@@ -1,11 +1,390 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Steve Best</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Steve Best</title>
+
+
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+
+<link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+<style type="text/css" media="screen">
+
+/*--[ GLOBAL TAG STYLES ]---------*/
+html {
+font-size: 100%;
+}
+
+body {
+font: normal 1em/1.5;
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+width: 100%;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+color: #333;
+text-decoration: none;
+border: none;
+transition: 0.5s all ease-in-out;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}
+
+a:hover, a:focus {
+color: #777;
+}
+
+p {
+margin: 20px;
+}
+
+
+/*--[ HEADER ]--------------------*/
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+transition: 0.5s all ease-in-out;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 10px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 12px;
+font-family: 'Open Sans', 'Arial', sans-serif;
+color: #777;
+padding-right: 25px;
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: rgb(0,0,0);
+transition: 0.5s all ease-in-out;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+font-weight: 700;
+}
+
+#header #nav a:hover {
+color: #336699;
+}
+
+
+/*--[ MAIN CONTENTS ]--------------------*/
+#contents {
+width: 100%;
+color: #333;
+}
+
+#contents h1 {
+font-family: 'Abril Fatface', 'Georgia', serif;
+font-size: 42px;
+color: rgb(0,0,0);
+font-weight: normal;
+margin-bottom: 50px;
+margin-top: 100px;
+transition: 0.5s all ease-in-out;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+text-align: center;
+}
+
+#contents p {
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-size: 18px;
+color: #333;
+font-weight: 300;
+line-height: 1.5;
+transition: 0.5s all ease-in-out;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}
+
+#contents .year {
+font-size: 28px;
+color: #336699;
+font-weight: normal;
+font-family: 'Abril Fatface', 'Georgia', serif;
+margin-top: 75px;
+margin-bottom: 0;
+}
+
+#contents .to-the-top {
+width: 200px;
+font-size: 12px;
+font-family: 'Open Sans', 'Arial', sans-serif;
+color: #777;
+font-weight: 300;
+margin-top: 50px;
+margin-bottom: 50px;
+margin-left: 20px;
+}
+
+#contents .to-the-top a {
+padding: 15px;
+text-align: center;
+background: transparent;
+color: #777;
+transition: 0.5s all ease-in-out;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+}
+
+#contents .to-the-top a:hover {
+background: #336699;
+color: #fff;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#Copyright {
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+margin-bottom: 25px;
+}
+
+#Copyright p {
+font-size: 12px;
+text-align: center;
+color: #777;
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-weight: 300;
+}
+
+
+#Copyright a {
+color: #336699;
+text-decoration: none;
+border: none;
+transition: 0.5s all ease-in-out;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}
+
+#Copyright a:hover, a:focus {
+color: #777;
+}
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 50px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 14px;
+font-family: 'Open Sans', 'Arial', sans-serif;
+color: #777;
+padding-right: 15px;
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: rgb(0,0,0);
+transition: 0.5s all ease-in-out;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+font-weight: 700;
+}
+
+#header #nav a:hover {
+color: #336699;
+}
+
+#contents {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+padding: 50px;
+color: #333;
+}
+
+#contents h1 {
+font-family: 'Abril Fatface', 'Georgia', serif;
+font-size: 72px;
+color: rgb(0,0,0);
+font-weight: normal;
+margin-bottom: 50px;
+transition: 0.5s all ease-in-out;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+text-align: center;
+}
+
+#contents p {
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-size: 20px;
+color: #333;
+font-weight: 300;
+line-height: 1.5;
+transition: 0.5s all ease-in-out;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}
+
+#contents .year {
+font-size: 52px;
+color: #336699;
+font-weight: normal;
+font-family: 'Abril Fatface', 'Georgia', serif;
+margin-top: 75px;
+margin-bottom: 0;
+}
+
+#contents .to-the-top {
+float: right;
+clear: both;
+width: 200px;
+position: relative;
+font-size: 14px;
+font-family: 'Open Sans', 'Arial', sans-serif;
+color: #777;
+font-weight: 300;
+}
+
+#contents .to-the-top a {
+padding: 15px;
+text-align: center;
+background: transparent;
+color: #777;
+transition: 0.5s all ease-in-out;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+}
+
+#contents .to-the-top a:hover {
+background: #336699;
+color: #fff;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#Copyright {
+width: 800px;
+margin-left: auto;
+margin-right: auto; margin-top: 50px;
+margin-bottom: 25px;
+}
+
+#Copyright p {
+font-size: 12px;
+text-align: center;
+color: #777;
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-weight: 300;
+}
+
+
+#Copyright a {
+color: #336699;
+text-decoration: none;
+border: none;
+transition: 0.5s all ease-in-out;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}
+
+#Copyright a:hover, a:focus {
+color: #777;
+}
+
+}
+
+
+</style>
 </head>
+
 <body>
 
-<banner>Welcome.  This site is under construction.  Check back soon.</banner>
+<section id="header">
+
+	<ul id="nav">
+	        <li><a title="About"href="t">About</a></li>
+		<li>/</li>
+		<li><a title="Shoot me an email"href="mailto:sfbest23@gmail.com">Contact</a></li>
+        </ul>
+
+</section> <!-- end #header -->
+
+<section id="contents">
+
+	<h1>Table of Contents</h1>
+	
+	<p class="year">Volume I (2021)</p>
+	
+  <p><a href="">First Article Will Go Here</a>p>
+	
+<div class="to-the-top"><a href="#contents">Back to the top</a></p></div>
+
+</section>	<!-- end #contents -->
+
+<section id="Copyright">
+	<p>&copy; 2021 Steve Best. All Rights Reserved. <a href="">Privacy Policy</a></p>
+</section>
 
 </body>
 </html>
+
