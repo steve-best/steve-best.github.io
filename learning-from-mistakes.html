@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Learning From My Mistakes</title>
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Crimson+Pro:300,400,700' rel="stylesheet"> 
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: rgb(60, 88, 128);
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+font-weight: 700;
+}
+
+a:hover {
+color: rgb(58, 115, 110);
+}
+
+p {
+margin: 20px;
+}
+
+code {
+font-size: 14px;
+}
+
+img {
+max-width: 60%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}     
+
+#intro_holder {
+width: 100%;
+background: rgba(60, 88, 128, 1.0);
+background: -webkit-linear-gradient(top left, rgba(60, 88, 128, 1.0), rgba(58, 115, 110, 1.0));
+background: -moz-linear-gradient(top left, rgba(60, 88, 128, 1.0), rgba(58, 115, 110, 1.0));
+background: linear-gradient(to bottom right, rgba(60, 88, 128, 1.0), rgba(58, 115, 110, 1.0));
+min-height: 600px;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 20;
+}
+
+#header #nav li {
+display: inline;
+font-size: 12px;
+font-family: "Open Sans", "Arial", sans-serif;
+font-weight: 400;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+font-family: "Open Sans", "Arial", sans-serif;
+font-weight: 300;
+margin-top: 150px;
+margin-bottom: 150px;
+width: 100%;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-family: "Open Sans", "Arial", sans-serif;
+font-size: 52px;
+font-weight: 700;
+text-align: center;
+letter-spacing: -2px;
+}
+
+#intro p {
+font-size: 18px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background:rgb(233,233,233);
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 18px;
+line-height: 1.75;
+font-family: 'Crimson Pro', serif;
+font-weight: 300;
+}
+
+#main_content .firstcharacter {
+color: #000;
+float: left;
+font-size: 62px;
+line-height: 40px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+#main_content .begin_point {
+    color: #000;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+}
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+font-weight: 700;
+font-family: "Open Sans", "Arial", sans-serif;
+font-size: 12px;
+}
+
+#main_content .end a {
+border-bottom: none;
+}
+
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+
+img {
+float: right;
+max-width: 40%;
+height: auto;
+margin-left: 25px;
+margin-bottom: 25px;
+}
+
+img:hover {
+max-width: 80%;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+code {
+font-size: 16px;
+}
+
+#intro_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 25px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 14px;
+padding: 15px;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+margin-top: 200px;
+margin-bottom: 250px;
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-size: 92px;
+font-weight: bold;
+text-align: center;
+}
+
+#intro p {
+font-size: 20px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: rgb(233,233,233);
+}
+
+#main_content {
+width: 700px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 20px;
+line-height: 1.75;
+}
+
+#main_content .begin_point {
+    font-size: 28px;
+}
+
+#main_content .firstcharacter {
+float: left;
+font-size: 75px;
+line-height: 60px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+}
+
+#main_content .end {
+margin-top: 100px;
+text-align: center;
+font-size: 16px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="intro_holder">
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+</ul>
+
+</section>
+
+<section id="intro">
+
+<p class="title">Learning From My Mistakes</p>
+
+<p>October 4, 2020</p>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<p>Hi, I’m Steve, and I used to have a little slice of the web called <a href="https://theartdirectedjournal.github.io">The Art Directed Journal</a>. My site was essentially a bunch of Github Pages that I had cobbled together as an excuse to practice HTML, CSS and improve my writing skills. It was essentially a fancy blog where each post had its own, unique style. I say that I used to have this site because due to a two-factor authentication snafu that was entirely my fault, I am essentially locked out of my Github account forever.</p>
+
+<p>My Github woes started a few weeks ago, after I updated my iPhone 11 to iOS 14. I had been running the iOS 14 public betas for a few weeks prior with absolutely no issues. Naturally, as soon as Apple released the production version of iOS 14, I updated to it and deleted my public beta profile. However, I started to experience two issues that I had not previously experienced while running the public betas — my phone ran a little hotter than normal, and the battery life was substantially worse. Since my battery health/capacity still showed 100%, I decided to wipe the phone and completely reset to factory settings. The factory reset resolved both issues.</p>
+
+<p>Two-factor authentication is beautiful thing. It is one of the easiest ways to keep your accounts from being compromised. For those who might not be aware, two-factor authentication is something you know (like your username and password) combined with something you either “are” (bio-metrics) or “possess” (like a YubiKey or an authentication code generated by an app like Google Authenticator or Microsoft Authenticator). Once a rare feature to be offered, most services, such as GMail, iCloud, Outlook.com, Twitter, Facebook, Instagram, and AWS, along with most banks, Amazon, etc., now offer two-factor authentication, and Github is no exception.</p>
+
+<p>However, two-factor authentication is a two-edged sword. On one hand, if implemented correctly (i.e. not using SMS (text message codes) unless you just absolutely have to, since SIM swapping is a real thing) it can keep bad actors out of your account. On the other hand, if you don’t take the necessary precautions (i.e. back ups), you can quite easily get permanently locked out of your account. That’s what happened to me.</p>
+
+<p>Before wiping my iPhone, I took the necessary steps to ensure that I would not be locked out of my iCloud account, my work related accounts, my Google account, and my Microsoft account. However, with Github, I believe that a mistake that I may have made when I switched to the iPhone 11 from my old iPhone SE, came back to haunt me. When I originally set up the SE, I made the decision to use the Google Authenticator app for my Github account. I had been using it on my previous phone, a Nextbit Robin, and it made sense to keep using the Google app. When I got my iPhone 11, I also took the necessary steps to correctly set up the Google Authenticator app on this new iPhone, and I made sure that all the accounts successfully transitioned over, including Github. However, I think I forgot to make a copy of my backup codes when making this change.</p>
+
+<p>After wiping my iPhone 11 and freshly installing iOS 14, I quickly realized that I was locked out of Github. I still had the Google Authenticator app on my old iPhone SE, but those codes no longer worked. I unfortunately did not have any active sessions in any browsers, and for some reason, my connectivity to Github through Visual Studio Code was no longer working. I did find some backup codes, which I had saved and stored in an AES 256 bit encrypted .zip file. However, none of those codes worked. This means that they were probably the backup codes originally generated when I originally set up two-factor back when I switched to the iPhone SE. After a few emails with Github support, I realized that there was nothing that can be done. That was that. They offered to remove my email address from that Github account, but there was nothing that they could do on their end. The Art Directed Journal is no more. Well, it’s still there, but will certainly never be contributed to again.</p>
+
+<p>A few lessons learned...</p>
+
+<p class="begin_point">Always have a backup, and don’t skip steps.</p>
+
+<p>If I had made sure that I had the right backup codes for my Github account before wiping my phone, this would never have been an issue. I thought that I had them, but they turned out to be the wrong ones. I will not make this mistake again.</p>
+
+<p class="begin_point">Nothing is permanent.</p>
+
+<p>When it’s time to move on, it’s time to move on. All good things eventually come to an end. I may rebuild it later, but right now I have no appetite to do so.</p>
+
+<p class="begin_point">Maybe I should do better about abiding by an Amish approach to technology.</p>
+
+<p>My internet friend Patrick Rhone abides by an <a href="https://patrickrhone.com/2016/09/09/an-amish-approach-to-technology/">“Amish approach to technology”</a>. I try to do the same. My daily driver laptop runs a long term support version of Ubuntu. I don’t download every new app or try every new service that comes along. I generally stick with what is tried and true, as long as what is tried and true continues to get the job done. I had made a stout resolution not to upgrade to iOS 14, and even though the betas were stable (I only installed the public beta profile well into the public beta process — I think it was like beta 5), the production version burned me for some reason. Lesson learned.</p>
+
+<p class="begin_point">What now?</p>
+
+<p>Well, I created a new Github account and here I am.  I plan to keep creating art directed blog posts here because it's fun.  I probably will not post too frequently for a while, since life is extremely hectic at the moment, but nonetheless, stay tuned.</p>
+
+<p class="end"><a href="https://steve-best.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+</body>
+</html>
