@@ -1,0 +1,366 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<title>Year of the Linux Desktop</Del></title>
+		
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.2.6");
+    </script>
+
+<script type="text/javascript">
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+<style type="text/css" media="screen">
+
+/*--[ GLOBAL TAG STYLES ]---------*/
+html { 
+font-size: 100%; 
+}
+
+body { 
+font: normal 1em/1.5; 
+margin: 0; 
+padding: 0; 
+background: rgb(255,255,255); 
+width: 100%;   
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited { 
+color: #336699; 
+text-decoration: none; 
+border: none; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+}
+  
+a:hover, a:focus { 
+color: #777;
+}
+
+p {
+margin: 20px;
+}
+
+img {
+max-width: 80%;
+height: auto;
+display: block;
+margin: auto;
+padding-bottom: 40px;
+}                  		
+
+/*--[ HEADER ]--------------------*/
+#header {
+background: rgba(255,255,255,.87);  
+position: fixed; 
+top: 0px;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 2; 
+}
+
+#header #nav {
+margin-bottom: 10px; 
+margin-top: 10px; 
+}
+
+#header #nav li { 
+display: inline; 
+font-size: 12px; 
+font-family: 'Open Sans', 'Arial', sans-serif; 
+color: #777;   
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: rgb(0,0,0); 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+font-weight: 700;
+}
+
+#header #nav a:hover {
+color: #336699; 
+}
+                                		
+                
+/*--[ MAIN CONTENTS ]--------------------*/
+#contents {
+width: 100%;  
+color: #333;
+}   
+               
+#contents h1 {
+font-family: 'Abril Fatface', 'Georgia', serif;
+font-size: 42px; 
+color: rgb(0,0,0); 
+font-weight: normal; 
+margin-top: 100px;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out; 
+-ms-transition: 0.5s all ease-in-out; 
+text-align: center;
+}
+
+#contents h2 {
+font-weight: 300;
+font-size: 24px;
+line-height: 1;
+color: #999;
+margin-bottom: 75px;
+text-align: center;
+font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+#contents p {
+font-family: 'Open Sans', 'Arial', sans-serif; 
+font-size: 18px; 
+color: #000; 
+font-weight: 300; 
+line-height: 1.5; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+}
+
+#contents a {
+font-weight: 700;
+}
+
+#contents blockquote {
+font-size: 16px;
+color: #777;
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-weight: 300;
+font-style: italic;
+background: #f9f9f9;
+border-left: 10px solid #ccc;
+margin: 1.5em 10px;
+padding: 0.5em 10px;
+quotes: "\201C""\201D""\2018""\2019";
+}
+#contents blockquote:before {
+color: #ccc;
+content: open-quote;
+font-size: 4em;
+line-height: 0.1em;
+margin-right: 0.25em;
+vertical-align: -0.4em;
+}
+
+#contents blockquote p {
+display: inline;
+}
+
+#contents .happy_ending {
+    font-size: 12px;
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#Copyright {
+width: 100%; 
+margin-left: auto; 
+margin-right: auto; 
+margin-top: 50px; 
+margin-bottom: 25px; 
+}
+
+#Copyright p {
+font-size: 12px; 
+text-align: center; 
+color: #777;
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-weight: 300;
+}  
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+img {
+float: right;
+max-width: 50%;
+height: auto;
+padding-left: 25px;
+}
+
+#header {
+background: rgba(255,255,255,.65); 
+opacity: 20%;
+position: fixed; 
+top: 0px;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 2; 
+}
+
+#header #nav {
+margin-bottom: 10px; 
+margin-top: 10px;  
+}
+
+#header #nav li { 
+display: inline; 
+font-size: 14px; 
+font-family: 'Open Sans', 'Arial', sans-serif; 
+color: #777;   
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: rgb(0,0,0); 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+font-weight: 700;
+}
+
+#header #nav a:hover {
+color: #336699; 
+}
+
+#contents {
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+padding: 50px; 
+color: #333;
+}   
+               
+#contents h1 {
+font-family: 'Abril Fatface', 'Georgia', serif;
+font-size: 62px; 
+color: rgb(0,0,0); 
+font-weight: normal; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out; 
+-ms-transition: 0.5s all ease-in-out; 
+text-align: center;
+}
+
+#contents h2 {
+font-size: 28px;
+margin-bottom: 125px;
+}
+
+#contents p {
+font-family: 'Open Sans', 'Arial', sans-serif; 
+font-size: 20px; 
+font-weight: 300; 
+line-height: 1.5; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+}
+
+#contents blockquote {
+font-size: 18px;
+}
+
+#contents a {
+font-weight: 700;
+}
+
+#contents .happy_ending {
+    font-size: 14px;
+    margin-top: 75px;
+}
+
+#Copyright {
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+margin-top: 50px; 
+margin-bottom: 25px; 
+}
+
+#Copyright p {
+font-size: 12px; 
+text-align: center; 
+color: #777;
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-weight: 300;
+}
+   
+}    
+      
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+
+	<ul id="nav">
+
+        <li><a title="Steve Best" href="https://steve-best.github.io/">Steve Best</a></li> 
+
+    </ul>
+
+</section> <!-- end #header -->
+
+<section id="contents">        
+
+    <h1>The Year of the Linux Desktop is Finally Here</h1>
+
+    <h2>But it's not in the form you may think.</h2>
+
+    <p>I came across an <a href="https://arstechnica.com/gadgets/2021/02/the-worlds-second-most-popular-desktop-operating-system-isnt-macos-anymore/">interesting article</a> this morning over on Ars Technica that says Chrome OS now has the second largest desktop OS market share at 10.8%, behind Windows (at 80.5%). From the article:</p>
+
+    <blockquote>Despite the fact that macOS landed in third, viewing this as an example of Google beating out Apple directly might not be accurate. Rather, it’s likely that Chrome OS has been primarily pulling sales and market share away from Windows at the low end of the market. Mac market share actually grew from 6.7 percent in 2019 to 7.5 percent in 2020.  Meanwhile, Chrome OS skyrocketed from 6.4 percent in 2019 to 10.8 percent in 2020. Windows fell from 85.4 percent to 80.5 percent.</blockquote>
+
+    <p>While macOS being supplanted at the number 2 spot is interesting, what I think is really interesting here is that while still a distant number two and while not a “traditional” desktop Linux distro like Debian, Ubuntu or Fedora, Chrome OS is still in fact Linux under the hood.</p>
+    
+    <p>I’ve always been a fan of Chrome OS, dating back to my original CR-48, and I think Google made some smart decisions in gearing the platform toward the education space. My daughter is using my wife’s old 11” Samsung Chromebook for online school, and that device’s battery, even almost six years after we purchased it, lasts for almost an entire day. Is it the fastest machine? Absolutely not, but it’s reliable and fast enough for my daughter to do everything she needs for school.</p>
+
+    <p class="happy_ending"><a href="https://steve-best.github.io">Table of Contents</a></p>
+		
+</section>	<!-- end #contents -->
+
+<section id="Copyright">
+    
+    <p>&copy; 2021 Steve Best. All Rights Reserved.</p>
+    
+</section>
+        
+</body>
+</html> 
