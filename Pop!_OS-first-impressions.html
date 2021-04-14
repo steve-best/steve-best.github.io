@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Pop!_OS First Impressions</title>
+
+
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap" rel="stylesheet">  
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: #a10705;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+a:hover {
+color: #ed5353;
+}
+
+p {
+margin: 20px;
+}
+
+img {
+max-width: 80%;
+height: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}   
+
+.image_holder {
+text-align: center;
+}
+
+#intro_holder {
+width: 100%;
+background: rgb(16,18,17) url(https://steve-best.github.io/Site_Images/Pop!_OS_Desktop.png) center center no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+background: rgba(0,0,0,.80)
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 20;
+}
+
+#header #nav li {
+display: inline;
+font-size: 14px;
+font-family: 'Cormorant Garamond', serif;
+font-weight: 400;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+font-family: 'Raleway', sans-serif;
+margin-top: 100px;
+margin-bottom: 175px;
+width: 100%;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-family: 'Raleway', sans-serif;
+font-size: 52px;
+font-weight: 300;
+text-align: center;
+margin-bottom: 50px;
+}
+
+#intro p {
+font-family: 'Cormorant Garamond', serif;
+font-size: 20px;
+margin-bottom: 0px;
+text-align: center;
+font-weight: 300;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: linear-gradient(to bottom, #fafafa 0%, #d4d4d4 100%);
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 18px;
+line-height: 1.75;
+font-family: 'Cormorant Garamond', serif;
+font-weight: 400;
+}
+
+#main_content .firstcharacter {
+font-family: 'Cormorant Garamond', serif;
+font-weight: 700;
+color: #000;
+float: left;
+font-size: 95px;
+line-height: 40px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+font-weight: 400;
+text-transform: uppercase;
+}
+
+#main_content .begin_point {
+font-family: 'Cormorant Garamond', serif;
+color: #000;
+font-size: 38px;
+line-height: 1;
+margin-top: 50px;
+}
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+}
+
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus {
+outline: none;
+}
+
+#intro_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 25px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 16px;
+padding: 15px;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+margin-top: 200px;
+margin-bottom: 350px;
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-size: 92px;
+text-align: center;
+margin-bottom: 75px;
+}
+
+#intro p {
+font-size: 32px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#main_content {
+width: 700px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 20px;
+line-height: 1.75;
+}
+
+#main_content .firstcharacter {
+float: left;
+font-size: 150px;
+line-height: 60px;
+padding-top: 3px;
+padding-right: 10px;
+padding-left: 3px;
+padding-bottom: 10px;
+}
+
+#main_content .begin_point {
+font-size: 52px;
+}
+
+#main_content .end {
+margin-top: 100px;
+text-align: center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="intro_holder">
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+</ul>
+
+</section>
+
+<section id="intro">
+
+<p class="title">Pop!_OS First Impressions</p>
+
+<p>a polished distro for new and experienced Linux enthusiasts</p>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<p><span class="firstcharacter">W</span>hen Linux computer maker System76 released their own distro, Pop!_OS, I did not really pay it too much attention. I was happily dual booting Ubuntu 16.04 LTS and Windows 10 on my laptop at the time, and since then, I ditched Windows and hopped between Ubuntu, elementary OS and Fedora as the sole OS on my laptop, always returning to Ubuntu since it was the only distro that would properly support two-finger scrolling on my particular hardware. (elementary OS used to support two-finger scrolling just fine, but their 5.1 release broke that functionality.) Overall, I’ve been happy with Ubuntu. However, I recently came across a really good review of a System76 laptop, and being impressed by Pop!_OS, I decided to give it a try.</p>
+
+<p class="begin_point">What is Pop!_OS?</p>
+
+<p>Pop!_OS is System76’s distro that comes preinstalled on the computers they sell. However, they offer it for free for anyone who wants to download and install it. It is based on Ubuntu, which itself is based on Debian. This gives it a reliable base (Debian), as well as corporate backing through Canonical and System76.</p>
+
+<p class="begin_point">What I Like...</p>
+
+<p><span style="font-weight: 700;">The Installer.</span>  I would like to see the Linux desktop become more mainstream, and outside of Chromebooks and the still much too rare instance where a machine is purchased with traditional desktop Linux pre-installed, the majority of folks will be installing Linux along side or in replacement of Windows on an existing machine. Therefore, an easy and intuitive initial install experience is paramount. The install experience for Pop!_OS was probably the best experience I have had with a Linux installer. Even though Pop!_OS is based on Ubuntu, Pop!_OS uses a different installer. It was extremely intuitive, as if System76 has geared the installer toward people who are not experienced Linux users. Pop!_OS presents two choices which are well explained: “Clean Install” and “Custom (Advanced)”. Since I was installing Pop!_OS as the only operating system and using the entire hard drive, I chose the “Clean Install” option. Clicking through the install process was easy, and Pop!_OS was installed in no time. It should also be noted that the installer did not crash (something I have experienced with other distros).</p>
+
+<p><span style="font-weight: 700;">The Desktop Environment.</span>  Like Ubuntu, Pop!_OS comes with a modified version of the GNOME desktop environment. I have always preferred GNOME, although elementary’s Pantheon environment and XFCE are close runners up. The changes that Pop!_OS has made to GNOME are subtle. I find the Pop!_OS color scheme (both light and dark) to be more palatable than that of Ubuntu.</p>
+
+<p>Pop!_OS has remained closer to what GNOME’s developers originally intended. Menus are changed here and there, but I actually find them more intuitive. While Ubuntu includes a custom dock, the developers at System76 have stuck with GNOME’s default dock, which is only shown when one clicks “Activities” in the upper left hand portion of the screen (or when one hits the Super (Windows) key). I’m not a huge fan of this approach, but installing the Dash to Dock GNOME extension (which I always do in Ubuntu anyway) fixes this.</p>
+
+<p>Pop!_OS is relatively speedy, given the now low end hardware I have installed it on. It rarely lags, and most applications open quickly. I don’t really put my laptop through a lot, but I can multi-task efficiently.</p>
+
+<p><span style="font-weight: 700;">The Desktop Environment.</span>  The Pop!_Shop is System76’s app store, which is a customized version of the GNOME software center. Unlike Ubuntu, whose own custom version of the GNOME software center is full of Snap packages, System76 has decided to use Flatpaks, which are sourced from Flathub. A number of applications offer the ability to grab Flatpaks or .deb versions of an application. Unlike a lot of people, I have no animosity toward Snap packages, so System76’s choice not to include Snaps is what it is. The whole Snaps versus Flatpaks reminds me of the HD DVD versus Blu-Ray wars back in the mid 2000’s. I mainly still install .debs via the command line, and I will accept whatever format ultimately wins out.</p>
+
+<p class="image_holder"><img src="https://steve-best.github.io/Site_Images/Pop!_Shop.png" /></p>
+
+<p>One really cool thing that I like is the inclusion of OS updates in the Pop!_Shop. Additionally, all apps, whether they are .debs or Flatpaks, are updated through the Pop!_Shop.</p>
+
+<p class="begin_point">What I Don't Like...</p>
+
+<p><span style="font-weight: 700;">The Fonts.</span>  I’m no graphic designer, but I think that the default system font used by Pop!_OS is ugly. It is too tall and narrow. It could be the crappy screen on my laptop, but it just looks slightly blurry. The default Ubuntu font and the default font on the stock GNOME desktop are both more pleasing to the eye. This is not a deal breaker though, and I have become used to it.</p>
+
+<p class="image_holder"><img src="https://steve-best.github.io/Site_Images/Settings.png" /></p>
+
+<p><span style="font-weight: 700;">The Lack of a Minimize Button.</span>  By default, there are no minimize and maximize buttons. Double clicking the border of a window will put the window in a maximized state, just like in Windows. Double clicking on a window border that is in a maximized state will bring it out of the maximized state.</p>
+
+<p>My solution to this little issue was to create a keyboard shortcut in the Settings app. I chose Superkey + H to hide the current window, just like in elementary OS. To maximize the window again, you can just click on the icon in the dock or alt-tab through your open programs.</p>
+
+<p class="image_holder"><img src="https://steve-best.github.io/Site_Images/Windows.png" /></p>
+
+<p class="begin_point">Wrapping It All Up...</p>
+
+<p>I really like Pop!_OS, and I plan to keep using it for a while. I’ll do a much more in depth review once I have had more time to put this OS through its paces.</p>
+
+<p class="end"><a href="https://steve-best.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+</body>
+</html>
