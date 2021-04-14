@@ -6,30 +6,6 @@
 
 <title>Steve Best</title>
 
-
-<script src="https://www.google.com/jsapi" type="text/javascript"></script>
-    <script type="text/javascript">
-        google.load("jquery", "1.2.6");
-    </script>
-
-<script type="text/javascript">
-$(function(){
-    $('a[href*=#]').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-        && location.hostname == this.hostname) {
-            var $target = $(this.hash);
-            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-            if ($target.length) {
-                var targetOffset = $target.offset().top;
-                $('html,body').animate({scrollTop: targetOffset}, 1000);
-                return false;
-            }
-        }
-    });
-});
-</script>
-
-
 <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 
