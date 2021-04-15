@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sega Genesis Mini</title>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet"> 
+ 
+
+  
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: #ed5353;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+a:hover {
+color: #a10705;
+}
+
+p {
+margin: 20px;
+}
+
+img {
+max-width: 80%;
+height: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}   
+
+.image_holder {
+text-align: center;
+}
+
+#intro_holder {
+width: 100%;
+background: rgb(16,18,17) url(https://steve-best.github.io/Site_Images/genesis.jpeg) center center no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+background: rgba(0,0,0,.80)
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 20;
+}
+
+#header #nav li {
+display: inline;
+font-size: 14px;
+font-family: 'Reenie Beanie', cursive;
+font-weight: 400;
+text-shadow: 0px 1px 2px #161619;
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(255,255,255);
+}
+
+
+#intro {
+font-family: 'Press Start 2P', cursive;
+margin-top: 100px;
+margin-bottom: 175px;
+width: 100%;
+color: rgb(255,255,255);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-family: 'Press Start 2P', cursive;
+font-size: 52px;
+font-weight: 300;
+text-align: center;
+margin-bottom: 50px;
+}
+
+#intro p {
+font-family: 'Nunito', sans-serif;
+font-size: 20px;
+margin-bottom: 0px;
+text-align: center;
+font-weight: 300;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: linear-gradient(to bottom, #333 0%, #000 100%);
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: rgb(255,255,255);
+font-size: 18px;
+line-height: 1.75;
+font-family: 'Nunito', sans-serif;
+font-weight: 300;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#main_content .firstcharacter {
+font-family: 'Press Start 2P', cursive;
+color: rgb(255,255,255);
+float: left;
+font-size: 95px;
+line-height: 40px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+text-transform: uppercase;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#main_content .begin_point {
+font-family: 'Press Start 2P', cursive;
+color: rgb(255,255,255);
+font-size: 38px;
+line-height: 1;
+margin-top: 50px;
+}
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+}
+
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus {
+outline: none;
+}
+
+#intro_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 25px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 16px;
+padding: 15px;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+margin-top: 200px;
+margin-bottom: 350px;
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#intro .title {
+font-size: 92px;
+text-align: center;
+margin-bottom: 75px;
+}
+
+#intro p {
+font-size: 32px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#main_content {
+width: 700px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+font-size: 20px;
+line-height: 1.75;
+}
+
+#main_content .firstcharacter {
+float: left;
+font-size: 150px;
+line-height: 60px;
+padding-top: 3px;
+padding-right: 10px;
+padding-left: 3px;
+padding-bottom: 10px;
+}
+
+#main_content .begin_point {
+font-size: 52px;
+}
+
+#main_content .end {
+margin-top: 100px;
+text-align: center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="intro_holder">
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+</ul>
+
+</section>
+
+<section id="intro">
+
+<p class="title">Sega Genesis Mini</p>
+
+<p>a &ldquo;mini&rdquo; review of the mini Sega Genesis</p>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<p><span class="firstcharacter">I</span> completely missed the Sega Genesis. I was in middle school around the time that Sega’s follow up to the Master System was gaining in popularity. I saw the <a href="https://www.youtube.com/watch?v=NECDgA3gu8I">&ldquo;Genesis does what Nintendon’t&rdquo;</a> ads on TV, and I played the Genesis from time to time while hanging out with friends. However, I never asked my parents for the Genesis. I was a bit of a Nintendo fanboy and had an original Nintendo, along with every other kid on my street. (Well, except my friend Joseph; he was the only person I knew who had a Master System back then.) Be that as it may, I never asked my parents for a Super Nintendo either. The truth is, I was too busy playing basketball year round, and I simply did not care much about owning one of the next generation of consoles.</p>
+
+<p>Fast forward to today. I got back into playing video games while in college in the late ‘90’s, and as an adult, I play mostly retro games. I have a Nintendo Wii full of retro games, and I love the NES Classic that my wife bought me a few years ago. For my 41st birthday, one of the things that my beautiful wife bought me was the Sega Genesis Mini, and I absolutely love this thing.</p>
+
+<p class="begin_point">The Hardware</p>
+
+<p>The Genesis Mini, like the NES Classic, is a tiny little version of the original system. It appears to be well made. It has HDMI out, two USB controller ports, and even a little, non-functional cartridge slot at the top. The system comes with a micro USB power adapter, two wired USB controllers, and an HDMI cable. There is a power on/off button that slides back and forth, and there is a physical reset button.</p>
+
+<p>The volume slider actually does not do anything. It is just there for decoration, just like the fake headphone jack on the front. It would have really been cool if that were a real 3.5 mm headphone jack, as I could see myself hooking it up to my computer monitor, as opposed to a 55-inch 4K TV, and using headphones for sound. Last but not least, there is a small plastic piece on the bottom that looks like a battery cover and slides out. However, I cannot see any real use for it. Since I did not have the original Genesis, I am just assuming that this piece is also decoration to make the mini Genesis mirror the larger original.</p>
+
+<p>The controllers feel great and have a well-made quality to them. The buttons have a nice “click”, do not “stick”, and unlike some controllers on the market, the D-pad does not feel like it will break at any moment. These feel like the legit controllers. Importantly, the cords are just long enough not to make me go looking on Amazon for some wireless controllers, like I did for my NES Classic. My only complaint is that Sega decided to include the three button variant of the Genesis controller, as opposed to the six button version that they released well into the life of the original Genesis.</p>
+
+<p>As an aside, I am a huge fan of Street Fighter 2. Since the Sega Mini only comes with the three button controller, Street Fighter 2, which used six buttons in the arcade, is playable, but it is not optimal. Once you get used to the three button control scheme it is fine, but I really wanted six buttons. As such, my son has an arcade stick that works with PC, Xbox, and a number of other systems, and it just happens to have a USB connection. I plugged the arcade stick into the front USB port of the Genesis Mini, but alas, it did not work.</p>
+
+<p class="begin_point">The Software</p>
+
+<p>The Genesis Mini comes with 42 built-in games, including Altered Beast, Kid Chameleon, Sonic, Gunstar Heroes, Ghouls ‘N Ghosts, Dr. Robotnik’s Mean Bean Machine, and Street Fighter 2. I don’t believe that there is any way to update the games on this thing, at least not from what I have seen, and I have not really looked into any “hacks”. However, I am satisfied with most of the games that come with this system. Most importantly, there is an “official Sega seal of quality” on the box.</p>
+
+<p class="image_holder"><img src="https://steve-best.github.io/Site_Images/genesis-box.jpeg" /></p>
+
+<p>I have seen some “mini” systems absolutely ruined by bad emulation. In fact, I have another retro Genesis system that is made by At Games, I believe, and even though it comes with a ton of games, the emulation and sound are horrid. I am pleased to report that the emulation and sound of the Genesis Mini is spot on and really well done.</p>
+
+<p>The menu system is nice as well, and it definitely has a late 80’s/early 90’s vibe. The console powers up straight to the game menu. When you select a game to play, there is a little blurb about the game, which I find pretty neat. You can sort the games by alphabet, release date, or genre. The system settings are well organized, and the system is fairly quick in terms of menu responsiveness. You can save your progress in games. Holding down the start button while in a game will bring up the save menu, and there are also options to reset the game or return the main menu.</p>
+
+<p>The games can either be displayed in 4:3 aspect ratio, or they can be displayed in full screen. With the 4:3 choice, there are bars on each side of the screen. You can choose to have those bars appear black, or you can choose either a retro looking grid or a scene with some boomboxes and a shadow of Sonic. (I think the latter is the default.) The games look best to me in their original 4:3 aspect ratio. There is also a “CRT filter” that you can choose as well, if you want to go truly retro.</p>
+
+<p>In summary, this is a really nice retro system, and it is well worth the money.</p>
+
+<p class="end"><a href="https://steve-best.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+</body>
+</html>
