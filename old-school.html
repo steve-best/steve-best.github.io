@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>A Little Web 1.0 Nostalgia</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet"> 
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+
+<style type="text/css" media="screen">
+
+/*--[ GLOBAL STYLES ]---------*/
+html {
+font-size: 100%;
+}
+
+body {
+font: normal 1em/1.5;
+margin: 0;
+padding: 0;
+background: #000;
+width: 100%;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+color: #336699;
+text-decoration: none;
+border: none;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+font-weight: 700;
+}
+
+a:hover, a:focus {
+color: yellow;
+}
+
+p {
+-webkit-hyphens: auto;
+-moz-hyphens: auto;
+hyphens: auto;
+margin: 20px;
+}
+
+
+/*--[ HEADER ]--------------------*/
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 14px;
+font-family: 'Reenie Beanie', cursive;
+color: #777;
+padding-right: 25px;
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: yellow;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+font-weight: 300;
+}
+
+#header #nav a:hover {
+color: #336699;
+}
+
+
+/*--[ MAIN CONTENTS ]--------------------*/
+#contents {
+width: 100%;
+color: #333;
+}
+
+#contents h1 {
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-size: 42px;
+color: #fff;
+text-shadow: 0px 1px 2px #161619;
+font-weight: 700;
+margin-bottom: 50px;
+margin-top: 100px;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+text-align: center;
+}
+
+#contents marquee {
+font-family: 'Black Ops One', cursive;
+color: #000;
+background: yellow;
+padding: 25px;
+border: 4px dashed #000;
+font-size: 20px;
+}
+
+#contents p {
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-size: 16px;
+color: #fff;
+text-shadow: 0px 1px 2px #161619;
+font-weight: 300;
+line-height: 1.75;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}
+
+#Copyright {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 25px;
+}
+
+#Copyright p {
+font-size: 12px;
+text-align: center;
+color: #777;
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-weight: 300;
+}
+
+
+#Copyright a {
+color: #336699;
+text-decoration: none;
+border: none;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}
+
+#Copyright a:hover, a:focus {
+color: #777;
+}
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 50px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 16px;
+color: #777;
+padding-right: 15px;
+}
+
+#contents {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+padding: 50px;
+color: #333;
+}
+
+#contents marquee {
+font-size: 28px;
+}
+
+#contents h1 {
+font-size: 72px;
+margin-bottom: 50px;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+text-align: center;
+}
+
+#contents p {
+font-size: 20px;
+line-height: 1.75;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}
+
+#Copyright {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+margin-bottom: 25px;
+}
+
+#Copyright p {
+font-size: 12px;
+text-align: center;
+color: #777;
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-weight: 300;
+}
+
+
+#Copyright a {
+color: #336699;
+text-decoration: none;
+border: none;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}
+
+#Copyright a:hover, a:focus {
+color: #777;
+}
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+</ul>
+
+</section> <!-- end #header -->
+
+<section id="contents">
+
+<marquee>&#x1f6a7; This article is under contruction. &#x1f6a7;</marquee>
+
+<h1>A Little Web 1.0 Nostalgia</h1>
+
+<p>I recently read an <a href="https://manuelmoreale.com/something-about-the-evolution-of-the-web">interesting piece</a> by Manuel Moreale that made me briefly nostalgic about my first experiences with the web.  I was in college, and it was during the Web 1.0 &ldquo;dot com&rdquo; days.  The web was new and exciting.  Clicking on the Netscape Navigator icon meant that there would soon be a world of information at your fingertips. It was amazing that we rarely had to step foot in the huge school library.  Ebsco Host and NCLive were used for lots of research.</p>
+
+<p>Creativity abounded.  There was that dancing baby and a slew of other memes.  Websites were popping up about any topic one could think of.  GeoCities and Angelfire were popular ways to get one's own, personal page online quickly.  In fact, I think at one point, GeoCities may have been the number three most visitied site on the web? Napster was AMAZING. (This was before anyone cared about piracy or how insecure file sharing of that nature actually was.)</p>
+
+<p>We all had school issued email accounts.  However, as I recall, you had to initially load those off a 3.5” floppy disk.  We all used Hotmail and AOL Instant Messenger accounts instead. I remember one of the grad student, computer-lab-admin-type people showing me Google for the first time.  It was way better than Lycos.</p>
+
+<p>However, I realize it’s just nostalgia, and nostalgia does not always paint the most accurate picture.  Back then most web pages were insecure, and actually bringing up most pages was slooooow.   These were the days of dial up, after all, and sometimes not even at 56K modem speeds.  There was no WiFi.   If you wanted a fast(er) connection, you had to use one of the machines in the computer lab.  Those ran Windows NT. There were a few early iMacs and some beige box Macs running System 7 or 8  that could be used as well.  I started college with a 286 desktop running Windows 3.1.  It was a hand-me-down from my dad, and we were worried it would not make it through Y2K. (It did.)  I did not have a printer, and the 3.5&ldquo; floppy disk was my friend.  I would type papers up on that old 286, save them to the disk, and then print the papers off in the computer lab.  One of my roommates who was really into computers wanted me to upgrade that 286.  &ldquo;The case has so much room&rdquo;, he said.  But I did not want to spend the money.  I bought a Playstation instead.  I cared more about Gran Turismo.</p>
+
+<p>My first laptop ran Windows 98.  I think I got it during the summer between my sophmore and junior years &mdash; a Compaq if memory serves correctly.  It was a heavy clunker compared to the notebooks and tablets of today.  I think I kept that thing until about 2003.</p>
+
+<p>I graduated just after Bill Gates' <a href="https://www.wired.com/2002/01/bill-gates-trustworthy-computing/">famous trustworthy computing email</a>.  Our present day computing devices are certainly more capable and definitely more secure.  The iPhone is just one amazing example of how far things have come.  Yes, there have always been trolls, and the internet is still not private.  It wasn’t back then either &mdash; just people back then thought that it was.  However, aside from the fact that it seems like a handful of giant tech companies now control everything, I think the Internet is a much better place now.  That may be an unpopular opinion.  I realize that there are a slew of problems created by the Internet that are real and need real solutions.  Yet, I am thankful for the Internet. Online banking and ecommerce gave me my career.  I am confident that the problems of today will see solutions, and I'm excited for what is to come.</p>
+
+</section> <!-- end #contents -->
+
+<section id="Copyright">
+<p>&copy;2021 Steve Best. All Rights Reserved. <a href="https://steve-best.github.io/privacy">Privacy Policy</a></p>
+</section>
+
+</body>
+</html>
