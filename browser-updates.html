@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Thoughts on Browser Updates</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+<style type="text/css" media="screen">
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(33,33,33);
+  font-family: 'Lora', serif;
+  text-shadow: 0px 1px 2px #161619;
+}
+
+:focus {
+  outline: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #04B4AE;
+  -webkit-transition: .5s all ease-in-out;
+  -moz-transition: .5s all ease-in-out;
+  -ms-transition: .5s all ease-in-out;
+}
+
+a:hover {
+  color: #01DFA5;
+  text-shadow: none;
+}
+
+p {
+  margin: 20px;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
+
+#header {
+  padding: 5px 0;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+#header #nav {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+#header #nav li {
+  display: inline;
+  font-size: 14px;
+  color: #777;
+  font-family: 'Reenie Beanie', cursive;
+  text-transform: uppercase;
+}
+
+#header #nav a {
+  color: rgb(255,255,255);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  border: none;
+  background-color: #04B4AE;
+  padding: 40px 10px;
+}
+
+#header #nav a:hover {
+  background-color: #01DFA5;
+}
+
+#article_body {
+  margin-top: 100px;
+}
+
+#article_body .title {
+  font-size: 42px;
+  font-weight: 700;
+  color: rgb(255,255,255);
+}
+
+#article_body p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgb(255,255,255);
+}
+
+#article_body .happy_ending {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#article_body .happy_ending a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+
+
+/*--[ FOR LARGER SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+#header #nav li {
+  font-size: 16px;
+}  
+
+#article_body {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#article_body .title {
+  font-size: 48px;
+}
+
+#article_body p {
+  font-size: 22px;
+  line-heigt: 1.5;
+}
+
+#article_body .happy_ending a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</span></a></li>
+</ul>
+
+</section>
+
+<section id="article_body">
+
+<p class="title">Thoughts on Browser Updates</p>
+
+<p>I came across an <a href="https://arstechnica.com/gadgets/2021/05/exploitable-security-bug-remains-in-ios-and-macos-3-weeks-after-upstream-fix/">interesting article over on Arstechnica</a> earlier this week, and it got me thinking about the way that Apple updates Safari on iOS.  Because Safari is a part of the OS and not separated from the OS itself, Apple updates Safari through updates to iOS itself.  It seems to me that a more efficient method to update Safari would be to decouple it from the OS so that it can be updated through the App Store.  This is how Google does it with Chrome on Android, and quite frankly, I think it's a much better approach.</p>
+
+<p>On a related but unrelated note, on my wishlist for iOS 15 is for Apple to allow other browser rendering engines than that of WebKit. I know this is probably unlikely to happen, but I would really love to have a version of Firefox that runs Mozilla’s own engine.</p>
+
+<p class="happy_ending"><a href="https://steve-best.github.io">Table of Contents</a></p>
