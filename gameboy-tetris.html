@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sega Genesis Mini</title>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+ 
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: #b57aa1;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+a:hover {
+color: #946a87;
+}
+
+p {
+margin: 20px;
+}
+
+img {
+max-width: 80%;
+height: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}   
+
+.image_holder {
+text-align: center;
+}
+
+#intro_holder {
+width: 100%;
+background: rgb(16,18,17) url(https://steve-best.github.io/Site_Images/003005EC-5AB9-466F-A893-49B1916EB5D5.jpeg) center center no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+background: rgba(0,0,0,.80)
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 20;
+}
+
+#header #nav li {
+display: inline;
+font-size: 14px;
+font-family: 'Reenie Beanie', cursive;
+font-weight: 400;
+text-shadow: 0px 1px 2px #161619;
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(255,255,255);
+}
+
+
+#intro {
+font-family: 'Lato', sans-serif;
+margin-top: 100px;
+margin-bottom: 175px;
+width: 100%;
+color: rgb(255,255,255);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-size: 52px;
+font-weight: 700;
+text-align: center;
+margin-bottom: 50px;
+font-style: italic;
+text-transform: uppercase;
+}
+
+#intro p {
+font-size: 20px;
+margin-bottom: 0px;
+text-align: center;
+font-weight: 300;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: linear-gradient(to bottom, #333 0%, #000 100%);
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: rgb(255,255,255);
+font-size: 18px;
+line-height: 1.75;
+font-family: 'Lato', sans-serif;
+font-weight: 300;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#main_content .firstcharacter {
+font-family: 'Lato', sans-serif;
+color: rgb(255,255,255);
+float: left;
+font-size: 95px;
+line-height: 40px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+text-transform: uppercase;
+text-shadow: 0px 1px 2px #161619;
+font-weight: 700;
+}
+
+#main_content .begin_point {
+font-family: 'Lato', sans-serif;
+color: rgb(255,255,255);
+font-size: 38px;
+line-height: 1;
+margin-top: 50px;
+font-style: italic;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+}
+
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus {
+outline: none;
+}
+
+#intro_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 25px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 16px;
+padding: 15px;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+margin-top: 200px;
+margin-bottom: 350px;
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#intro .title {
+font-size: 92px;
+text-align: center;
+margin-bottom: 75px;
+}
+
+#intro p {
+font-size: 32px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#main_content {
+width: 700px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+font-size: 20px;
+line-height: 1.75;
+}
+
+#main_content .firstcharacter {
+float: left;
+font-size: 150px;
+line-height: 60px;
+padding-top: 3px;
+padding-right: 10px;
+padding-left: 3px;
+padding-bottom: 10px;
+}
+
+#main_content .begin_point {
+font-size: 52px;
+}
+
+#main_content .end {
+margin-top: 100px;
+text-align: center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="intro_holder">
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+</ul>
+
+</section>
+
+<section id="intro">
+
+<p class="title">Game Boy <br><span style="text-transform: none; color: rgb(33,33,33); background-color: rgba(255,255,255,.5); padding-left: 20px; padding-right: 20px; text-shadow: none; font-style: normal; font-weight: 300;">Tetris</span></br></p>
+
+<p>June 8, 2021</p>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<p><span class="firstcharacter">M</span>y wife and I were out and about last week, and we stopped by <a href="https://www.2ndandcharles.com/">2nd & Charles</a>, where I happened upon a copy of Tetris for the Nintendo Game Boy, which just happened to be in very good condition. Seeing as how I still have my original <a href="https://en.m.wikipedia.org/wiki/Game_Boy#Game_Boy_Pocket">Game Boy Pocket</a> but not Tetris, I jumped at the chance to buy it. (Tetris was included with most original Game Boy systems, but to my knowledge, it did not come included with the Game Boy Pocket.)</p>
+
+<p>Tetris was actually the perfect game to include with the original Game Boy, and its inclusion helped make both Tetris and the Game Boy immensely popular with folks of all ages.  The controls are simple, the game is easy to play, and with minimal motion blur, the graphics were well suited for the Game Boy’s screen.  Plus, Tetris is highly addictive, but it’s also the kind of game that one can simply pick up and put down without a whole lot of time investment.</p>
+
+<p>Even though the Game Boy Pocket, with its barely 8-bit graphics and grey and black screen, is an improvement on the original Game Boy, it is far from a graphics powerhouse.  Even so, I had forgotten what a joy Tetris on the Game Boy was to play.  I have Tetris on the NES (hands down the best console version), but in terms of portable gaming, Tetris on the Game Boy trumps any modern versions designed for Android or iOS.  There are tactile controls versus on screen controls, and there are no ads or in app purchases.  In my humble opinion, Tetris on the Game Boy is perfect simplicity.  Needless to say, as of the time of this writing, I have gone through three sets of AAA batteries.</p>
+
+<p class="end"><a href="https://steve-best.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+</body>
+</html>
