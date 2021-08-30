@@ -1,0 +1,217 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<title>Raspberry "PiMac"</title>
+	
+
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+
+
+<style type="text/css" media="screen">
+
+body {
+font-family: 'Cormorant Garamond', 'Garamond', serif;
+color: rgb(0,0,0);
+margin: 0;
+padding: 0;
+font-weight: 400;
+background: rgb(255,255,255) url(https://steve-best.github.io/Site_Images/Fiber_Paper.png) top left repeat;
+letter-spacing: -0.05em;
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited { 
+color: rgb(196, 25, 73); 
+text-decoration: none; 
+border: none; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+}
+  
+a:hover, a:focus { 
+color: rgb(0,0,0);
+}
+
+p {
+margin: 20px;
+font-size: 18px;
+line-height: 1.5;
+}
+
+code {
+font-size: 16px;
+}
+
+img {
+max-width: 60%;
+height: auto;
+display: block;
+margin: auto;
+}
+
+.left {
+max-width: 80%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}  
+
+#header { 
+padding: 5px 0;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out; 
+}     
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+margin-left: 0px;
+margin-right: 20px;
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 16px;
+font-family: 'Reenie Beanie', serif;
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: rgb(0,0,0); 
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+}
+
+#header #nav a:hover {
+color: rgb(171,5,52); 
+}
+
+#main {
+width: 100%;
+overflow: hidden;
+}
+
+#main .thetitle {
+font-size: 32px;
+line-height: 1.25;
+margin-top: 50px;
+text-align: center;
+color: rgb(0,0,0);
+}
+
+#main .ending {
+margin-top: 75px;
+margin-bottom: 75px;
+text-align: center;
+}
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+code {
+font-size: 20px;
+}
+
+img {
+    float: right;
+    max-width: 40%;
+    height: auto;
+}
+
+.left {
+float: left;
+max-width: 50%;
+height: auto;
+margin-right: 25px;
+margin-bottom: 25px;
+}       
+
+.left:hover {
+max-width: 100%;
+}
+
+
+#header {
+text-align: left;
+}
+ 
+#main {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+overflow: hidden;
+}
+    
+#main p {
+font-size: 24px;   
+}
+
+#main .thetitle {
+font-size: 52px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+                
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+</ul>
+               
+</section>
+
+<section id="main">
+
+<p class="thetitle">Raspberry &ldquo;<span style="color: rgb(196, 25, 73);">Pi</span>Mac&rdquo;</p>
+
+<img src="https://steve-best.github.io/Site_Images/RPi-Logo-SCREEN.png" />
+
+<p>In 2008 my wife and I purchased our first (and only) computer made by Apple &mdash; an <a href="https://everymac.com/systems/apple/imac/specs/imac-core-2-duo-2.4-20-inch-aluminum-early-2008-penryn-specs.html">iMac</a>. It was a significant investment at the time, our goal being to get at least six years of use out of it. It has served us well as our family desktop, and I am happy to report that even thirteen years later, our iMac is still trucking along.</p>
+
+<p>I wrote a while ago about breathing new life into this iMac (<a href="https://theartdirectedjournal.github.io/New-Life-For-iMac">here</a>, <a href="https://theartdirectedjournal.github.io/New-Life-for-iMac-2">here</a>, and <a href="https://theartdirectedjournal.github.io/New-Life-Old-iMac-Part-3">here</a>, if you're so interested), and I'm pleased to report that our iMac is now better than ever, thanks to <a href="https://www.raspberrypi.org/software/raspberry-pi-desktop/">Raspberry Pi Desktop for PC and Mac</a> (also known as Debian with Raspberry Pi Desktop).  What exactly is this operating system with an incredibly long name?  It is a Linux distro based on <a href="https://www.debian.org/">Debian</a> with the Raspberry Pi's desktop environment.  (This is not actually the operating system that is typically installed on the Raspberry Pi devices (Raspberry Pi OS), but Debian with Raspberry Pi Desktop and Raspberry Pi OS are incredibly similar.)</p>
+
+<p>While I have long been familiar with the Raspberry Pi (I have one running <a href="https://retropie.org.uk/">Retro Pi</a>), I wish I had known about this option to revive older hardware sooner.  Debian with Raspberry Pi Desktop is fast and reliable, and it has made our iMac a truly usable machine for day-to-day computing tasks.  Before I found this operating system, I thought our iMac was not too much longer for this world.  macOS was clearly no longer an option, given the general lack of support and the system resources needed to run even non-supported versions of macOS.  ChromeOS (Cloudready) had a lot of bugs, including extremely slow network speeds.  I could barely get 10 mbps over Wifi.  Ubuntu worked well, but in its standard form using the Gnome desktop environment, it was very resource intensive.  Even lighter desktop environments like XFCE, while a little better, were still taxing.  That said, Debian with Raspberry Pi Desktop uses a minimal amount of RAM, and as such, it is really fast.  I also think the UI looks great.</p>
+
+<img class="left" src="https://steve-best.github.io/Site_Images/desktop.png" />
+
+<p>Installation on the iMac was very straight forward, and the graphical installer worked as advertised.  Unlike vanilla Debian, Debian with Raspberry Pi Desktop comes with all of the necessary drivers (i.e. non-free repos enabled) out of the box, including WiFi, that allow the iMac to function correctly.  So far, other than a slight popping sound with audio on occassion, I have not experiened any deal breaking glitches.  Wifi works well.  I can consistently get 120 mbps down (testing using fast.com) via Google Wifi and my 200 mbps Spectrum internet connection.</p>
+
+<p>Debian with Raspberry Pi Desktop comes with all of the software out of the box that I need to get most things done.  It comes with the Chromium web browser, a decent file manager, VLC media player, a decent text editor, a PDF viewer, the full Libre Office suite, and a number of different IDEs.  I actually prefer <a href="https://www.geany.org/">Geany</a> since it is so lightweight.  Beyond that, there was not much additionally in terms of productivity apps that I needed to install.  I installed a screenshot tool (Gnome Screenshots), Firefox ESR (for browser choice) and <a href="https://www.gimp.org/">GIMP</a>, which is a Photoshop alternative.  All were in the standard Debian repos.  As a side note, GIMP opens extremely fast.</p>
+
+<p>There are a few defaults that the Raspberry Pi Foundation for whatever reason decided upon that go against basic security best practice, and those really need to be changed right out of the gate.  The first involves the use of the sudo command.  Sudo, which stands for &ldquo;super user do&rdquo; allows you to run commands that require elevated privileges (i.e. root) with your non-elevated account.  Security best practice is that a password is required when issuing sudo commands.  On Debian with Raspberry Pi Desktop, when you initially boot up after install, the operating system prompts you to change the password for default user account, &ldquo;pi&rdquo;.  This is a good thing, as you definitely don't want to be running a system with a known default password.  However, when using sudo, the Raspberry Pi folks have opted to not require the user's password.  To change this, you can do the following:</p>
+
+<p>First, open the file manager and navigate to the following folder: <code>/etc/sudoers.d</code>.  Next, click &ldquo;Tools&rdquo; in the file manager's menu bar and click &ldquo;Open Current Folder in Terminal&rdquo;.  In the terminal, type the <code>ls</code> command and hit enter.  This simply lists the names of all the files in the folder, and I wanted to be sure that I typed the file name correctly for the next step.  Next, run the following command: <code>sudo rm /etc/sudoers.d/010-pi-nopasswd</code>.  What this does is remove the file &ldquo;010-pi-nopasswd&rdquo; from the &ldquo;/etc/sudoers.d&rdquo; folder.  Lastly, reboot the system.  I'm not sure if this is a requirement, as I just did it for good measure.  Once you have rebooted, you should see that you now have to type your password when issuing sudo commands.</p>
+
+<p>The other thing that the folks at the Raspberry Pi Foundation did not do was install a software firewall.  This is also an easy fix, as UFW (<a href="https://www.linux.com/training-tutorials/introduction-uncomplicated-firewall-ufw/">Uncomplicated Firewall</a>) does the trick.  To install UFW, simply pop open the Terminal and type the following command:  <code>sudo apt install ufw</code> and hit enter.  Next, type in your password, and UFW will download and install.  After install, typing <code>sudo ufw status</code> into the terminal will show the status of the firewall.  It will be &ldquo;inactive&rdquo;.  As such, run the following command: <code>sudo ufw enable</code>.  This turns on the software firewall and enables the defaults:  <code>Status: active; Logging: on (low); Default: deny (incoming), allow (outgoing), disabled (routed); New profiles: skip</code>.  Lastly, if you want a GUI to manage the firewall, you can download and install GUFW as follows:  <code>sudo apt install gufw</code>.  You'll find it in the Pi menu under &ldquo;Preferences&rdquo; &mdash;> &ldquo;Firewall Configuration&rdquo;. Keep in mind, that the default configuration only denies incoming traffic.  If your threat model concerns ensuring that unauthorized outbound traffic is denied, you'll need to configure UFW further.</p>
+
+<p>I am really happy with the setup on our iMac now, and I plan to keep using this setup until the iMac's hardware finally dies.  (It's still on the original hard drive and aside from adding some RAM, everything is original.)  I cannot believe how fast this thing is now.  There are a few quirks that annoy me, such as the fact that Netflix does not work in Chromium or Firefox ESR.  However, since I'm not really using this machine to watch Netflix, it is not a deal breaker.</p>
+
+<p class="ending"><a href="https://steve-best.github.io">Table of Contents</a></p>
+
+</section>
+
+</body>
+</html>
