@@ -1,0 +1,237 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<title>A Raspberry PiMac Update</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">  
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%; 
+}
+
+body {
+background: rgb(33,33,33) url(https://steve-best.github.io/Site_Images/Pi-Mac-Desk.jpg) center center no-repeat; 
+min-height: 100%; 
+-moz-background-size: cover;  
+background-size: cover; 
+width: 100%;
+margin: 0;
+padding: 0;
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited {
+text-decoration: none;  
+color: #fafafa;
+transition: all .5s ease-in-out;
+font-weight: bold;
+background-color: #c51d4a;
+padding: 3px;
+border-radius: 5px;
+}
+
+a:hover {
+color: #fafafa;
+background-color: #000;
+}
+
+p {
+margin: 20px;
+}
+
+#header { 
+padding: 5px 0; 
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+transition: all .5s ease-in-out;
+}     
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+margin-left: 20px;
+}
+
+#header #nav a {
+font-weight: normal;
+color: #f0f8ff;
+background-color: transparent;
+padding: none;
+transition: all .5s ease-in-out;
+}  
+
+#header #nav a:hover {
+color: #777;
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 14px;  
+color: #999; 
+font-family: 'Reenie Beanie', serif;
+text-transform: uppercase;
+}
+
+#main_content {
+width: 100%;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+#main_content p {
+color: #f0f8ff;
+text-shadow: 0px 1px 2px #161619;
+font-family: 'Poppins', sans-serif;
+font-size: 18px;
+line-height: 1.5;
+}
+
+#main_content h1 {
+font-size: 72px;
+margin-top: 50px;
+margin-bottom: 0px;
+text-align: center;
+color: #f0f8ff;
+text-shadow: 0px 1px 2px #161619;
+font-family: 'Playfair Display', serif;
+padding-bottom: 25px;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+@keyframes dotdotdot {
+        0% {opacity: 0;}
+        25% {opacity: .15;}
+        50% {opacity:  1;}
+        75% {opacity: .15;}
+        100% {opacity: 0;}
+}
+
+#main_content .dotdotdot_begin {
+animation-name: dotdotdot; 
+animation-duration: 3500ms;  
+animation-iteration-count: 3; 
+aminimation-delay: 45s
+animation-timing-function: steps(5, jump-end);
+}
+
+#main_content .dotdotdot_middle {
+animation-name: dotdotdot; 
+animation-duration: 4500ms;  
+animation-iteration-count: 3; 
+aminimation-delay: 95s
+animation-timing-function: steps(5, jump-end);
+}
+
+#main_content .dotdotdot_end {
+animation-name: dotdotdot; 
+animation-duration: 5500ms;  
+animation-iteration-count: 3; 
+aminimation-delay: 145s
+animation-timing-function: steps(5, jump-end);
+}
+
+#main_content .happy_ending {
+margin-top: 75px;
+text-align: center;
+font-size: 16px;
+font-family: 'Reenie Beanie', serif;
+text-transform: uppercase;
+}
+
+#main_content .happy_ending a {
+font-weight: normal;
+color: #f0f8ff;
+background-color: transparent;
+padding: none;
+transition: all .5s ease-in-out;
+}
+
+#main_content .happy_ending a:hover {
+color: #777;
+}
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+margin-left: 50px;
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 16px; 
+}
+
+#main_content {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 200;
+margin-bottom: 200;
+}
+
+#main_content p {
+font-size: 20px;
+line-height: 1.75;
+}
+
+#main_content h1 {
+font-size: 92px;
+margin-top: 100px;
+margin-bottom: 0;
+text-align: center;
+line-height: 1.25;
+padding-bottom: 50px;
+}
+
+#main_content .happy_ending {
+margin-top: 100px;
+text-align: center;
+font-size: 20px;
+}
+
+}
+
+                                                                                 
+</style>
+</head>
+
+<body>
+
+<section id="header">
+                
+    <ul id="nav">
+        <li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+    </ul>
+               
+</section>
+
+<section id="main_content">
+
+<h1>A Raspberry PiMac Update<span class="dotdotdot_begin">.</span><span class="dotdotdot_middle">.</span><span class="dotdotdot_end">.</span></span></h1>
+
+<p class="appear"><a href="https://steve-best.github.io/raspberry-pimac">The Raspberry PiMac</a> is still going strong, and I use it just about every day.  It sits on the desk in our home office beside my work computer, and it has actually become my go-to computer (aside from my phone) to get non-work related stuff done.  It is still fast, sips RAM, and has been extremely reliable.  I'm using Firefox ESR as my main browser, but since I last wrote about the Raspberry PiMac, I have installed Microsoft Edge (beta), since it contains the proprietary bits that allow me to watch Hulu.  Just to see how it worked, I also installed Zoom for a personal meeting that I needed to attend, and it worked great. In the grand scheme of things, installing Raspberry Pi Desktop on an old iMac is nothing special.  However, I'm continuously grateful for the work of so many on the Debian project, as well as the work of the folks at the <a href="https://www.raspberrypi.org/">Raspberry Pi Foundation</a>.  It's because of their efforts that I can continue to enjoy a thirteen year-old iMac that would have otherwise been put out to pasture long ago.</p>
+
+<p class="happy_ending"><a href="https://steve-best.github.io">Table of Contents</a></p>
+
+</section>
+        
+</body>
+</html>
