@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>A Few Fun Facts About the NES</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+ 
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: #b57aa1;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+a:hover {
+color: #946a87;
+}
+
+p {
+margin: 20px;
+}
+
+img {
+max-width: 80%;
+height: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}   
+
+.image_holder {
+text-align: center;
+}
+
+#intro_holder {
+width: 100%;
+background: #000 url(https://steve-best.github.io/Site_Images/NES_White_Background_2.jpg) center center no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 20px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 14px;
+font-family: 'Reenie Beanie', cursive;
+font-weight: 400;
+text-shadow: 0px 1px 2px #161619;
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(255,255,255);
+}
+
+
+#intro {
+font-family: 'Press Start 2P', sans-serif;
+margin-top: 100px;
+margin-bottom: 175px;
+width: 100%;
+color: rgb(255,255,255);
+text-shadow: 1px 2px 3px #161619;
+}
+
+#intro .title {
+font-size: 32px;
+font-weight: normal;
+text-align: center;
+margin-bottom: 50px;
+line-height: 1.25;
+}
+
+#intro p {
+font-size: 18px;
+margin-bottom: 0px;
+text-align: center;
+font-weight: 300;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: linear-gradient(to bottom, #000 0%, #2c1e04 100%);
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: rgb(255,255,255);
+font-size: 18px;
+line-height: 1.75;
+font-family: 'Lato', sans-serif;
+font-weight: 300;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#main_content .firstcharacter {
+font-family: 'Press Start 2P', sans-serif;
+color: rgb(255,255,255);
+float: left;
+font-size: 95px;
+line-height: 40px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+text-shadow: 0px 1px 2px #161619;
+font-weight: normal;
+}
+
+#main_content .begin_point {
+font-family: 'Press Start 2P', sans-serif;
+color: rgb(255,255,255);
+font-size: 20px;
+line-height: 1;
+margin-top: 50px;
+}
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+}
+
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus {
+outline: none;
+}
+
+#intro_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 25px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 16px;
+padding: 15px;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+margin-top: 200px;
+margin-bottom: 350px;
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#intro .title {
+font-size: 62px;
+text-align: center;
+margin-bottom: 75px;
+}
+
+#intro p {
+font-size: 24px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#main_content {
+width: 700px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+font-size: 20px;
+line-height: 1.75;
+}
+
+#main_content .firstcharacter {
+float: left;
+font-size: 150px;
+line-height: 60px;
+padding-top: 3px;
+padding-right: 10px;
+padding-left: 3px;
+padding-bottom: 10px;
+}
+
+#main_content .begin_point {
+font-size: 28px;
+}
+
+#main_content .end {
+margin-top: 100px;
+text-align: center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="intro_holder">
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+</ul>
+
+</section>
+
+<section id="intro">
+
+<p class="title">A Few Fun Facts About the NES</p>
+
+<p>October 2021</p>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<p><span class="firstcharacter">A</span>s a second grader at Piney Grove Elementary School in 1987, I became keenly aware of the Nintendo Entertainment System, or NES for short.  Every kid in my class who did not already have one, including myself, desperately coveted one, and I finally got mine for Christmas the year I was in 3rd grade.  By that time, the NES had established Nintendo as <i>the</i> video game juggernaut.  There were competing systems, of course. I had a friend who had a Sega Master System. However, Nintendo may as well have had a monopoly on the home video game market at that time.  Nintendo was so popular in the late 1980's that the company's name actually became a verb.  Instead of asking if a friend wanted to play video games, &ldquo;Hey, wanna play Nintendo?&rdquo; was more often than not said.  My friends and I certainly did not care about things like monopolies back then.  The NES had all the cool games like Baseball Stars, Mike Tyson's Punch Out, Super Mario Bros 2, Mega Man 2, and Ninja Gaiden, and a large part of our elementary school years was spent playing Nintendo. While many articles and documentaries have touched on the lore of the Nintendo Entertainment System, here are a few facts that I find interesting. 
+
+<p class="begin_point">Longevity</p>
+
+<p>While Nintendo actually stopped selling the NES in America in 1995, they did not stop selling the Famicom (the Japanese version of the NES) until 2003.  Additionally, they provided customer support for the Famicom <a href="https://www.engadget.com/2007-10-18-nintendo-of-japan-calling-it-quits-on-famicom-hardware-support.html">until 2007</a>.  Given that the Famicom was released in 1983, that is a long time for sales and support.</p>
+
+<p>Nintendo actually <a href="https://en.wikipedia.org/wiki/New-Style_NES">redesigned</a> the NES for the United States market in 1993.  Offered along side the Super Nintendo, which was by then Nintendo's flagship console, the newly redesigned version of the NES was a top-loader that resembled the Super NES, and it was much cheaper.</p>
+
+<p class="begin_point">Blowing Cartidges</p>
+
+<p>Legend has it that Nintendo designed the NES as a front loading system so that the device would better resemble a VCR.  When the NES was released in the United States in 1985, America was recovering from a <a href="https://en.wikipedia.org/wiki/Video_game_crash_of_1983">crash in the video game market</a>, and the executives at Nintendo did not want the NES to resemble any of the failed consoles from other companies.  Most of those failed consoles loaded their cartidges in through a slot in the top.  While the front load design gave the NES that iconic look, it was actually a poor design.  Sometimes the games would not seat properly in the cartidge slot, and there was a troublesome lockout chip.  (We'll cover that more later.)  Needless to say, I think that just about everyone who has ever played a NES at some point has inserted a game, only to find a blank or flashing screen.</p>
+
+<p>I'm not sure how it started, but the common &ldquo;solution&rdquo; to the problem of games not working was to blow inside the cartdridge.  While it appeared to work, it was <a href="https://www.geekwire.com/2014/blow-nintendo-games/">actually just a mind trick</a>.  Believe it or not, it was actually worse to blow into the cartridge in the long run.</p>
+
+<p class="begin_point">The Seal of Quality</p>
+
+<p>Aside from excellent first party titles such as the Super Mario Bros. franchise, Zelda, and Metroid, one of the reasons that Nintendo was able to capture so much of the market share was through <a href="https://www.nintendotimes.com/1986/10/05/nintendo-announces-licensing-for-nes/">restrictive licensing agreements</a>. One of the reasons that the video game market crashed in the early 1980's was that the market had become inundated with low quality titles.  As such, Nintendo created their licensing agreements in part to ensure third party developers were writing quality software in order to prevent another market crash.  However, a side effect of the licensing agreement was that a large number of high quality games were available only on the NES.</p>
+
+<p>How did this licensing agreement work?  First, third party developers who developed a title on the NES could not port the title over to a competing system for two years. Second, all authorized game cartridges were manufactured by Nintendo.  The reason for this is because each NES had a lock out chip, and only cartidges coming from Nintendo and blessed with the official seal of quality could legally bypass this lockout chip.  There were a few companies that <a href="https://www.dkoldies.com/blog/did-you-own-illegal-nes-games/">cracked the code</a> and sold &ldquo;illegal&rdquo; games, and inevitably court cases ensued.</p>
+
+<p class="begin_point">The Mystery Port</p>
+
+<p>Each of the original style NES models produced from 1985 until 1993 had a cover underneth that when removed unveiled a &ldquo;mystery port&rdquo;.  I always wondered what this port was for, as there were never any accessories for it that seemed to be available.  However, according to <a href="https://kotaku.com/when-nintendo-wanted-to-bring-gambling-into-american-ho-5838193">Kotaku</a>, this port was actually intended to support a modem.  Nintendo and the state of Minnesota actually had plans at one point to allow the NES to let folks play the lottery.  The idea was later abandoned.</p>
+
+<p class="end"><a href="https://steve-best.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+</body>
+</html>
