@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Peanuts</title>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet"> 
+ 
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: #db1408;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+a:hover {
+color: #f74b29;
+}
+
+p {
+margin: 20px;
+}
+
+img {
+max-width: 80%;
+height: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}   
+
+.image_holder {
+text-align: center;
+}
+
+#intro_holder {
+width: 100%;
+background: #a9b64d url(https://steve-best.github.io/Site_Images/CB-and-Snoopy.jpg) center center no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+background: rgba(250,250,250,.80)
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 20;
+}
+
+#header #nav li {
+display: inline;
+font-size: 14px;
+font-family: 'Reenie Beanie', cursive;
+font-weight: 400;
+text-transform: uppercase;
+}
+
+#header #nav a {
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#intro {
+font-family: 'Walter Turncoat', sans-serif;
+margin-top: 200px;
+margin-bottom: 275px;
+width: 100%;
+color: rgb(255,255,255);
+text-shadow: 1px 2px 3px #161619;
+text-transform: uppercase;
+}
+
+#intro .title {
+font-size: 52px;
+font-weight: 700;
+text-align: center;
+margin-bottom: 50px;
+}
+
+#intro p {
+font-size: 18px;
+margin-bottom: 0px;
+text-align: center;
+font-weight: 300;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: #f2f3f4 url(https://steve-best.github.io/Site_Images/Paper_light.png) top left repeat;
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: #1a2127;
+font-size: 18px;
+line-height: 1.75;
+font-family: 'Walter Turncoat', sans-serif;
+text-transform: uppercase;
+}
+
+#main_content .firstcharacter {
+color: #4e8fba;
+float: left;
+font-size: 95px;
+line-height: 40px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+text-transform: uppercase;
+font-weight: 700;
+}
+
+#main_content .begin_point {
+font-family: 'Lato', sans-serif;
+color: #266181;
+font-size: 38px;
+line-height: 1;
+margin-top: 50px;
+font-style: italic;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+}
+
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus {
+outline: none;
+}
+
+#intro_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 25px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 16px;
+padding: 15px;
+}
+
+#intro {
+margin-top: 300px;
+margin-bottom: 450px;
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#intro .title {
+font-size: 92px;
+text-align: center;
+margin-bottom: 75px;
+}
+
+#intro p {
+font-size: 28px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#main_content {
+width: 700px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+font-size: 20px;
+line-height: 2;
+}
+
+#main_content .firstcharacter {
+float: left;
+font-size: 150px;
+line-height: 80px;
+padding-top: 3px;
+padding-right: 10px;
+padding-left: 3px;
+padding-bottom: 10px;
+}
+
+#main_content .begin_point {
+font-size: 52px;
+}
+
+#main_content .end {
+margin-top: 100px;
+text-align: center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="intro_holder">
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+</ul>
+
+</section>
+
+<section id="intro">
+
+<p class="title">Peanuts</p>
+
+<p>November 2021</p>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<p><span class="firstcharacter">I</span> have loved Charlie Brown, Snoopy, and the other Peanuts characters that Charles Schulz created since I was a little boy.  I read the comic strip in the Charlotte Observer daily, and I have fond memories of watching &ldquo;Snoopy Come Home&rdquo; and &ldquo;A Boy Named Charlie Brown&rdquo; (which, in my opinion now as an adult, were both actually sad movies).  I like the art work of Charles Schulz, and I like the humor the comic brought to the table.  The older I get, the more I realize how dark some of it actually was.  (Hmmm... maybe there is something wrong with me, but there are a lot of other Peanuts fans out there too, so...)  There were of course the Halloween, Thanksgiving and Christmas specials that became holiday staples, adored by most.  I also enjoyed the Peanuts remake that came out a few years back.</p>
+
+<p>I recently found a documentary about Charles Schulz on Apple TV called <a href="https://tv.apple.com/us/movie/who-are-you-charlie-brown/umc.cmc.7a7wj0y9l9p9z8dwz287j4wx3">Who Are You, Charlie Brown?</a>.  I actually did not know much about the Peanuts creator before watching this documentary, and I found it fascinating. If you're a Peanuts fan and subscribe to Apple TV+, I would definitely recommend giving it a watch.  I have watched it twice so far.</p>
+
+<p>Also on Apple TV+ (and I promise this is not a pitch for that service, these things just happen to be on there) is the <a href="https://tv.apple.com/us/show/the-snoopy-show/umc.cmc.5iswprrvjjw6ab020a17x4ca3">Snoopy Show</a>.  It is a refreshing, modern take on the Peanuts world.  I have enjoyed watching it with my nine-year-old daughter, who also very much loves Peanuts.  We both find it to be incredibly funny (albeit in different ways), and the animators have done a terrific job making the Peanuts characters more &ldquo;modern&rdquo; while still preserving the traditional character dynamics. It is a little less &ldquo;sad, poor Charlie Brown&rdquo; than the Peanuts cartoons of yesteryear.  The jazz infused soundtrack is phenomenal.  Again, if you're a Peanuts fan and have not already done so, definitely give this one a watch.</p>
+
+<p class="end"><a href="https://steve-best.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+</body>
+</html>
