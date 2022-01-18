@@ -1,0 +1,344 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<title>Browser Choice on iOS</title>
+		
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet"> 
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+<style type="text/css" media="screen">
+
+/*--[ GLOBAL TAG STYLES ]---------*/
+html { 
+font-size: 100%; 
+}
+
+body { 
+font: normal 1em/1.5; 
+margin: 0; 
+padding: 0; 
+background: rgb(255,255,255); 
+width: 100%;   
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited { 
+color: #336699; 
+text-decoration: none; 
+border: none; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+}
+  
+a:hover, a:focus { 
+color: #777;
+}
+
+p {
+margin: 20px;
+}
+
+img {
+max-width: 80%;
+height: auto;
+display: block;
+margin: auto;
+padding-bottom: 40px;
+}                  		
+
+/*--[ HEADER ]--------------------*/
+#header {
+background: rgb(255,255,255);  
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+}
+
+#header #nav {
+margin-bottom: 10px; 
+margin-top: 10px; 
+}
+
+#header #nav li { 
+display: inline; 
+font-size: 14px; 
+font-family: 'Reenie Beanie', cursive; 
+color: #777;   
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: rgb(0,0,0); 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+font-weight: 700;
+}
+
+#header #nav a:hover {
+color: #336699; 
+}
+                                		
+                
+/*--[ MAIN CONTENTS ]--------------------*/
+#contents {
+width: 100%;  
+color: #333;
+}   
+               
+#contents h1 {
+font-family: 'Orelega One', 'Georgia', serif;
+font-size: 42px; 
+color: rgb(0,0,0); 
+font-weight: normal; 
+margin-top: 100px;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out; 
+-ms-transition: 0.5s all ease-in-out; 
+text-align: center;
+padding-left: 25px;
+padding-right: 25px;
+}
+
+#contents h2 {
+font-weight: 300;
+font-size: 24px;
+line-height: 1;
+color: #999;
+margin-bottom: 75px;
+text-align: center;
+font-family: 'Open Sans', 'Arial', sans-serif;
+padding-left: 25px;
+padding-right: 25px;
+}
+
+#contents p {
+font-family: 'Open Sans', 'Arial', sans-serif; 
+font-size: 18px; 
+color: #000; 
+font-weight: 300; 
+line-height: 1.5; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+}
+
+#contents a {
+font-weight: 700;
+}
+
+#contents blockquote {
+font-size: 16px;
+color: #777;
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-weight: 300;
+font-style: italic;
+background: #f9f9f9;
+border-left: 10px solid #ccc;
+margin: 1.5em 10px;
+padding: 0.5em 10px;
+quotes: "\201C""\201D""\2018""\2019";
+}
+#contents blockquote:before {
+color: #ccc;
+content: open-quote;
+font-size: 4em;
+line-height: 0.1em;
+margin-right: 0.25em;
+vertical-align: -0.4em;
+font-family: 'Orelega One', 'Georgia', serif;
+}
+
+#contents blockquote p {
+display: inline;
+}
+
+#contents .happy_ending {
+    font-size: 12px;
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#Copyright {
+width: 100%; 
+margin-left: auto; 
+margin-right: auto; 
+margin-top: 50px; 
+margin-bottom: 25px; 
+}
+
+#Copyright p {
+font-size: 12px; 
+text-align: center; 
+color: #777;
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-weight: 300;
+}  
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+img {
+float: right;
+max-width: 50%;
+height: auto;
+padding-left: 25px;
+}
+
+#header {
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+}
+
+#header #nav {
+margin-bottom: 10px; 
+margin-top: 10px;  
+}
+
+#header #nav li { 
+display: inline; 
+font-size: 16px; 
+color: #777;   
+}
+
+#header #nav a {
+color: rgb(0,0,0); 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+font-weight: 700;
+}
+
+#header #nav a:hover {
+color: #336699; 
+}
+
+#contents {
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+padding: 50px; 
+color: #333;
+}   
+               
+#contents h1 {
+font-size: 62px; 
+color: rgb(0,0,0); 
+font-weight: normal; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out; 
+-ms-transition: 0.5s all ease-in-out; 
+text-align: center;
+}
+
+#contents h2 {
+font-size: 28px;
+margin-bottom: 125px;
+}
+
+#contents p {
+font-family: 'Open Sans', 'Arial', sans-serif; 
+font-size: 20px; 
+font-weight: 300; 
+line-height: 1.5; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+}
+
+#contents blockquote {
+font-size: 18px;
+}
+
+#contents a {
+font-weight: 700;
+}
+
+#contents .happy_ending {
+    font-size: 14px;
+    margin-top: 75px;
+}
+
+#Copyright {
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+margin-top: 50px; 
+margin-bottom: 25px; 
+}
+
+#Copyright p {
+font-size: 12px; 
+text-align: center; 
+color: #777;
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-weight: 300;
+}
+   
+}    
+      
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+
+	<ul id="nav">
+
+        <li><a title="Steve Best" href="https://steve-best.github.io/">Steve Best</a></li> 
+
+    </ul>
+
+</section> <!-- end #header -->
+
+<section id="contents">        
+
+<h1>Browser Choice on iOS</h1>
+
+<h2>January 18, 2022</h2>
+
+<p>In the last paragraph of a <a href="https://steve-best.github.io/browser-updates">previous piece</a>, I wrote that one of my hopes for iOS 15 was for Apple to allow competing browsers on iOS to use their native rendering engines instead of <a href="https://webkit.org/">WebKit</a>.  That unfortunately did not turn out to be the case, as Apple still requires all browsers on iOS to use the WebKit rendering engine.  As such, I begrudgingly use Safari, since there is no ability to add ad-blocking extensions in Chrome for iOS at this time.</p>  
+
+<p>Fast forward to this morning, when I read about a <a href="https://fingerprintjs.com/blog/indexeddb-api-browser-vulnerability-safari-15/">particularly nasty security vulnerability in Safari</a>. While Apple’s engineers are apparently working on a fix, absolutely every single iOS 15 user is vulnerable at the moment.  From the <a href="https://fingerprintjs.com/blog/indexeddb-api-browser-vulnerability-safari-15/">article</a>:</p> 
+
+<blockquote>In Safari 15 on macOS, and in all browsers on iOS and iPadOS 15, the IndexedDB API is violating the same-origin policy. Every time a website interacts with a database, a new (empty) database with the same name is created in all other active frames, tabs, and windows within the same browser session. Windows and tabs usually share the same session, unless you switch to a different profile, in Chrome for example, or open a private window. For clarity, we will refer to the newly created databases as “cross-origin-duplicated databases” for the remainder of the article.</blockquote>
+
+<p>On the Mac, a mitigating control is to switch to a non-WebKit based browser such as Chrome or Firefox.  However, iOS users do not have this option, since Apple forces all browsers on iOS to use WebKit.  iOS users can potentially turn off JavaScript, but that leads to a lot of &ldquo;broken&rdquo; sites.  Just turn off JavaScript (Settings —> Safari —> Advanced —> toggle JavaScript off), and try to access cnn.com, for example.  No news articles load.</p>
+
+<p>I really wish that Apple would allow the &ldquo;true&rdquo; versions of competing browsers on iOS.  Would it be that detrimental to their browser market share on iOS?  I don’t think it would, but it would go a long way in giving users more choice. <a href="https://infrequently.org/2021/08/webkit-ios-deep-dive/">This is a really good read</a>, if you’re so inclined.</p>
+
+<p>I will say that this situation really has me contemplating a move back to Android once my iPhone 11 and Apple Watch Series 3 are the end of their useful lives.  Android offers the ability to &ldquo;truly&rdquo; use a different browser (not just set another version of a browser that uses Blink as the default), and browser updates are not coupled with the OS.  Apple really needs to get with the times here.</p>
+
+<p class="happy_ending"><a href="https://steve-best.github.io">Table of Contents</a></p>
+		
+</section>	<!-- end #contents -->
+
+<section id="Copyright">
+    
+<p>&copy; 2022 Steve Best. All Rights Reserved.</p>
+    
+</section>
+        
+</body>
+</html> 
