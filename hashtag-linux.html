@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>#Linux</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+<style type="text/css" media="screen">
+
+/*--[ GLOBAL TAG STYLES ]---------*/
+html {
+font-size: 100%;
+}
+
+body {
+font: normal 1em/1.5;
+margin: 0;
+padding: 0;
+background: #fafafa url(https://steve-best.github.io/Site_Images/Tux.svg) top center no-repeat;
+width: 100%;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+color: #333;
+text-decoration: none;
+border: none;
+transition: 0.5s all ease-in-out;
+}
+
+a:hover, a:focus {
+color: #777;
+}
+
+p {
+margin: 20px;
+}
+
+
+/*--[ HEADER ]--------------------*/
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+transition: 0.5s all ease-in-out;
+background: rgba(250,250,250, .90);
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 10px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 14px;
+font-family: 'Reenie Beanie', serif;
+color: #777;
+padding-right: 25px;
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: rgb(0,0,0);
+transition: 0.5s all ease-in-out;
+font-weight: 700;
+}
+
+#header #nav a:hover {
+color: #336699;
+}
+
+
+/*--[ MAIN CONTENTS ]--------------------*/
+#contents {
+width: 100%;
+color: #333;
+background: rgba(250,250,250, .90);
+overflow: hidden;
+}
+
+#contents h1 {
+font-family: 'Reenie Beanie', serif;
+font-size: 42px;
+color: rgb(0,0,0);
+font-weight: normal;
+margin-bottom: 50px;
+margin-top: 100px;
+transition: .5s all ease-in-out;
+text-align: center;
+text-transform: uppercase;
+}
+
+#contents h1:hover {
+transform: rotate(2deg);	
+}
+
+#contents p {
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-size: 18px;
+color: rgb(0,0,0);
+font-weight: 300;
+line-height: 1.5;
+transition: 0.5s all ease-in-out;
+}
+
+#contents .year {
+font-size: 28px;
+color: #336699;
+font-weight: normal;
+font-family: 'Reenie Beanie', serif;
+margin-top: 75px;
+margin-bottom: 0;
+text-transform: uppercase;
+}
+
+#contents .to-the-top {
+width: 200px;
+font-size: 12px;
+font-family: 'Open Sans', 'Arial', sans-serif;
+color: #777;
+font-weight: 300;
+margin-top: 50px;
+margin-bottom: 50px;
+margin-left: 20px;
+}
+
+#contents .to-the-top a {
+padding: 15px;
+text-align: center;
+background: transparent;
+color: #777;
+transition: 0.5s all ease-in-out;
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+}
+
+#contents .to-the-top a:hover {
+background: #336699;
+color: #fff;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#contents .Copyright {
+font-size: 14px;
+text-align: center;
+color: #777;
+font-family: 'Reenie Beanie', serif;
+text-transform: uppercase;
+margin-top: 125px;
+}
+
+
+#contents .Copyright a {
+color: #336699;
+text-decoration: none;
+border: none;
+transition: 0.5s all ease-in-out;
+}
+
+#contents .Copyright a:hover, a:focus {
+color: #777;
+}
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 50px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 16px;
+color: #777;
+padding-right: 15px;
+}
+
+#contents {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+padding: 50px;
+}
+
+#contents h1 {
+font-size: 72px;
+margin-bottom: 50px;
+text-align: center;
+}
+
+#contents p {
+font-size: 20px;
+color: #333;
+line-height: 1.5;
+}
+
+#contents .year {
+font-size: 52px;
+margin-top: 75px;
+margin-bottom: 0;
+}
+
+#contents .to-the-top {
+float: right;
+clear: both;
+width: 200px;
+position: relative;
+font-size: 14px;
+font-weight: 300;
+}
+
+#contents .to-the-top a {
+padding: 15px;
+text-align: center;
+background: transparent;
+color: #777;
+transition: 0.5s all ease-in-out;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+}
+
+#contents .to-the-top a:hover {
+background: #336699;
+color: #fff;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#contents .Copyright p {
+font-size: 16px;
+text-align: center;
+color: #777;
+}
+
+
+#contents .Copyright a {
+color: #336699;
+text-decoration: none;
+border: none;
+transition: 0.5s all ease-in-out;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}
+
+#contents .Copyright a:hover, a:focus {
+color: #777;
+}
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+
+<ul id="nav">
+<li>Steve Best</li>
+<li>/</li>
+<li><a title="About"href="https://steve-best.github.io/about">About</a></li>
+</ul>
+
+</section> <!-- end #header -->
+
+<section id="contents">
+
+<h1>#Linux</h1>
+	
+<p><a href="https://steve-best.github.io/seven-links">Seven Links</a></p>
+
+<p><a href="https://steve-best.github.io/25-days-of-thankfulness">25 Days of Thankfulness</a></p>
+	
+<p><a href="https://steve-best.github.io/edge-linux">Microsoft Edge Stable for Linux</a></p>
+	
+<p><a href="https://steve-best.github.io/pimac-update">A Raspberry PiMac Update</a></p>
+	
+<p><a href="https://steve-best.github.io/raspberry-pimac">Raspberry &ldquo;PiMac&rdquo;</a></p>
+	
+<p><a href="https://steve-best.github.io/ubuntu-20-04">I Keep Coming Back to Ubuntu</a></p>
+
+<p><a href="https://steve-best.github.io/planned-obsolescence">Planned Obsolescence & My Samsung Chromebook</a></p>
+
+<p><a href="https://steve-best.github.io/year-of-the-linux-desktop">The Year of the Linux Desktop is Finally Here</a></p>
+
+<p><a href="https://steve-best.github.io/Pop!_OS-first-impressions">Pop!_OS First Impressions</a></p>
+	
+<p class="Copyright">&copy; 2022 <a href="https://steve-best.github.io">Steve Best</a>.</p>
+
+</section>	<!-- end #contents -->
+
+</body>
+</html>
