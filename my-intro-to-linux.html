@@ -1,0 +1,388 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<title>Browser Choice on iOS</title>
+		
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+<style type="text/css" media="screen">
+
+/*--[ GLOBAL TAG STYLES ]---------*/
+html { 
+font-size: 100%; 
+}
+
+body { 
+font: normal 1em/1.5; 
+margin: 0; 
+padding: 0; 
+background: rgb(255,255,255) url(https://steve-best.github.io/Site_Images/Graph_paper.png) top left repeat;; 
+width: 100%;   
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited { 
+color: #336699; 
+text-decoration: none; 
+border: none; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+font-family: 'Reenie Beanie', 'Arial', sans-serif;
+font-weight: bold;
+text-transform: uppercase;
+font-size: 20px;
+}
+  
+a:hover, a:focus { 
+color: #777;
+}
+
+p {
+margin: 20px;
+}
+
+img {
+max-width: 80%;
+height: auto;
+display: block;
+margin: auto;
+padding-bottom: 40px;
+}                  		
+
+/*--[ HEADER ]--------------------*/
+#header {
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+}
+
+#header #nav {
+margin-bottom: 10px; 
+margin-top: 10px; 
+}
+
+#header #nav li { 
+display: inline; 
+font-size: 14px; 
+font-family: 'Reenie Beanie', 'Arial', sans-serif; 
+color: #777;   
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: rgb(0,0,0); 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+font-weight: normal;
+font-size: 14px;
+}
+
+#header #nav a:hover {
+color: #336699; 
+}
+                                		
+                
+/*--[ MAIN CONTENTS ]--------------------*/
+#contents {
+width: 100%;  
+color: #333;
+}   
+               
+#contents h1 {
+font-family: 'DM Serif Display', 'Georgia', serif;
+font-size: 62px; 
+color: rgb(0,0,0); 
+font-weight: normal; 
+margin-top: 100px;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out; 
+-ms-transition: 0.5s all ease-in-out; 
+text-align: center;
+padding-left: 25px;
+padding-right: 25px;
+}
+
+#contents h2 {
+font-weight: 300;
+font-size: 24px;
+line-height: 1;
+color: #999;
+margin-bottom: 50px;
+text-align: center;
+font-family: 'Reenie Beanie', 'Arial', sans-serif; 
+text-transform: uppercase;
+padding-left: 25px;
+padding-right: 25px;
+}
+
+#contents p {
+font-family: 'Montserrat', 'Arial', sans-serif; 
+font-size: 18px; 
+color: #000; 
+font-weight: 300; 
+line-height: 1.75; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+}
+
+#contents .firstcharacter {
+color: #000;
+float: left;
+font-size: 95px;
+line-height: 40px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+font-weight: normal;
+font-family: 'DM Serif Display', 'Georgia', serif;
+}
+
+#contents a {
+font-weight: 700;
+}
+
+#contents blockquote {
+font-size: 16px;
+color: #777;
+font-family: 'Montserrat', 'Arial', sans-serif;
+font-weight: 300;
+font-style: italic;
+background: #f9f9f9;
+border-left: 10px solid #ccc;
+margin: 1.5em 10px;
+padding: 0.5em 10px;
+quotes: "\201C""\201D""\2018""\2019";
+}
+
+#contents blockquote:before {
+color: #ccc;
+content: open-quote;
+font-size: 4em;
+line-height: 0.1em;
+margin-right: 0.25em;
+vertical-align: -0.4em;
+font-family: 'DM Serif Display', 'Georgia', serif;
+}
+
+#contents blockquote p {
+display: inline;
+}
+
+#contents .happy_ending {
+font-size: 14px;
+margin-top: 50px;
+text-align: center;
+text-transform: uppercase;
+font-family: 'Reenie Beanie', 'Arial', sans-serif;
+}
+
+#contents .happy_ending a {
+font-size: 14px;
+}
+
+#Copyright {
+width: 100%; 
+margin-left: auto; 
+margin-right: auto; 
+margin-top: 50px; 
+margin-bottom: 25px; 
+}
+
+#Copyright p {
+font-size: 12px; 
+text-align: center; 
+color: #777;
+font-family: 'Reenie Beanie', 'Arial', sans-serif;
+font-weight: normal;
+}  
+
+#Copyright a {
+font-size: 14px;
+}
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+    
+a:link, a:visited { 
+font-size: 24px;
+}
+
+img {
+float: right;
+max-width: 50%;
+height: auto;
+padding-left: 25px;
+}
+
+#header {
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+}
+
+#header #nav {
+margin-bottom: 10px; 
+margin-top: 10px;  
+}
+
+#header #nav li { 
+display: inline; 
+font-size: 16px; 
+color: #777;   
+}
+
+#header #nav a {
+color: rgb(0,0,0); 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+font-size: 16px;
+}
+
+#header #nav a:hover {
+color: #336699; 
+}
+
+#contents {
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+padding: 50px; 
+color: #333;
+}   
+               
+#contents h1 {
+font-size: 82px; 
+color: rgb(0,0,0); 
+font-weight: normal; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out; 
+-ms-transition: 0.5s all ease-in-out; 
+text-align: center;
+}
+
+#contents h2 {
+font-size: 28px;
+margin-bottom: 75px;
+}
+
+#contents p {
+font-family: 'Montserrat', 'Arial', sans-serif; 
+font-size: 20px; 
+font-weight: 300; 
+line-height: 1.75; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+}
+
+#contents .firstcharacter {
+float: left;
+font-size: 150px;
+line-height: 60px;
+padding-top: 3px;
+padding-right: 10px;
+padding-left: 3px;
+padding-bottom: 10px;
+}
+
+#contents blockquote {
+font-size: 18px;
+}
+
+#contents a {
+font-weight: 700;
+}
+
+#contents .happy_ending {
+font-size: 16px;
+margin-top: 75px;
+}
+
+#contents .happy_ending a {
+font-size: 18px;
+}
+
+#Copyright {
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+margin-top: 50px; 
+margin-bottom: 25px; 
+}
+
+#Copyright p {
+font-size: 14px; 
+text-align: center; 
+color: #777;
+font-family: 'Montserrat', 'Arial', sans-serif;
+font-weight: 300;
+}
+
+#Copyright a {
+font-size: 16px;
+}
+   
+}    
+      
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+
+	<ul id="nav">
+
+        <li><a title="Steve Best" href="https://steve-best.github.io/">Steve Best</a></li> 
+
+    </ul>
+
+</section> <!-- end #header -->
+
+<section id="contents">        
+
+<h1>My Intro to Linux</h1>
+
+<h2>August 2022</h2>
+
+<p><span class="firstcharacter">R</span>oughly eighteen years ago, I happened to mention to a new colleague that I was having issues with my home PC, and we commiserated for a while on the terribleness that was Microsoft Windows. (These were the days when we were still using Windows 2000 at work, and my home PC was still running Windows 98.)  Toward the end of our conversation, he proceeded to tell me about what he felt was a better alternative to Windows (and Macs) &mdash; Linux.</p>
+
+<p>The next day, he brought a CD into work, onto which he had burned a copy of <a href="https://en.wikipedia.org/wiki/SUSE_Linux">SUSE Linux</a>. He told me that if I wanted to give Linux a try, feel free to give him a call should I run into any issues.  He also gave me a stack of back issues of various Linux related magazines.  I went home that evening, perused through some of those magazines, and installed Linux on that problematic PC.  I was hooked right then and there.</p>
+
+<p>I'm eternally thankful to my friend for introducing me to Linux, but more importantly, I'm grateful for the <i>way</i> that he introduced me to Linux.  He was not pushy or condescending, and he was extremely patient with all of my noob questions, of which I had a LOT in those early days.  His patience and willingness to help, coupled with the fact that he did not act like a gate keeper with a superiority complex, is definitely one of the reasons that I am where I am today.</p>
+
+<p class="happy_ending"><a href="https://steve-best.github.io">Table of Contents</a></p>
+		
+</section>	<!-- end #contents -->
+
+<section id="Copyright">
+    
+<p>&copy; 2022 Steve Best. All Rights Reserved.  <a href="https://steve-best.github.io/hashtag-linux">#Linux</a></p>
+    
+</section>
+        
+</body>
+</html> 
