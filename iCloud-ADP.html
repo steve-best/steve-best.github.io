@@ -1,0 +1,287 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<title>Advanced Data Protection</title>
+	
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+
+<style type="text/css" media="screen">
+
+body {
+font-family: 'Quattrocento', serif;
+color: rgb(0,0,0);
+margin: 0;
+padding: 0;
+font-weight: 400;
+background: #E8E8E8;
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited { 
+color: #007afe; 
+text-decoration: none; 
+border: none; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+}
+  
+a:hover, a:focus { 
+color: rgb(0,0,0);
+}
+
+p {
+margin-top: 0px;
+margin-left: 20px;
+margin-right: 20px;
+font-size: 18px;
+line-height: 1.5;
+}
+
+img {
+max-width: 45%;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+margin-bottom: 100px;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+transition: all 0.5s ease-in-out;
+}
+
+img:hover {
+box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#header { 
+padding: 5px 0;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out; 
+}     
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+margin-left: 0px;
+margin-right: 20px;
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 16px;
+font-family: 'Reenie Beanie', sans-serif;
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: rgb(0,0,0); 
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+}
+
+#header #nav a:hover {
+color: #007afe; 
+}
+
+#main {
+width: 100%;
+overflow: hidden;
+}
+
+#main h1 {
+font-size: 42px;
+line-height: 1.25;
+margin-top: 50px;
+margin-bottom: 75px;
+text-align: center;
+color: #000;
+font-weight: 800;
+letter-spacing: -0.05em;
+margin-left: 20px;
+margin-right: 20px;
+font-family: 'Montserrat', sans-serif;
+hyphens: auto;
+}
+
+#main .firstcharacter {
+color: #000;
+float: left;
+font-size: 95px;
+line-height: 40px;
+padding-right: 8px;
+padding-left: 3px;
+padding-top: 0px;
+padding-bottom: 8px;
+font-weight: 800;
+font-family: 'Montserrat', sans-serif;
+}
+
+#main .from_article {
+font-size: 16px;
+color: #333;
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-weight: 300;
+background: #f9f9f9;
+border-left: 10px solid #ccc;
+margin-left: 50px;
+margin-top: 50px;
+margin-bottom: 50px;
+padding: 0.5em 10px;
+quotes: "\201C""\201D""\2018""\2019";
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+transition: all 0.5s ease-in-out;
+}
+
+#main .from_article:hover {
+box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#main from_article:before {
+color: #ccc;
+content: open-quote;
+font-size: 4em;
+line-height: 0.1em;
+margin-right: 0.25em;
+vertical-align: -0.4em;
+font-family: 'Orelega One', 'Georgia', serif;
+}
+
+#main from_article p {
+display: inline;
+}
+
+#main .ending {
+margin-top: 75px;
+margin-bottom: 75px;
+text-align: center;
+font-family: 'Reenie Beanie', sans-serif;
+text-transform: uppercase;
+}
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+#header {
+text-align: left;
+}
+
+#header #nav li { 
+font-size: 20px;
+}
+ 
+#main {
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+overflow: hidden;
+}
+    
+#main p {
+font-size: 24px;   
+}
+
+#main h1 {
+font-size: 62px;
+}
+
+#main .firstcharacter {
+float: left;
+font-size: 150px;
+line-height: 60px;
+padding-top: 3px;
+padding-right: 10px;
+padding-left: 3px;
+padding-bottom: 10px;
+}
+
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+                
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+<li>|</li>
+<li><a title="#Apple" href="https://steve-best.github.io/hashtag-apple">#Apple</a></li>
+</ul>
+               
+</section>
+
+<section id="main">
+
+<h1>My Disappointment with Apple's Advanced Data Protection for iCloud</h1>
+
+<img src="https://steve-best.github.io/Site_Images/advanced_data_protection.jpg" />
+
+<p><span class="firstcharacter">A</span>s a security professional, the annoucement of Apple's <a href="https://support.apple.com/en-us/HT212520">Advanced Data Protection</a> for iCloud was fantastic and exciting news.  Unfortunately, my initial excitement shortly dissipated when I realized that I was not able to easily switch over to Advanced Data Encryption.  Let me explain.</p>
+
+<p>Upon updating my iPhone 11 to iOS 16.2, I immediately began the process to switch over to Advanced Data Protection for iCloud.  You'll find this option by going into Settings, tapping on your name (your Apple ID, iCloud, Media and Purchases), then tapping iCloud.  From there, scroll down and tap on Advanced Data Protection.  The first thing you'll need to do is set up a recovery key.</p>
+
+<p>To my surprise, after creating my recovery key and attempting to enable Advanced Data Protection, I was presented with the page shown in the screenshot above.  Because I have older devices that cannot support the latest versions of iOS and WatchOS, I cannot enable Advanced Data Protection until I remove them from my iCloud account.  This leaves me with somewhat of a dilemma. Do I disassociate these devices from my iCloud account (rendering them pretty much unusable) or do I continue to use Apple's standard data protection?  To come to a resolution to this dilemma, the details of what is actually offered by Advanced Data Protection for iCloud, whether or not I really need these older devices anymore, as well as my personal threat model must be taken into account.</p>
+
+<p>First, let's look at what Advanced Data Protection for iCloud actually offers over Apple's standard data protection.  <a href="https://support.apple.com/en-us/HT202303">This Apple support page</a> provides a good comparison of the two offerings. No matter whether you choose the default standard data protection offering or whether you choose to use Advanced Data Protection for iCloud, your data is encrypted in the cloud and over the Internet. The difference is whether <b>Apple</b> maintains the keys to decrypt your data or whether <b>you</b> maintain the keys to decrypt your data on your trusted devices.</p>  
+
+<p>By enabling Advanced Data Protection for iCloud, there are some additional iCloud services where the keys to be able to decrypt that data will no longer be under Apple's control, including:</p>
+
+<p class="from_article">iCloud Backup (including device and Messages backup), iCloud Drive, Photos, Notes, Reminders, Safari Bookmarks, Siri Shortcuts, Voice Memos, and Wallet Passes.</p>
+
+<p>Apple calls this &ldquo;end-to-end&rdquo; encryption, and it means that <i>in theory</i>, Apple will no longer be able to decrypt your data while it is stored in their cloud.</p>
+
+<p>Interesestingly, no matter which option you choose, per Apple, the following iCloud services are encrypted &ldquo;end-to-end&rdquo; anyway:</p>
+
+<p class="from_article">Passwords and Keychain, Health data, Home data, Messages in iCloud, Payment info, Apple Card Transactions, Maps, QuickType Keyboard learned vocabulary, Safari (your History, Tab Groups, and iCloud Tabs), and Siri information.</p>
+
+<p>Also interesting is the fact that, per the support article, iCloud Mail, your calendar entries, and your contacts are never &ldquo;end-to-end&rdquo; encrypted, no matter which option you choose.</p>
+
+<p>With an understanding of what data is actually &ldquo;end-to-end&rdquo; encrypted with iCloud Advanced Data Protection, let's see if the benefits outweigh disassociating those older devices from my iCloud account.</p>
+
+<p>First, the older iPhone on the list above I can live without.  It is a first generation iPhone SE running iOS 15, and it's now out of Apple's operating system support window.  (Sure, Apple is still <i>technically</i> updating iOS 15 (for now), but it has been proven that <a href="https://arstechnica.com/gadgets/2022/10/apple-clarifies-security-update-policy-only-the-latest-oses-are-fully-patched/">not all older macOS and iOS versions receive all the necessary security patches</a>, even when <i>technically</i> supported. And lest you feel like I am just picking on Apple here, <a href="https://steve-best.github.io/planned-obsolescence">Google has been just as bad</a>, but <a href="https://chromeunboxed.com/google-aue-chrome-os-chromebooks-updates-8-year/">getting better</a>, with their Chromebook Auto Update policies.)  Bottom line, I have not used that old iPhone SE in a very long time, and the battery is shot.  I also have my wife's old iPhone XR that I can use as a backup phone in case something happens to my iPhone 11.  So while I hate to see that first gen SE go, it can go.</p> 
+
+<p>The Apple Watch Series 3 is a slightly different matter.  It also <a href="https://steve-best.github.io/do-not-buy-series-3">no longer receives updates</a>, but I no longer regularly wear it, chiefly because the battery is nowhere near good enough to get through the entire day enymore.  However, I still wear my Series 3 to go on the occasional run.</p>
+
+<p>So, is it worth not having iCloud Advanced Data Protection just so I can track the occasional run?</p>
+
+<p>In terms of the services that iCloud Advanced Data Protection now allows to be encrypted &ldquo;end-to-end&rdquo;, I don't use iCloud Photos.  So that one is easy.  I also don't use Reminders, Siri Shortcuts, or Voice Memos.  Lastly, I don't use Safari (and please don't <a href="https://steve-best.github.io/wwdc22-wish-list">get me started</a> about iOS's <a href="https://steve-best.github.io/browser-choice-ios">lack of true browser choice</a>).</p>
+
+<p>That said, I do use Notes quite regularly, and although I don't have anything particularly sensitive in there, it would be nice to have that data encrypted &ldquo;end-to-end&rdquo; such that if an attacker were to compromise iCloud, they would not be able to view the actual contents of my Notes.</p>
+
+<p>However, I think one particular line from this <a href="https://support.apple.com/en-us/HT212520">Apple support article</a> is quite intriguing:</p>
+
+<p class="from_article">&ldquo;You can turn off Advanced Data Protection at any time. Your device will securely upload the required encryption keys to Apple servers, and your account will once again use standard data protection.&rdquo;</p> 
+
+<p>So, wearing my conspiricy theory hat here for a moment...  You don't technically own your phone, and you really have no control (at the root level) over iOS &mdash; by design.  This is both good and bad.  It's good from a security perspective.  However, again, wearing my tin foil hat, who is to say that Apple could not get a request from, say a three-letter federal agency (with proper warrants) for iCloud data that is &ldquo;end-to-end&rdquo; encrypted, and simply remotely issue a command to your iPhone to simply &ldquo;securely upload&rdquo; your keys to Apple's servers?  This does not really impact my threat model, as I am in the &ldquo;nothing to hide&rdquo; camp.  But still... food for thought.</p>
+
+<p>I think for me, the benefit iCloud Advanced Data Protection would provide in allowing my iCloud Notes to be &ldquo;end-to-end&rdquo; encrypted does not outweigh my desire to track my occassional run.  Especially since I do not want to buy a new Apple Watch right now.</p>
+
+<p class="ending"><a href="https://steve-best.github.io">Table of Contents</a></p>
+
+</section>
+
+</body>
+</html>
