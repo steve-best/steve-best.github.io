@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ubuntu</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet"> 
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Crimson+Pro:300,400,700' rel="stylesheet"> 
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: rgb(138, 24, 71);
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+font-weight: 700;
+}
+
+a:hover {
+color: #777;
+}
+
+p {
+margin: 20px;
+}
+
+code {
+font-size: 14px;
+}
+
+img {
+max-width: 80%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}     
+
+#intro_holder {
+width: 100%;
+background: linear-gradient(126deg, rgba(101, 101, 101, 0.09) 0%, rgba(101, 101, 101, 0.09) 68%,rgba(200, 200, 200, 0.09) 68%, rgba(200, 200, 200, 0.09) 100%),linear-gradient(164deg, rgba(238, 238, 238, 0.03) 0%, rgba(238, 238, 238, 0.03) 90%,rgba(14, 14, 14, 0.03) 90%, rgba(14, 14, 14, 0.03) 100%),linear-gradient(27deg, rgba(214, 214, 214, 0.04) 0%, rgba(214, 214, 214, 0.04) 34%,rgba(104, 104, 104, 0.04) 34%, rgba(104, 104, 104, 0.04) 100%),linear-gradient(175deg, rgba(20, 20, 20, 0.01) 0%, rgba(20, 20, 20, 0.01) 4%,rgba(9, 9, 9, 0.01) 4%, rgba(9, 9, 9, 0.01) 100%),linear-gradient(257deg, rgba(14, 14, 14, 0.01) 0%, rgba(14, 14, 14, 0.01) 28%,rgba(164, 164, 164, 0.01) 28%, rgba(164, 164, 164, 0.01) 100%),linear-gradient(311deg, rgba(68, 68, 68, 0.07) 0%, rgba(68, 68, 68, 0.07) 33%,rgba(213, 213, 213, 0.07) 33%, rgba(213, 213, 213, 0.07) 100%),linear-gradient(244deg, rgba(43, 43, 43, 0.02) 0%, rgba(43, 43, 43, 0.02) 80%,rgba(161, 161, 161, 0.02) 80%, rgba(161, 161, 161, 0.02) 100%),linear-gradient(130deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 49%,rgba(105, 105, 105, 0.04) 49%, rgba(105, 105, 105, 0.04) 100%),linear-gradient(90deg, rgb(190, 33, 111),rgb(97, 3, 0));
+min-height: 600px;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#header {
+  padding: 5px 0;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+#header #nav {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+#header #nav li {
+  display: inline;
+  font-size: 14px;
+  color: #777;
+  font-family: 'Reenie Beanie', cursive;
+  text-transform: uppercase;
+}
+
+#header #nav a {
+  color: rgb(33,33,33);
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  border: none;
+  background-color: rgb(255,255,255);
+  padding: 40px 10px;
+  text-shadow: none;
+  font-weight: normal;
+}
+
+#header #nav a:hover {
+  background-color: #333;
+  color: rgb(255,255,255);
+  text-shadow: 0px 1px 2px #161619;
+}
+
+
+#intro {
+font-family: "Open Sans", "Arial", sans-serif;
+font-weight: 300;
+margin-top: 150px;
+margin-bottom: 150px;
+width: 100%;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-family: "Open Sans", "Arial", sans-serif;
+font-size: 52px;
+font-weight: 700;
+text-align: center;
+letter-spacing: -2px;
+}
+
+#intro p {
+font-size: 18px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background:rgb(233,233,233);
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 18px;
+line-height: 1.75;
+font-family: 'Crimson Pro', serif;
+font-weight: 300;
+}
+
+#main_content .firstcharacter {
+color: #000;
+float: left;
+font-size: 62px;
+line-height: 40px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+#main_content .begin_point {
+    color: #000;
+    font-weight: 700;
+}
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+font-weight: 700;
+font-family: "Open Sans", "Arial", sans-serif;
+font-size: 12px;
+}
+
+#main_content .end a {
+border-bottom: none;
+}
+
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+
+img {
+float: right;
+max-width: 50%;
+height: auto;
+margin-left: 25px;
+margin-bottom: 25px;
+}
+
+img:hover {
+max-width: 100%;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: rgb(138, 24, 71);
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+a:hover {
+color: #777;
+}
+
+code {
+font-size: 16px;
+}
+
+#intro_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#header #nav li {
+  font-size: 16px;
+}  
+
+#intro {
+margin-top: 200px;
+margin-bottom: 250px;
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-size: 92px;
+font-weight: bold;
+text-align: center;
+}
+
+#intro p {
+font-size: 20px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: rgb(233,233,233);
+}
+
+#main_content {
+width: 700px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 20px;
+line-height: 1.75;
+}
+
+#main_content .firstcharacter {
+float: left;
+font-size: 105px;
+line-height: 60px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+}
+
+#main_content .end {
+margin-top: 100px;
+text-align: center;
+font-size: 16px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="intro_holder">
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+</ul>
+
+</section>
+
+<section id="intro">
+
+<p class="title">Ubuntu</p>
+
+<p>January 2023</p>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<p><span class="firstcharacter">M</span>aybe it was something about trying the &ldquo;latest and greatest&rdquo;, maybe it was a love of technology, or maybe it was just out of sheer curiosity to try new things, but I used to <a href="https://www.urbandictionary.com/define.php?term=distrohopper">distro hop</a> quite a bit.  However, those days seem to be behind me for the most part.  I have settled in with Debian Bullseye with the Raspberry Pi desktop on my iMac, and I have grown quite fond of plain old Ubuntu 22.04.1 LTS on my laptop.</p>
+
+<img src="https://steve-best.github.io/Site_Images/Fingerprint_Settings.png" />
+
+<p>Even though people tend to think of Ubuntu as a distro geared more toward newcomers to Linux, and even though 22.04 has gotten a bit of grief from some in the media for bugs and reliability issues, I still prefer Ubuntu due to its level of polish, corporate backing, and hardware support for my particular laptop.  My particular laptop, a hand-me-down HP that I just can't seem to part with, has always been tricky as far as hardware support and Linux are concerned.  On some distros, it's issues with the WiFi support.  On others, it's issues with the display.  On others, it's issues with the trackpad.  On others, it's the fact that the fan runs constantly.  However, <a href="https://ubuntu.com">Ubuntu</a>, the plain, old vanilla Gnome-based Ubuntu, always works well on this laptop &mdash; without fuss, and while I have had a few bugs here and there (mainly related to Snaps), my overall experience has been quite nice.</p>
+
+<p>Case in point is the support for the fingerprint reader. When using other distros on this laptop, this was something I could never get to work.  However, setting it up on Ubuntu was easy, and it works accurately and quickly right out of the box.  It makes logging in so much quicker than typing a long, complex password, and it makes me appreciate all the hard work the engineers at Canonical have put into Ubuntu.</p>
+
+<p class="end"><a href="https://steve-best.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+</body>
+</html>
