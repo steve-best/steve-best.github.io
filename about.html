@@ -56,34 +56,38 @@ margin: 20px;
 
 
 /*--[ HEADER ]--------------------*/
-#header {
-height: auto;
-width: 200px;
-overflow: hidden;
-transition: all 0.5s ease-in-out;
-padding-top: 25px;
-padding-bottom: 10px;
-}
+#header { 
+padding: 5px 0;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out; 
+}     
 
-#header #nav li {
-display: inline;
-font-size: 14px;
-font-family: 'Reenie Beanie', 'Arial', sans-serif;
-color: #333;
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 16px;
+font-family: 'Reenie Beanie', sans-serif;
 text-transform: uppercase;
-padding-left: 5px;
-padding-right: 5px;
+color: #333;
 }
 
 #header #nav a {
-color: #333;
--webkit-transition: 0.5s all ease-in-out;
--moz-transition: 0.5s all ease-in-out;
--ms-transition: 0.5s all ease-in-out;
+color: #333; 
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
 }
 
 #header #nav a:hover {
-color: #336699;
+color: #336699; 
 }
 
 
@@ -153,37 +157,11 @@ color: #777;
 @media screen and (min-width: 481px) {
 	
 #header {
-height: auto;
-width: 200px;
-overflow: hidden;
-transition: all 0.5s ease-in-out;
-background: #333;
-margin-left: 30px;
-padding-top: 25px;
-padding-bottom: 10px;
+text-align: left;
 }
 
-
-#header #nav li {
-display: inline;
-font-size: 16px;
-font-family: 'Reenie Beanie', 'Arial', sans-serif;
-color: #fff;
-text-transform: uppercase;
-text-shadow: 0px 1px 2px #161619;
-padding-left: 5px;
-padding-right: 5px;
-}
-
-#header #nav a {
-color: #fff;
--webkit-transition: 0.5s all ease-in-out;
--moz-transition: 0.5s all ease-in-out;
--ms-transition: 0.5s all ease-in-out;
-}
-
-#header #nav a:hover {
-color: #777;
+#header #nav li { 
+font-size: 20px;
 }
 
 #contents {
@@ -253,9 +231,7 @@ color: rgb(122,184,0);
 <section id="header">
 
 <ul id="nav">
-<li><a title="Home" href="https://steve-best.github.io">Home</a></li>
-<li>/</li>
-<li><a title="Shoot me an email"href="mailto:sfbest23@gmail.com">Contact</a></li>
+<li><a title="Steve Best" href="https://steve-best.github.io">Table of Contents</a></li>
 </ul>
 
 </section> <!-- end #header -->
