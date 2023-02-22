@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Linux Mint 21.1 First Impressions</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet"> 
+
+  
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: #254c75;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+a:hover {
+color: #21334b;
+}
+
+p {
+margin: 20px;
+}
+
+img {
+max-width: 80%;
+height: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}   
+
+.image_holder {
+text-align: center;
+}
+
+#intro_holder {
+width: 100%;
+background: rgb(16,18,17) url(https://steve-best.github.io/Site_Images/Linux_Mint_21_1.png) center center no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+background: rgba(0,0,0,.60);
+position: fixed;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 20;
+}
+
+#header #nav li {
+display: inline;
+font-size: 14px;
+font-family: 'Reenie Beanie', sans-serif;
+font-weight: 400;
+text-shadow: 0px 1px 2px #161619;
+text-transform: uppercase;
+color: rgb(200,200,200);
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+margin-top: 100px;
+margin-bottom: 175px;
+width: 100%;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-family: 'Lobster', serif;
+font-size: 52px;
+font-weight: 300;
+text-align: center;
+margin-bottom: 50px;
+text-shadow: 2px 3px 4px #161619;
+}
+
+#intro p {
+font-family: 'Cormorant Garamond', serif;
+font-size: 20px;
+margin-bottom: 0px;
+text-align: center;
+font-weight: 300;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: linear-gradient(to bottom, #fafafa 0%, #d4d4d4 100%);
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 18px;
+line-height: 1.75;
+font-family: 'Cormorant Garamond', serif;
+font-weight: 400;
+}
+
+#main_content .firstcharacter {
+font-family: 'Lobster', serif;
+font-weight: 700;
+color: #000;
+float: left;
+font-size: 95px;
+line-height: 40px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+font-weight: 400;
+text-transform: uppercase;
+opacity: .40;
+}
+
+#main_content .begin_point {
+font-family: 'Lobster', serif;
+color: #000;
+font-size: 38px;
+line-height: 1;
+margin-top: 50px;
+}
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+}
+
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus {
+outline: none;
+}
+
+#intro_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 25px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 16px;
+padding: 15px;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+margin-top: 200px;
+margin-bottom: 350px;
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-size: 92px;
+text-align: center;
+margin-bottom: 75px;
+}
+
+#intro p {
+font-size: 32px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#main_content {
+width: 700px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 20px;
+line-height: 1.75;
+}
+
+#main_content .firstcharacter {
+float: left;
+font-size: 150px;
+line-height: 60px;
+padding-top: 3px;
+padding-right: 10px;
+padding-left: 3px;
+padding-bottom: 10px;
+}
+
+#main_content .begin_point {
+font-size: 52px;
+}
+
+#main_content .end {
+margin-top: 100px;
+text-align: center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="intro_holder">
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+<li>|</li>
+<li><a title="#Linux" href="https://steve-best.github.io/hashtag-linux">#Linux</a></li>
+</ul>
+
+</section>
+
+<section id="intro">
+
+<p class="title">Linux Mint 21.1</p>
+
+<p>first impressions of a nicely polished Linux distro for experienced and new users alike</p>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<p><span class="firstcharacter">L</span>inux Mint is one of those distros that I knew about but didn't really have any hands on experience with.  I knew from reading the tech news that their website was <a href="https://www.zdnet.com/article/has-your-linux-mint-desktop-been-hacked/">hacked back in 2016</a>.  An attacker was able to point a download link to what should have been the normal ISO file, instead pointing anyone trying to download Linux Mint to a back-door-ed version of the ISO file created by said hacker.  I also knew the Linux Mint team had cleaned up the issue.</p>
+
+<p>Bad press aside, I also knew Linux Mint was based on Ubuntu, and I knew the default desktop was called Cinnamon. I also knew that it consistently stays in the list of top distros on <a href="https://distrowatch.com/">DistroWatch</a>. (Right now it's number three, for whatever those metrics are even worth.)  But again, Mint was just one of those distros I had never paid that much attention to or had any interest in using.</p>
+
+<p>However, the latest long term release of Ubuntu (22.04.1) had been running terribly on my laptop, an HP from 2012 that I just can't seem to bring myself to part with yet.  Because of this, I had been looking for a distro that was much more lightweight than the standard, Gnome-based version of Ubuntu.  I thought about <a href="https://xubuntu.org/">Xubuntu</a>, since XFCE is very lightweight and customizable.  I also thought about <a href="https://www.raspberrypi.com/software/raspberry-pi-desktop/">Debian with the Raspberry Pi desktop</a>, which I currently run on my 2008 iMac, or &ldquo;Raspberry PiMac&rdquo; as I call it.  I even contemplated just switching to some lightweight version of <a href="https://archlinux.org/">Arch</a>.  But after reading <a href="https://www.zdnet.com/article/linux-mint-21-1-the-better-than-ever-linux-desktop/">an article on ZDNet about Linux Mint 21.1</a> by Steven Vaughan-Nichols, I decided to give Linux Mint a fair shake.  (Don't worry, I also <a href="https://linuxmint-installation-guide.readthedocs.io/en/latest/verify.html">verified my downloaded ISO file was legit</a>.)</p>
+
+<p class="begin_point">What is Linux Mint?</p>
+
+<p><a href="https://linuxmint.com/">Linux Mint</a> is based on Ubuntu, and because of that, it can take advantage of Ubuntu's security updates and out-of-the-box hardware compatibility.  The desktop environment is called <a href="https://projects.linuxmint.com/cinnamon/">Cinnamon</a>, and it leans much more towards a Windows-like user experience, as opposed to Gnome, which has more of a macOS look and feel.  Mint has an active community, and the project seems to be decently funded.</p>
+
+<p class="begin_point">What I Like...</p>
+
+<p><span style="font-weight: 700; color: #000;">Great Resource Management.</span>  The minimum system requirements for the latest version of Mint, which is version 21.1 as of the time of this writing, is 2GB RAM.  4GB RAM, which my laptop currently has, provides a comfortable user experience. Cinnamon is fast, and as such, Mint allows me to multi-task on this laptop much more efficiently than Ubuntu did.</p>
+
+<p><span style="font-weight: 700; color: #000;">Cinnamon.</span>  While its look and feel gives off a Windows vibe, Cinnamon is by no means a Windows clone.  It has sensible defaults out of the box, but it's also very customizable.  While I have not gone theme crazy, I have changed the mouse pointer to Adwaita and the icons to Papirus. I keep the terminal, file manager, Google Chrome (my default browser) and Visual Studio Code pinned to the Windows-like Panel, which can be moved from the bottom to the top or either side of the screen. I prefer the panel in its default position on the bottom.  Tapping the Windows key on my laptop's keyboard launches the app launcher with the cursor already in the search box.  I typically just type the application I want and hit enter.  This worked similarly on Gnome, albeit much, much slower.</p>
+
+<p class="image_holder"><img src="https://steve-best.github.io/Site_Images/Mint_Themes.png" /></p>
+
+<p><span style="font-weight: 700; color: #000;">Reliability.</span>  Ubuntu 22.04.1 did not fully crash much, but it did have regular issues with slowdowns and application hangs, along with random errors that I felt I could no longer live with.  To me, Mint seems vastly more stable... so far.  Additionally, most applications launch much more quickly.  This could be due to the lack of Snap and Snap applications.  However, it could be due to the better RAM management of the desktop environment.  I'm not sure, other than to say Mint just seems to be more stable.  I'll have much more to say on Mint's stability for my long term update.</p>
+
+<p><span style="font-weight: 700; color: #000;">Lack of Snaps.</span>  <a href="https://snapcraft.io/">Snaps</a> are Ubuntu's in-house developed, next gen application packages.  In theory, Snaps are really great because they bundle an application and that application's dependencies into one package, which can then be installed across any Linux distributions that <a href="https://snapcraft.io/docs/installing-snapd">supports Snaps</a>.  Snaps also provide containerization of the application and its permissions, which in turn, provides more security. The whole system consists of the Snaps themselves, the Snapd service, the Snapcraft framework, and the Snap Store.</p> 
+
+<p>While I like the concept, and while I feel Snaps do solve a big problem in terms of the distribution and security of Linux applications, the main problem I have had with Snaps is that they are slow.  For example, the preinstalled version of Firefox on Ubuntu is a Snap.  While it initially takes a long time to launch, especially after a reboot, I found that the Snap version of Firefox was much slower than when I replaced it with the .deb version.  I know that they <a href="https://snapcraft.io/blog/how-are-we-improving-firefox-snap-performance-part-1">have made some progress</a> on this, but it is still too slow to my liking. Additionally, with regards to Ubuntu's crashes and instability, all logs and every error message I received were related to issues with Snaps and the Snap Store.  Unfortunately, Ubuntu has <a href="https://www.omgubuntu.co.uk/2022/04/ubuntu-wont-support-flatpak-anytime-soon">taken a stand</a> on Snaps as the way of the future, and they are dying on that hill.</p>
+
+<p>If you want to install Snaps on Linux Mint, you're <a href="https://snapcraft.io/docs/installing-snap-on-linux-mint">certainly free and able to do so</a>.  On a side note, I find <a href="https://flatpak.org/">Flatpak</a>, Snap's main &ldquo;competitor&rdquo;, to be only slightly better.  I think both systems need work.  Flatpak support is actually built into Linux Mint.  In fact, installing a Flatpak application is as easy as downloading the file and double clicking on it.  The Flatpak will install using the Mint Software Manager application.  However, I have Gnome Web (a.k.a. Epiphany, a.k.a the Webkit technology preview) installed as a Flatpak, and it runs so slowly that it is barely usable.</p>
+
+<p>I fully realize that you can <a href="https://www.debugpoint.com/remove-snap-ubuntu/">remove Snaps </a> from Ubuntu.  However, doing this still leaves me with a system that is not as &ldquo;snappy&rdquo; (pun intended) and uses more RAM than I would like.</p>
+
+<p><span style="font-weight: 700; color: #000;">Software Center.</span>  The Mint Software Center, called mintinstall, is a fast application that does what it is supposed to do &mdash; install applications.  It's clean and simple.  While I install most applications via the command line, it is nice to browse the software center from time to time.  Unlike the Ubuntu software center, it is just a clean, fast application.</p>
+
+<p>While I'm still on the topic of applications, I also like the fact that if I want to uninstall an application, I can just right click it in the application launcher and choose &ldquo;Unintall&rdquo;.</p> 
+
+<p class="begin_point">What I Don't Like...</p>
+
+<p><span style="font-weight: 700; color: #000;">Lack of biometrics out of the box.</span>  Unlike Ubuntu, the fingerprint reader on my laptop does not work out of the box.  However, I was able to get it working with a little tinkering.</p>
+
+<p class="begin_point">Wrapping It All Up...</p>
+
+<p>Overall I really like Linux Mint, and I plan on using it for quite some time.  I wish I had started using it earlier.  I am planning to write a long term review once I have used it longer.</p>
+
+<p class="end"><a href="https://steve-best.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+</body>
+</html>
