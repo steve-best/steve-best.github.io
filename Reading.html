@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Reading</title>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+ 
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: #904278;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+font-weight: 700;
+}
+
+a:hover {
+color: #946a87;
+}
+
+p {
+margin: 20px;
+}
+
+img {
+max-width: 80%;
+height: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}   
+
+.image_holder {
+text-align: center;
+}
+
+#intro_holder {
+width: 100%;
+background: rgb(16,18,17) url(https://steve-best.github.io/Site_Images/Kindle_Paperwhite.jpg) center center no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 20;
+}
+
+#header #nav li {
+display: inline;
+font-size: 14px;
+font-family: 'Reenie Beanie', cursive;
+font-weight: 400;
+text-shadow: 0px 1px 2px #161619;
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(255,255,255);
+}
+
+
+#intro {
+font-family: 'Lato', sans-serif;
+margin-top: 100px;
+margin-bottom: 175px;
+width: 100%;
+color: rgb(255,255,255);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-size: 52px;
+font-weight: 700;
+text-align: center;
+margin-bottom: 50px;
+}
+
+#intro p {
+font-size: 20px;
+margin-bottom: 0px;
+text-align: center;
+font-weight: 300;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: #e4e6e7;
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: #3c4152;
+font-size: 18px;
+line-height: 1.75;
+font-family: 'Zilla Slab', serif;
+font-weight: 400;
+}
+
+#main_content .firstcharacter {
+font-family: 'Lato', sans-serif;
+color: #3c4152;
+float: left;
+font-size: 95px;
+line-height: 40px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+text-transform: uppercase;
+font-weight: 700;
+}
+
+#main_content .begin_point {
+font-family: 'Lato', sans-serif;
+color: rgb(255,255,255);
+font-size: 38px;
+line-height: 1;
+margin-top: 50px;
+font-style: italic;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+}
+
+#main_content .end a {
+font-weight: 700;
+}
+
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus {
+outline: none;
+}
+
+#intro_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 25px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 16px;
+padding: 15px;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+margin-top: 200px;
+margin-bottom: 350px;
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#intro .title {
+font-size: 92px;
+text-align: center;
+margin-bottom: 75px;
+}
+
+#intro p {
+font-size: 32px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#main_content {
+width: 700px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+font-size: 20px;
+line-height: 1.75;
+}
+
+#main_content .firstcharacter {
+float: left;
+font-size: 150px;
+line-height: 60px;
+padding-top: 3px;
+padding-right: 10px;
+padding-left: 3px;
+padding-bottom: 10px;
+}
+
+#main_content .begin_point {
+font-size: 52px;
+}
+
+#main_content .end {
+margin-top: 100px;
+text-align: center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="intro_holder">
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+</ul>
+
+</section>
+
+<section id="intro">
+
+<p class="title">Reading</p>
+
+<p>July 3, 2023</p>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<p><span class="firstcharacter">A</span> book that I had been anticipating, <a href="https://www.amazon.com/Definitive-Guide-PCI-Version-Documentation-ebook/dp/B0BZHBHLZM/">The Definitive Guide to PCI DSS Version 4: Documentation, Compliance, and Management</a>, recently came out, and instead of waiting for the paperback version, I decided to buy the ebook version so that I could read it immediately.  The ebook was the same price on Apple Books and Kindle, but I bought and downloaded the Kindle version because it works on more than just Apple devices, including the web browser.  However, as I began reading the book on the Kindle app on my iPhone 11, I noticed some pretty significant eye strain was starting to set in.  To no avail, I tried adjusting the display settings on my iPhone, as well as tweaking various settings within the Kindle app.  However, no sooner than I had resigned myself to come back to reading my new book when my eyes had rested a bit, I remembered that my oldest son had a Kindle Paperwhite (7th generation) that had long been relegated to a drawer.  I found it, charged it up, signed in with the Amazon account my wife and I share, and I have been enjoying reading on this device ever since.</p>
+
+<p>I mainly read for information (although I am trying to read more fiction), and a number of the books in my library, especially the computer / technology / security related ones, are big &ldquo;bug smashers&rdquo;, as my wife calls them.  The ebook format lets me comfortably read, highlight in, and take notes in these types of books, and as a plus, it makes these books extremely portable.</p>
+
+<p>There are many advantages the Kindle (or any other dedicated e-reader) has over a phone or tablet, the first and foremost being the e-ink screen.  Not only does the screen of the Paperwhite have a paper-like feel, it has the same effect on my eyes that reading on paper does.  I really like the Paperwhite’s high DPI and how easy it is on my eyes.  It is easy to read in the sunlight, but at the same time, I also like the fact that it does have a backlight, which makes reading at night much easier.</p>  
+
+<p>Another advantage over reading on a phone or tablet is that with the Paperwhite, one gets a distraction free environment.  There are no notifications, no temptations to check other apps, no games.  There is just reading.</p>  
+
+<p>I really like this Paperwhite, and whether it is just the novelty of a new gadget or not, it has increased the amount that I am reading.  In fact, it has me thinking about the Kindle Scribe, which seems like a better alternative to the <a href="https://steve-best.github.io/paper-vs-remarkable">Remarkable</a> tablet.  We’ll see.</p>
+
+
+<p class="end"><a href="https://steve-best.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+</body>
+</html>
