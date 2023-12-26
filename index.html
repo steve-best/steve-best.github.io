@@ -23,12 +23,19 @@ font-size: 100%;
 
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Cormorant Garamond';
+  font-family: 'DM Serif Text';
   font-style: normal;
   font-weight: 400;
-  src: url(https://steve-best.github.io/cormorant-garamond-v16-latin-regular.woff2) format('woff2'); 
+  src: url(https://steve-best.github.io/dm-serif-text-v12-latin-regular.woff2) format('woff2'); 
 }
 
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://steve-best.github.io/source-sans-3-v15-latin-regular.woff2) format('woff2'); 
+}
 
 body {
 font: normal 1em/1.5;
@@ -100,15 +107,14 @@ color: #333;
 }
 
 #contents h1 {
-font-family: 'Cormorant Garamond', 'Garamond', serif;
-font-size: 52px;
+font-family: 'DM Serif Text', serif;
+font-size: 62px;
 color: #333;
 font-weight: normal;
 margin-bottom: 50px;
 margin-top: 100px;
 transition: .5s all ease-in-out;
 text-align: center;
-letter-spacing: -0.05em;
 }
 
 #contents h1:hover {
@@ -116,16 +122,16 @@ transform: rotate(2deg);
 }
 
 #contents p {
-font-family: 'Cormorant Garamond', 'Garamond', serif;
-font-size: 20px;
+font-family: 'Source Sans 3', 'Arial', sans-serif;
+font-size: 16px;
 color: #333;
 font-weight: 400;
 line-height: 1.25;
 transition: 0.5s all ease-in-out;
-letter-spacing: -0.05em;
 }
 
 #contents .title {
+font-family: 'DM Serif Text', serif;
 font-size: 42px;
 margin-top: 50px;
 margin-bottom: 0px;
@@ -133,15 +139,16 @@ line-height: 1;
 }
 
 #contents .brief {
-font-size: 18px;
+font-size: 16px;
 margin-top: 5px;
 margin-bottom: 5px;
 line-height: 1.5;
+color: #777;
 }
 
 #contents .read_more {
 margin-bottom: 50px;
-font-family: 'Arial', sans-serif;
+font-family: 'Source Sans 3', 'Arial', sans-serif;
 font-size: 12px;
 }
 
@@ -160,7 +167,7 @@ color: #0095B6;
 	
 
 #contents .year {
-font-size: 52px;
+font-size: 62px;
 color: #E5E5E5;
 font-weight: normal;
 font-family: 'Reenie Beanie', serif;
@@ -171,12 +178,11 @@ margin-bottom: 0;
 #contents .to-the-top {
 width: 200px;
 font-size: 12px;
-font-family: 'Arial', sans-serif;
+font-family: 'Source Sans 3', 'Arial', sans-serif;
 color: #333;
 margin-top: 50px;
 margin-bottom: 50px;
 margin-left: 20px;
-letter-spacing: -0.05em;
 }
 
 #contents .to-the-top a {
@@ -245,13 +251,13 @@ padding: 50px;
 }
 
 #contents h1 {
-font-size: 82px;
+font-size: 72px;
 margin-bottom: 50px;
 text-align: center;
 }
 
 #contents p {
-font-size: 24px;
+font-size: 18px;
 color: #333;
 }
 
@@ -262,7 +268,7 @@ margin-bottom: 0px;
 }
 
 #contents .brief {
-font-size: 20px;
+font-size: 18px;
 margin-top: 5px;
 margin-bottom: 5px;
 }
