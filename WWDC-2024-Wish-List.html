@@ -1,0 +1,250 @@
+
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<title>WWDC 2024 Wish List</title>
+	
+<style type="text/css" media="screen">
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Reenie Beanie';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://steve-best.github.io/reenie-beanie-v20-latin-regular.woff2) format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Quattrocento';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://steve-best.github.io/quattrocento-v23-latin-regular.woff2) format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://steve-best.github.io/open-sans-v40-latin-regular.woff2) format('woff2'); 
+}
+
+body {
+font-family: 'Quattrocento', serif;
+color: rgb(10, 31, 71);
+margin: 0;
+padding: 0;
+font-weight: 400;
+background: #8ec2ea;
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited { 
+color: #ffffff; 
+text-decoration: none; 
+border: none; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+font-weight: 700;
+text-shadow: 0px 1px 2px #161619;
+}
+  
+a:hover, a:focus { 
+color: rgb(10, 31, 71);
+text-shadow: none;
+}
+
+p {
+margin-top: 0px;
+margin-left: 20px;
+margin-right: 20px;
+font-size: 18px;
+line-height: 1.5;
+}
+
+img {
+max-width: 45%;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+margin-bottom: 100px;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+transition: all 0.5s ease-in-out;
+}
+
+img:hover {
+box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#header { 
+padding: 5px 0;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out; 
+}     
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+margin-left: 0px;
+margin-right: 20px;
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 16px;
+font-family: 'Reenie Beanie', sans-serif;
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: rgb(0,0,0); 
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 400;
+text-shadow: none;
+}
+
+#header #nav a:hover {
+color: #ffffff; 
+text-shadow: 0px 1px 2px #161619;
+}
+
+#main {
+width: 100%;
+overflow: hidden;
+}
+
+#main h1 {
+font-size: 48px;
+line-height: 1.25;
+margin-top: 50px;
+margin-bottom: 75px;
+text-align: center;
+color: rgb(10, 31, 71);
+font-weight: 700;
+margin-left: 20px;
+margin-right: 20px;
+hyphens: auto;
+}
+
+#main .firstcharacter {
+color: rgb(10, 31, 71);
+float: left;
+font-size: 95px;
+line-height: 40px;
+padding-right: 8px;
+padding-left: 3px;
+padding-top: 0px;
+padding-bottom: 8px;
+font-weight: 700;
+}
+
+#main .ending {
+margin-top: 75px;
+margin-bottom: 75px;
+text-align: center;
+font-family: 'Reenie Beanie', sans-serif;
+text-transform: uppercase;
+}
+
+#main .ending a {
+font-weight: 400;
+}
+
+#main .postcript {
+font-size: 14px;
+margin-bottom: 75px;
+}
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+#header {
+text-align: left;
+}
+
+#header #nav li { 
+font-size: 20px;
+}
+ 
+#main {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+overflow: hidden;
+}
+    
+#main p {
+font-size: 24px;   
+}
+
+#main h1 {
+font-size: 82px;
+}
+
+#main .firstcharacter {
+float: left;
+font-size: 150px;
+line-height: 60px;
+padding-top: 3px;
+padding-right: 10px;
+padding-left: 3px;
+padding-bottom: 10px;
+}
+
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+                
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+<li>|</li>
+<li><a title="#Apple" href="https://steve-best.github.io/hashtag-apple">#Apple</a></li>
+</ul>
+               
+</section>
+
+<section id="main">
+
+<h1>My WWDC 2024 Wish List</h1>
+
+<p><span class="firstcharacter">A</span>s we're only a few hours away from the start of WWDC, there is a lot of excitment about all the new features Apple will introduce across their various operating systems, as well as <a href="https://appleinsider.com/articles/24/06/08/siri-is-reborn-in-ios-18----everything-apples-voice-assistant-will-be-able-to-do">speculation about a revamped Siri</a> with lots of AI features being baked into Apple’s various apps and services.  However, as someone who only really uses and cares about iOS, there are a few things at the top of my wish list.</p>
+
+<p>First, I hope that the iPhone 11 will be able to upgrade to iOS 18.   I really like my iPhone 11, and after four and a half years it's still going strong.  I’m just not ready to upgrade to a new phone yet, and I hope that Apple doesn't force my hand*.</p>
+  
+<p>Second, I sincerely hope that iOS 18 finally allows browser makers to leverage their own rendering and JavaScript engines.  While Apple is currently sort of allowing this in order to comply with EU mandates, what I am hoping for is that Apple will simply allow other browser makers put these new browser versions in the official Apple App Store so that customers will not have to sideload them.  I also hope that they make this available across all their app stores, even that of the US.</p>
+  
+<p>Last, if Apple will not do the above, I at least hope they continue giving Safari feature parity with Chrome and other Chromium based browsers.  Chromium based browsers lead the pack, and Safar (Webkit) has a lot of catching up to do.</p>
+  
+<p>We'll see what happens in a few hours.</p>
+
+<p class="ending"><a href="https://steve-best.github.io">Table of Contents</a></p>
+
+<p class="postcript">* While Apple does patch the occasional critical security issues on older versions of iOS, they traditionally only support the latest version of iOS with new feature updates and regular security updates.</p>
+
+</section>
+
+</body>
+</html>
