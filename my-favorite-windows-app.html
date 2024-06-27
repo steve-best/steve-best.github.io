@@ -1,0 +1,267 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<title>My Favorite Windows App</title>
+
+
+<style type="text/css" media="screen">
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Reenie Beanie';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://steve-best.github.io/reenie-beanie-v20-latin-regular.woff2) format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://steve-best.github.io/inconsolata-v32-latin-regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Prata';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://steve-best.github.io/prata-v20-latin-regular.woff2) format('woff2');
+}
+
+body {
+font-family: 'Inconsolata', 'Consolas', monospace;
+color: rgb(0,0,0);
+margin: 0;
+padding: 0;
+font-weight: 400;
+background: #e6e7e2;
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited { 
+color: #0067c0; 
+text-decoration: none; 
+border: none; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+}
+  
+a:hover, a:focus { 
+color: rgb(0,0,0);
+}
+
+p {
+margin-top: 0px;
+margin-left: 20px;
+margin-right: 20px;
+font-size: 18px;
+line-height: 1.5;
+}
+
+img {
+max-width: 80%;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+margin-bottom: 100px;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+transition: all 0.5s ease-in-out;
+}
+
+img:hover {
+box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+max-width: 100%;
+}
+
+#header { 
+padding: 5px 0;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out; 
+}     
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+margin-left: 0px;
+margin-right: 20px;
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 16px;
+font-family: 'Reenie Beanie', sans-serif;
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: rgb(0,0,0); 
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+}
+
+#header #nav a:hover {
+color: #0067c0; 
+}
+
+#main {
+width: 100%;
+overflow: hidden;
+}
+
+#main h1 {
+font-size: 58px;
+line-height: 1.25;
+margin-top: 100px;
+margin-bottom: 150px;
+text-align: center;
+color: #000;
+font-weight: 400;
+letter-spacing: -0.05em;
+margin-left: 20px;
+margin-right: 20px;
+font-family: 'Prata', serif;
+hyphens: auto;
+}
+
+#main .firstcharacter {
+color: #000;
+float: left;
+font-size: 95px;
+line-height: 40px;
+padding-right: 8px;
+padding-left: 3px;
+padding-top: 0px;
+padding-bottom: 8px;
+font-weight: 800;
+font-family: 'Montserrat', sans-serif;
+}
+
+#main .from_article {
+font-size: 16px;
+color: #333;
+font-family: 'Open Sans', 'Arial', sans-serif;
+font-weight: 300;
+background: #f9f9f9;
+border-left: 10px solid #ccc;
+margin-left: 50px;
+margin-top: 50px;
+margin-bottom: 50px;
+padding: 0.5em 10px;
+quotes: "\201C""\201D""\2018""\2019";
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+transition: all 0.5s ease-in-out;
+}
+
+#main .from_article:hover {
+box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#main from_article:before {
+color: #ccc;
+content: open-quote;
+font-size: 4em;
+line-height: 0.1em;
+margin-right: 0.25em;
+vertical-align: -0.4em;
+font-family: 'Orelega One', 'Georgia', serif;
+}
+
+#main from_article p {
+display: inline;
+}
+
+#main .ending {
+margin-top: 75px;
+margin-bottom: 75px;
+text-align: center;
+font-family: 'Reenie Beanie', sans-serif;
+text-transform: uppercase;
+}
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+#header {
+text-align: left;
+}
+
+#header #nav li { 
+font-size: 20px;
+}
+ 
+#main {
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+overflow: hidden;
+}
+    
+#main p {
+font-size: 20px;   
+}
+
+#main h1 {
+font-size: 72px;
+}
+
+#main .firstcharacter {
+float: left;
+font-size: 150px;
+line-height: 60px;
+padding-top: 3px;
+padding-right: 10px;
+padding-left: 3px;
+padding-bottom: 10px;
+}
+
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+                
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+</ul>
+               
+</section>
+
+<section id="main">
+
+<h1>My Favorite Windows App</h1>
+
+<img src="https://steve-best.github.io/Site_Images/Notepad.png" />
+
+<p>My absolute favorite app on Windows is Notepad.  That's right.  It's plain old simple Notepad.  I love Notepad for its simplicity.  It opens quickly.  It uses only a small amount of RAM.  It's free, and it comes with every version of Windows.  It does one thing, and it does that one thing well.</p>
+
+<p>I have been using Notepad on my work laptops since 2004, and now that I am mainly using a Surface Laptop 3 as my secondary computer, I'm using it on that too.  I usually have at least one instance of Notepad running at all times.  It's used for quick copy/paste.  It's used for quick notes.  Almost everything that I write, from emails, to documents, to you name it starts its life in Notepad.  In fact, I'm writing this blog post in Notepad on that Surface Laptop right now.</p>
+
+<p>Even though Notepad is such a simple app, I love that Microsoft keeps improving it without making it lose the simplicity that makes it so special.  They added tabs, which really comes in handy, and earlier this year, they added spell check!  It's a small change, but for someone like me who spends so much time in this app, this little feature makes all the difference in the world.</p>
+
+<p class="ending"><a href="https://steve-best.github.io">Table of Contents</a></p>
+
+</section>
+
+</body>
+</html>
