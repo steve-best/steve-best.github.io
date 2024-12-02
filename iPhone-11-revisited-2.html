@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>iPhone 11 Revisited</title>
+
+  
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+
+  
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: #903;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+a:hover {
+color: rgb(228, 132, 164);
+}
+
+p {
+margin: 20px;
+}
+    
+img {
+max-width: 80%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+} 
+
+.left {
+max-width: 80%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+} 
+
+.right_transparent {
+max-width: 80%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+box-shadow: none;
+} 
+
+#intro_holder {
+width: 100%;
+background: rgb(16,18,17) url(https://steve-best.github.io/Site_Images/iPhone_11_5_years_later.png) center center no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 20;
+}
+
+#header #nav li {
+display: inline;
+font-size: 14px;
+text-shadow: 0px 1px 2px #161619;
+font-family: 'Reenie Beanie', cursive;
+text-transform: uppercase;
+color: rgb(200,200,200);
+font-weight: normal;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+margin-top: 75px;
+margin-bottom: 150px;
+width: 100%;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-size: 72px;
+text-align: center;
+font-family: 'Playfair Display', serif;
+font-weight: normal;
+letter-spacing: -0.05em;
+}
+
+#intro p {
+font-size: 14px;
+margin-bottom: 0px;
+text-align: center;
+font-family: 'IBM Plex Mono', sans-serif;
+font-weight: 300;
+letter-spacing: -0.05em;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: rgb(255,255,255);
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 16px;
+line-height: 1.75;
+font-family: 'IBM Plex Mono', serif;
+font-weight: 300;
+letter-spacing: -0.05em;
+}
+
+#main_content .miniquote {
+font-family:'Playfair Display', serif;
+font-size: 32px;
+font-weight: normal;
+color: #000;
+}
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+}
+
+
+/*--[ FOR BIGGER SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+body {
+margin: 0;
+padding: 0;
+background: rgb(255,255,255);
+}
+
+:focus {
+outline: none;
+}
+    
+img {
+float: right;
+max-width: 50%;
+height: auto;
+margin-left: 25px;
+margin-bottom: 25px;
+}
+
+img:hover {
+max-width: 100%;
+}
+
+.left {
+float: left;
+max-width: 50%;
+height: auto;
+margin-right: 25px;
+margin-bottom: 25px;
+}       
+
+.left:hover {
+max-width: 100%;
+}
+
+.right_transparent {
+float: right;
+max-width: 50%;
+height: auto;
+margin-right: 25px;
+margin-bottom: 25px;
+}       
+
+..right_transparent:hover {
+max-width: 100%;
+}
+
+#intro_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 25px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 16px;
+padding: 15px;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+font-weight: 300;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+margin-top: 150px;
+margin-bottom: 250px;
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+color: rgb(252,252,252);
+text-shadow: 0px 1px 2px #161619;
+}
+
+#intro .title {
+font-size: 96px;
+text-align: center;
+}
+
+#intro p {
+font-size: 16px;
+margin-bottom: 0px;
+text-align: center;
+font-weight: 300;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#main_content {
+width: 900px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+color: rgb(33,33,33);
+font-size: 18px;
+line-height: 1.75;
+}
+
+#main_content .miniquote {
+font-size: 52px;
+}
+
+#main_content .end {
+margin-top: 100px;
+text-align: center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="intro_holder">
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+<li>|</li>
+<li><a title="#Apple" href="https://steve-best.github.io/hashtag-apple">#Apple</a></li>
+</ul>
+
+</section>
+
+<section id="intro">
+
+<p class="title">iPhone 11 Revisited</p>
+
+<p>(and why I won't be upgrading any time soon)</p>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+    <p>Today is what is known in the United States as <a href="https://en.wikipedia.org/wiki/Black_Friday_(shopping)">Black Friday</a>, and I have been contemplating a new phone with a larger display for quite a while now.  The new iPhone 16 Plus looks compelling, and Verizon does have a few deals at the moment. (Although this would mean my monthly Verizon bill would go up about $25-30 a month for 36 months, and this is more or less a, &ldquo;principle of the matter&rdquo; thing that I am not too keen on.)</p>
+
+    <p>At the same time, I’ve also been thinking about moving back to Android and just buying a cheaper, midrange device.  I'm really on the fence about it, but I currently use Apple's stock apps, particularly Notes and Reminders, as my defaults.  While all the Google apps I care about and use are also available on iOS, if I did move to Android, I could also easily switch Reminders for Google Tasks and Notes for Google Keep.  I <a href="https://steve-best.github.io/defaults-updated">have done that in the past</a>, sometimes using these apps interchangeably.  That said, I do really wish the <a href="https://us.nothing.tech/pages/phone-2a">Nothing Phone (2a)</a> or the <a href="https://us.nothing.tech/products/cmf-phone-1">CMF Phone 1</a> worked on Verizon.  If this were the case, a jump to Android would be all the more compelling.</p>
+    
+    <p class="miniquote">However, there is this old adage that keeps popping into my head that says, &ldquo;If it ain’t broke, don’t fix it&rdquo;, and the more I think about it, the more I think it applies to my current phone situation.</p>  
+    
+    <p>Each time I get the urge to go to the Verizon store, or go to Best Buy's site, or open my Amazon app to upgrade to a new phone, I tell myself to think about it until the next morning and only go ahead with the upgrade, if and only if, the urge to upgrade is still there.  So far, the urge to upgrade passes because I realize that in reality, I don’t really <i>need</i> to do anything quite yet.  My iPhone 11, even though I have had it for five years now, is still getting software and security updates from Apple, and the battery is still decent for this phone’s age (around 80% maximum capacity).   My iPhone 11 is still plenty fast (for me), and the camera still takes decent quality photos (for me).  Aside from wanting a larger screen, I’m actually good with my current phone.  (There's is also not a vast difference between a 6.7" screen and a 6.1" screen, and technically, this is something my regular glasses or a pair of readers could remedy.)  I don’t consider either Apple intelligence, or Gemini, if I end up back on Android, to be something that is worthy of an upgrade to a new phone in and of itself.</p>   
+    
+    <p>So I’m going to keep on keeping on with my iPhone 11.  If I can squeeze a few more months out of it, or even if I can make it last until Apple is no longer updating it, then I think I can consider myself as having been a good steward of this phone.</p>
+
+<p class="end"><a href="https://steve-best.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+</body>
+</html>
