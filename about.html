@@ -21,6 +21,22 @@ font-size: 100%;
   src: url(https://steve-best.github.io/reenie-beanie-v20-latin-regular.woff2) format('woff2'); 
 }
 
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://steve-best.github.io/playfair-display-v37-latin-regular.woff2) format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://steve-best.github.io/ibm-plex-mono-v19-latin-300.woff2) format('woff2'); 
+}
+
 body {
 font: normal 1em/1.5;
 margin: 0;
@@ -36,17 +52,17 @@ outline: none;
 a:link, a:visited {
 color: #336699;
 text-decoration: none;
-border: none;
+border-bottom: 1px dotted #336699;
 -webkit-transition: 0.5s all ease-in-out;
 -moz-transition: 0.5s all ease-in-out;
 -ms-transition: 0.5s all ease-in-out;
-font-family: 'Reenie Beanie', 'Arial', sans-serif;
-font-weight: 700;
-text-transform: uppercase;
+font-weight: bold;
 }
 
 a:hover, a:focus {
 color: rgb(122,184,0);
+border: none;
+font-weight: 300;
 }
 
 p {
@@ -86,6 +102,8 @@ color: #333;
 -webkit-transition: color 0.5s ease-in-out;
 -moz-transition: color 0.5s ease-in-out;
 -ms-transition: color 0.5s ease-in-out;
+border: none;
+font-weight: 300;
 }
 
 #header #nav a:hover {
@@ -99,30 +117,27 @@ width: 100%;
 }
 
 #contents h1 {
-font-family: 'Reenie Beanie', 'Arial', sans-serif;
+font-family: 'Playfair Display', serif;
 font-size: 52px;
-color: #333;
+color: #000;
 font-weight: normal;
-margin-bottom: 50px;
+margin-bottom: 20px;
 margin-top: 100px;
 margin-left: 20px;
--webkit-transition: 0.5s all ease-in-out;
--moz-transition: 0.5s all ease-in-out;
--ms-transition: 0.5s all ease-in-out;
-text-align: left;
-text-transform: uppercase;
+transition: .5s all ease-in-out;
+letter-spacing: -0.05em;
 }
 
 #contents p {
-font-family: 'Reenie Beanie', 'Arial', sans-serif;
-font-size: 20px;
+font-family: 'IBM Plex Mono', monospace;
+font-size: 16px;
 color: #333;
 font-weight: 300;
 line-height: 1.75;
 -webkit-transition: 0.5s all ease-in-out;
 -moz-transition: 0.5s all ease-in-out;
 -ms-transition: 0.5s all ease-in-out;
-text-transform: uppercase;
+letter-spacing: -0.05em;
 }
 
 #Copyright {
@@ -175,17 +190,17 @@ color: #333;
 }
 
 #contents h1 {
-font-size: 72px;
+font-size: 62px;
 color: rgb(0,0,0);
 font-weight: normal;
-margin-bottom: 50px;
+margin-bottom: 30px;
 -webkit-transition: 0.5s all ease-in-out;
 -moz-transition: 0.5s all ease-in-out;
 -ms-transition: 0.5s all ease-in-out;
 }
 
 #contents p {
-font-size: 28px;
+font-size: 18px;
 color: #333;
 font-weight: 300;
 line-height: 1.75;
@@ -242,7 +257,7 @@ color: rgb(122,184,0);
 
 <h1>Hi, I'm Steve.</h1>
 
-<p>Welcome to my little corner of the Internet.  I reside in the Charlotte, NC area with my beautiful wife, and we have a college junior, a college freshman, and a middle schooler.</p>
+<p>Welcome to my little corner of the Internet.  I reside in the Charlotte, NC area with my beautiful wife, and we have a senior in college, a junior in college, and a middle schooler.</p>
 
 <p>I'm a Jesus follower, a <a href="https://www.pcisecuritystandards.org/assessors_and_solutions/internal_security_assessors">PCI ISA</a>, a <a href="https://www.pcisecuritystandards.org/assessors_and_solutions/pci_professionals">PCIP</a>, a security enthusiast, a Linux enthusiast, and an all-around tech nerd. I also love the game of basketball and have an affinity for BMWs.</p>
 
@@ -252,7 +267,7 @@ color: rgb(122,184,0);
 
 <p>Topics will include whatever strikes my interest, but mainly I like to stick with topics related to my personal life, technology and productivity.</p> 
 
-<p><span style="color: rgb(122,184,0); font-weight: 700; font-family: 'Reenie Beanie', 'Arial', sans-serif; text-transform: uppercase;">Disclaimer:</span> Any opinions I express on this site are my own and do not necessarily represent those of my employer.</p> 
+<p><span style="font-weight: 700;">Disclaimer:</span> Any opinions I express on this site are my own and do not necessarily represent those of my employer.</p> 
 
 </section> <!-- end #contents -->
 
