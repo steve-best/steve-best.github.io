@@ -23,18 +23,18 @@ font-size: 100%;
 
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'DM Serif Text';
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 400;
-  src: url(https://steve-best.github.io/dm-serif-text-v12-latin-regular.woff2) format('woff2'); 
+  src: url(https://steve-best.github.io/playfair-display-v37-latin-regular.woff2) format('woff2'); 
 }
 
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Source Sans 3';
+  font-family: 'IBM Plex Mono';
   font-style: normal;
-  font-weight: 400;
-  src: url(https://steve-best.github.io/source-sans-3-v15-latin-regular.woff2) format('woff2'); 
+  font-weight: 300;
+  src: url(https://steve-best.github.io/ibm-plex-mono-v19-latin-300.woff2) format('woff2'); 
 }
 
 body {
@@ -107,14 +107,15 @@ color: #333;
 }
 
 #contents h1 {
-font-family: 'DM Serif Text', serif;
+font-family: 'Playfair Display', serif;
 font-size: 62px;
-color: #333;
+color: #000;
 font-weight: normal;
 margin-bottom: 50px;
 margin-top: 100px;
 transition: .5s all ease-in-out;
 text-align: center;
+letter-spacing: -0.05em;
 }
 
 #contents h1:hover {
@@ -122,34 +123,38 @@ transform: rotate(2deg);
 }
 
 #contents p {
-font-family: 'Source Sans 3', 'Arial', sans-serif;
-font-size: 16px;
+font-family: 'IBM Plex Mono', monospace;
+font-size: 14px;
 color: #333;
-font-weight: 400;
+font-weight: 300;
 line-height: 1.25;
 transition: 0.5s all ease-in-out;
+letter-spacing: -0.05em;
 }
 
 #contents .title {
-font-family: 'DM Serif Text', serif;
+font-family: 'Playfair Display', serif;
 font-size: 42px;
 margin-top: 50px;
 margin-bottom: 0px;
-line-height: 1;
+color: #000;
+letter-spacing: -0.05em;
 }
 
 #contents .brief {
-font-size: 16px;
+font-size: 14px;
 margin-top: 5px;
 margin-bottom: 5px;
 line-height: 1.5;
 color: #777;
+letter-spacing: -0.05em;
 }
 
 #contents .read_more {
 margin-bottom: 50px;
-font-family: 'Source Sans 3', 'Arial', sans-serif;
+font-family: 'IBM Plex Mono', monospace;
 font-size: 12px;
+letter-spacing: -0.05em;
 }
 
 #contents .read_more a {
@@ -178,11 +183,12 @@ margin-bottom: 0;
 #contents .to-the-top {
 width: 200px;
 font-size: 12px;
-font-family: 'Source Sans 3', 'Arial', sans-serif;
+font-family: 'IBM Plex Mono', monospace;
 color: #333;
 margin-top: 50px;
 margin-bottom: 50px;
 margin-left: 20px;
+letter-spacing: -0.05em;
 }
 
 #contents .to-the-top a {
@@ -257,7 +263,7 @@ text-align: center;
 }
 
 #contents p {
-font-size: 18px;
+font-size: 16px;
 color: #333;
 }
 
@@ -283,7 +289,7 @@ background: #F5F5F5;
 padding: 10px;	
 border-radius: 10px;
 transition: 0.5s all ease-in-out;
-color: #333;
+color: #000;
 }
 
 #contents .read_more a:hover {
