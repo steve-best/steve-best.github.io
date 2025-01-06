@@ -1,0 +1,481 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CMF Watch Pro 2</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+font-family: 'Cormorant Garamond', 'Garamond', serif;
+font-weight: normal;
+letter-spacing: -0.05em;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: #FB471F;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+a:hover {
+color: #A3A7A4;
+}
+
+p {
+margin: 20px;
+}
+    
+img {
+max-width: 75%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+} 
+
+.left {
+max-width: 75%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+} 
+
+#intro_holder {
+width: 100%;
+background: rgb(16,18,17) url(https://steve-best.github.io/Site_Images/My_CMF_Watch_Pro_2.jpg) center center no-repeat;
+min-height:100%;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 20;
+}
+
+#header #nav li {
+display: inline;
+font-size: 18px;
+text-shadow: 0px 1px 2px #161619;
+font-family: 'Reenie Beanie', monospace;
+}
+
+#header #nav a {
+color: rgb(200,200,200);
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(252,252,252);
+}
+
+
+#intro {
+margin-top: 75px;
+margin-bottom: 150px;
+width: 100%;
+color: rgb(252,252,252);
+text-shadow: 1px 2px 3px #161619;
+}
+
+#intro .title {
+font-size: 62px;
+text-align: center;
+font-family: 'IBM Plex Mono', monospace;
+font-weight: 300;
+}
+
+#intro p {
+font-size: 20px;
+margin-bottom: 0px;
+text-align: center;
+font-family: 'IBM Plex Mono', monospace;
+font-weight: 300;
+color: #A3A7A4;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: #DEE1E9;
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: #434D53;
+font-size: 20px;
+line-height: 1.75;
+}
+
+#main_content .firstcharacter {
+font-weight: 700;
+color: #FB471F;
+float: left;
+font-size: 95px;
+line-height: 40px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+font-weight: 300;
+text-transform: uppercase;
+text-shadow: 1px 2px 3px #161619;
+
+}
+
+#main_content .begin_point {
+color: #000;
+font-size: 36px;
+line-height: 1;
+margin-top: 75px;
+margin-bottom: 0px;
+font-family: 'IBM Plex Mono', sans-serif;
+font-weight: 300;
+}
+
+#main_content .little_dots {
+text-align: center; 
+color: #FB471F;
+}
+
+#main_content ul {
+font-size: 20px;
+line-height: 1.75;
+color: #434D53;
+margin-left: 25px;
+margin-right: 25px;
+}
+
+#main_content li {
+font-size: 20px;
+color: #434D53;
+}
+
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+}
+
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+    
+img {
+float: right;
+max-width: 40%;
+height: auto;
+margin-left: 25px;
+margin-bottom: 25px;
+}
+
+img:hover {
+max-width: 100%;
+}
+
+.left {
+float: left;
+max-width: 40%;
+height: auto;
+margin-right: 25px;
+margin-bottom: 25px;
+}       
+
+.left:hover {
+max-width: 100%;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+#intro_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 25px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 20px;
+padding: 15px;
+}
+
+
+#intro {
+margin-top: 150px;
+margin-bottom: 250px;
+width: 900px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#intro .title {
+font-size: 102px;
+text-align: center;
+}
+
+#intro p {
+font-size: 28px;
+margin-bottom: 0px;
+text-align: center;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#main_content {
+width: 900px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+font-size: 24px;
+line-height: 1.75;
+}
+
+#main_content .firstcharacter {
+float: left;
+font-size: 150px;
+line-height: 60px;
+padding-top: 3px;
+padding-right: 10px;
+padding-left: 3px;
+padding-bottom: 10px;
+}
+
+#main_content .begin_point {
+font-size: 52px;
+}
+
+#main_content ul {
+font-size: 24px;
+line-height: 1.75;
+}
+
+#main_content li {
+font-size: 24px;
+}
+
+#main_content .end {
+margin-top: 100px;
+text-align: center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="intro_holder">
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+</ul>
+
+</section>
+
+<section id="intro">
+
+<p class="title">CMF Watch Pro 2</p>
+
+<p>January 2025</p>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<p><span class="firstcharacter">T</span>he <a href="https://steve-best.github.io/computer-on-my-wrist">computer on my wrist</a>, an Apple Watch Series 3, is now ancient in tech years and no longer supported by Apple.  Aside from the fact that Apple is no longer providing security updates, it still works great, albeit except for the fact that the battery has long since gotten to the point where it will only hold a charge for a few hours at a time.  Given these two issues, I relegated my Apple Watch to only occasional wear, having mainly reverted to wearing a Casio G-Shock, along with a few other dressier analog watches.  Analog watches have several distinct advantages over smart watches, including, but not limited to, the fact that they don't need security updates and have user replacable batteries.  That said, I do miss the fitness and health tracking capabilities that a smart watch offers.</p>
+    
+<p class="little_dots">....................</p>
+
+<p>I have long been impressed by <a href="https://us.nothing.tech/">Nothing</a>.  They are a London based company that has a very Steve Jobs' Apple vibe, in the sense that they have a great sense of design and seem to care a lot about the quality of their products.  However, unlike Apple, their products do not tend to break the bank.  Nothing has a sub-brand called <a href="https://cmf.tech/en-us/">CMF</a> that sells a well designed, yet inexpensive phone, as well as ear buds, wearables, and accessories, and when I found out about the <a href="https://cmf.tech/en-us/pages/watch-pro-2">Watch Pro 2</a>, I immediately knew I wanted to replace my aging Apple Watch with it.  It just so happens that my beautiful wife got me one for Christmas.</p>
+
+<p class="little_dots">....................</p>
+
+<p class="begin_point">Unboxing, set up, and the specs.</p>
+    
+<p>The CMF Watch Pro 2 comes in a small box that contains the watch itself, the watch band (already attached to the watch), a USB A charging cable with a proprietary connection to the watch, and a bare bones owner's manual.  Pressing and briefly holding down the crown powered it up, and the subsequent set up process, which involved downloading the CMF watch app and creating an account, was a breeze. My watch came charged at around 96%.</p>
+
+<p>Given that this watch is currently selling for around $70, I think it punches well above its weight in terms of specs.  Mine is the dark grey model, and it has a metal (presumably aluminum) body that seems quite sturdy.  The bezels are interchangable. I prefer the flatter bezel that comes with the dark grey model over the more rounded bezel that comes with the watches that sport the orange or blue bands.  One can buy an additional bezel/strap combo for $19 directly from <a href="https://us.nothing.tech/products/cmf-watch-pro-2">CMF</a>. Speaking of the watch band, the included dark grey silicon band is soft to the touch, yet feels sturdy.  I like the texture of the band my watch came with a lot better than the texture of the band that originally came with my Apple Watch Series 3. My Watch Pro 2 only came with one size band, but that is to be expected for the price range.  Additional aftermarket bands, such as <a href="https://www.amazon.com/TenCloud-Silicone-Adjustable-Waterproof-Compatible/dp/B0CZ6W1B3H/ref=sr_1_5?crid=2LCHT01RYEJ4D&dib=eyJ2IjoiMSJ9.yuT8cizmza2IonE0Juqmq-iPKmHSuwz_s-AhcVWfGZoaFOS0lhmNg8ylOoH6wTWjhl1_DtewT1ozMzVGCd9E7uosw9tWjCQ6Bt7KyRDyRGmAGEJEIsTL3ZN0t7M1_sX0lHfOxS6Ca5RTs9T8tryxVKZ8fQsxexqDuROOmueXuffYq-jzJVM9XHM7Q7QGN_ALY5a_Ygr8jBDEG_0OKS9Ev63qT773PdaxjLvD_J74_XE.j2rnVmPmmdVNqKuRkFqQf0411FSsUwwNExrDMS1Ares&dib_tag=se&keywords=cmf+watch+pro+2+bands&sprefix=cmf+watch+pro+2+bands%2Caps%2C112&sr=8-5">these</a> or <a href="https://www.amazon.com/Lamshaw-Compatible-Stainless-Replacement-Smartwatch/dp/B0D97M3QNG/ref=sr_1_4?crid=2LCHT01RYEJ4D&dib=eyJ2IjoiMSJ9.yuT8cizmza2IonE0Juqmq-iPKmHSuwz_s-AhcVWfGZoaFOS0lhmNg8ylOoH6wTWjhl1_DtewT1ozMzVGCd9E7uosw9tWjCQ6Bt7KyRDyRGmAGEJEIsTL3ZN0t7M1_sX0lHfOxS6Ca5RTs9T8tryxVKZ8fQsxexqDuROOmueXuffYq-jzJVM9XHM7Q7QGN_ALY5a_Ygr8jBDEG_0OKS9Ev63qT773PdaxjLvD_J74_XE.j2rnVmPmmdVNqKuRkFqQf0411FSsUwwNExrDMS1Ares&dib_tag=se&keywords=cmf+watch+pro+2+bands&sprefix=cmf+watch+pro+2+bands%2Caps%2C112&sr=8-4">this one</a> can be purchased.</p>
+
+<p>The dark grey version of the CMF Watch Pro 2 is 25.5 x 4.5 x 1.36 cm, and it weighs in at just 48.1 g.  It is really light, and the size, I think, is perfect &mdash; not too big, yet not too small.  The display itself is 1.32", and it is AMOLED.  It has a 60 frames per second refresh rate, with a 466 x 466 aspect ratio.  The screen is 353 pixels per inch.  On paper, the Apple Watch Series 10 and the Apple Watch SE both have better display specs, but from the perspective of the naked eye, I find the screen of the CMF Watch Pro 2 quite comprable with that of my wife's Apple Watch Series 9.</p>
+
+<p>The CMF Watch Pro 2 has an accelerometer, as well as an ambient light sensor.  It also has a heart rate & SpO₂ Blood Oxygen Saturation sensor.  It has IP68 dust and water resistance, and it has GPS, a built-in microphone, a decent speaker, and Bluetooth 5.3 connectivity.  It also has a 305 mAh battery that, on paper at least, provides around 9 days of heavy use. (More on that later.)</p>
+
+<p class="begin_point">The CMF Watch app.</p>
+
+<p>The CMF Watch Pro 2 runs a proprietary operating system developed by Nothing, and the necessary companion app is available on the <a href="https://apps.apple.com/us/app/cmf-watch/id6447500890">iOS App Store</a> and the <a href="https://play.google.com/store/apps/details?id=com.nothing.cmf.watch&pli=1">Google Play Store</a> as a free download.  This cross platform compatibility was a huge factor in my wanting this particular watch.</p>
+
+<img src="https://steve-best.github.io/Site_Images/CMF_Watch_App.jpg" />
+
+<p>The app itself, while not conforming to Apple's native iOS design language, conforms to Nothing's design language and is exceptionally well designed, leveraging a pleasant color palette, along with Nothing's NDot font and a sans-serif font, <a href="https://www.androidfaithful.com/nothing-os-3-0-hands-on/">presumably either Inter or Roboto</a>, throughout. The app loads quickly.  If there was one thing I could change about the app, it would be that the fonts are a bit small in a few places throughout. Additionally, while I like NDot, I hope it is replaced with the serif font they are now using throughout Nothing OS 3.0.</p>
+
+<p>Navigating the app is accomplished via the icons at the bottom, where functions are grouped by health, exercise, device, and account.  When the app loads, it defaults to the health tab, which is represented by a heart icon.  In this section, one will find all of the health and exercise information categorized into little widgets.  Tapping on each widget brings up additional metrics.  The excercise section, represented by an icon of a little running person, shows a map of one's location (or where the watch is), and it allows one to start an excercise from this section of the app.  (The app syncs GPS data with the watch upon being opened.)  The device section, represented by a watch icon, contains all the watch's settings, including a very comprehensive choice of watch faces that can be downloaded onto the watch.  One can also check for software updates for the watch in this section of the app.  Last but not least, the account section is where one can change their account info, update their profile, set a daily goal, and provide feedback to Nothing.</p>
+
+<p class="begin_point">The good.</p>
+
+<p>Having worn the watch every day now for a solid week, there are a lot of positive things to say about it.  The bullets below are a brain dump of my thoughts in no particular order.</p>
+  
+<ul>
+<li>The initial watch set up was a breeze.</li>
+<li>The watch itself is well designed.</li>
+<li>I prefer a watch with a round bezel.</li>
+<li>The size is perfect.  It's not too big and not too small.</li>
+<li>I like the fact that the bezel can be easily swapped out with a different one, if one so chooses. (Although I prefer the one I currently have.)</li>
+<li>The watch is lightweight, yet appears to be well constructed.</li>
+<li>Cross platform compatibility.  The watch works with iOS and Android via Bluetooth and the CMF Watch app.  While I don't plan to switch to Android anytime soon, I also like knowing that if I did, the watch would not become a paperweight.</li>
+<li>I appreciate the large selection of watch faces that can be set on the watch via the CMF Watch app, and I find the watch's user interface easy to navigate.</li>
+<li>The screen on the watch is bright and clear, and the screen responds well to touch.</li> 
+<li>The user interface is, for the most part, fast and responsive.</li>
+<li>Before an outdoor run, the watch prompts one to do warm up exercises before the run starts, and the screen provides examples of how to do each warm up excercise along with a timer for the excercises.</li>
+<li>Battery life has been excellent.  I'm not getting the advertised battery life, but it is excellent nonetheles and much better than the battery life I was getting on my Apple Watch Series 3, even when it was new.  The watch was around 96% fully charged when I unboxed it on December 25th.  I charged the battery to 100% and began wearing it about mid-day on the 25th.  As of 10:34 am on 12/28, the battery was down to 61%. As of 9:48am on 12/29, the battery life was at 52% with normal usage.  As of 8:45 am on Dec 30th, the battery life was down to 41%.  As of around 9:30 am on the 31st, the battery life was around 29%, at which point I decided to charge the watch.</li>
+<li>The battery charges quickly.  As stated above, the watch comes with a cable, but it does not include a power brick.  I have been using an old 5W brick from an iPhone.</li>
+<li>One can set reminders using &ldquo;Voice Assistant&rdquo; on the watch in Apple Reminders.  (This appears to invoke the default voice assistant on the phone.) One can also create notes in Apple Notes.  One can also create calendar entries.</li>
+<li>In terms of the health features of the watch, workout detection seems to work well, and all of the biometric functions of the watch, such as the heart rate monitor, appear to be accurate (or at least as accurate as they are on my Apple Watch series 3).</li>
+<li>The watch has a blood oxygen sensor, and it seems to work just as well as the one we bought during Covid that goes on one's finger.</li>
+<li>I like the fact that one can turn off some of the biometric functions, such as the O2 sensor and the stress testing, in order to save battery life.  Turning these off simply means that it will not collect that data in real time.</li>
+<li>The sleep tracking feature is fantastic, and I like the fact that it can apparently tell how deep one is sleeping.</li>
+<li>Integration with Apple Health is an invaluable feature.</li>
+<li>Phone call functionality works well.  My iPhone simply treats the watch as another bluetooth device, and calls can be switched between the iPhone's speaker, my Pixel Buds (when they are connected) and the watch.  The watch's volume is decently loud, even at half volume.  Calls are clear.</li>
+<li>Music playback worked well.  While I was on a run, I could skip tracks via the watch.  This is not as full featured as it was on the Apple Watch (given the tight integration between the Apple Watch and Apple Music), but it does what I need it to nonetheless.</li>
+<li>One can use the Voice Assistant to play music on the phone.  (Esentially, this just activates Siri on the phone.)</li>
+</ul>
+
+<p class="begin_point">The not so good.</p>
+
+<p>Unfortunately, there are some things about the Watch Pro 2 that are not that great.  I'm hoping that some of these things can be fixed down the road with software updates.</p>
+
+<ul>
+<li>This watch only comes in one size.  While I don't feel the watch is too big, some might feel differently.</li>
+<li>While I appreciate that the watch can receive notifications from the phone, the notification system leaves a lot to be desired.  For example, text messages / notifications marked as ignored or deleted on the watch aren't marked as read or deleted on the iPhone.</li>  
+<li>One cannot initiate texts, aside from doing so via the Voice Assistant functionality, and one cannot respond to texts from watch itself as one can on an Apple Watch.</li>
+<li>The built in reminders functionality within the CMF Watch app leaves much to be desired, and it does not properly provide notification on the watch at the correct time. In my testing, setting a reminder in the CMF Watch app always seemed to default to having the notification be a day behind.  For example, I tried to set a test reminder for about 5-10 minutes from the current time on the 25th.  However, it always defaulted to the 24th for some strange reason.</li>
+<li>The built in reminders app is not a replacement for Apple Reminders or Google Tasks, and one cannot set a reminder using the built in reminders app from the watch itself.</li>
+<li>While one can set reminders using &ldquo;Voice Assistant&rdquo; on the watch in Apple Reminders, one cannot do so if they are using anything other than reminders (such as Google Tasks) on the back end.  However, I think this is ultimately a limitation of Siri.</li>
+<li>The built in calendar app does not appear to be able to sync with Google Calendar.  All it does is display the date.</li>
+<li>Even though the watch and my iPhone have a constant Bluetooth connection, the app does not stay connected to the phone and often the data on the watch, such as the weather, is outdated until you open the app.</li>
+<li>One cannot mark Google Tasks or Apple Reminders notifications as completed via the watch.</li>
+<li>Notifications are not always clear as to which app on the phone they came from.  Additionally, some text gets cut off from some notifications.</li>
+<li>While one can sync favorite contacts via the CMF Watch app, there appears to not be true, full syncing with the contacts on the phone.  (I went into Settings --> Bluetooth --> tapped the i by the watch --> and toggled Sync Contacts over to the active state.  I also made sure that Favorites, Phone Recents, and All Contacts were checked.  I also made sure that &ldquo;Full Access&rdquo; was checked within the iOS settings for the CMF Watch app.)</li>
+<li>There is no &ldquo;Hey Siri&rdquo; functionality.</li>
+<li>The active call notification has issues, by which the watch still shows active call after the call has completed.</li>
+<li>Accessing the voice assistant requires going through the menu (pushing in the crown and scrolling to &ldquo;Voice Assistant&rdquo;).  There does not appear to be a way to add this to any of the widgets on any of the watch faces or when one swipes left or right from the watch face.</li>
+<li>This last one is a big one.  A few days ago, the watch just froze when I was trying to swipe away a notification.  When the watch rebooted, everything had been reset.  All my fitness tracking for the day was gone.  Because I had not synced with the app that day yet, when I did sync with the app, it only shows what was currently on the watch.  It missed my run that morning.  Additionally, all of the watch's settings and preferences had been reset.  This is an odd anomaly to say the least, and something that I am now on the lookout for to happen again.  Hopefully it was just a one time fluke.</li>
+<li>I could not figure out how to play music on the watch itself.  This does not appear to be a feature.</li>
+</ul>
+
+<p class="begin_point">The bottom line.</p>
+
+<p>With all of the negative things I have listed above, it would appear that my recommendation would be to pass on this watch, but that is not exactly the case.  I am actually happy with this watch, and I plan to keep using it regularly.  I'm hoping that a lot of the issues that I have with notifictions and other minor annoyances can be fixed over time with software updates.  That said, this watch is <b>NOT</b> a replacement for an Apple Watch, especially if one wants more from their smart watch than just health tracking and rudimentary notifications.  If this watch were a $200 watch, I would feel that it is not worth the money.  However, for only $70, this watch provides great health tracking in an attractive package.</p>
+
+<p class="end"><a href="https://theartdirectedjournal.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+</body>
+</html>
