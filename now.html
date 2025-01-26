@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Now</title>
+
+<style type="text/css" media="screen">
+
+/*--[ GLOBAL STYLES ]---------*/
+html {
+font-size: 100%;
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Reenie Beanie';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://steve-best.github.io/reenie-beanie-v20-latin-regular.woff2) format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://steve-best.github.io/playfair-display-v37-latin-regular.woff2) format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://steve-best.github.io/ibm-plex-mono-v19-latin-300.woff2) format('woff2'); 
+}
+
+body {
+font: normal 1em/1.5;
+margin: 0;
+padding: 0;
+background: #fefcfa url(https://steve-best.github.io/Site_Images/Fiber_Paper.png) top left repeat;
+width: 100%;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+color: #336699;
+text-decoration: none;
+border-bottom: 1px dotted #336699;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+font-weight: bold;
+}
+
+a:hover, a:focus {
+color: rgb(122,184,0);
+border: none;
+font-weight: 300;
+}
+
+p {
+-webkit-hyphens: auto;
+-moz-hyphens: auto;
+hyphens: auto;
+margin: 20px;
+}
+
+
+/*--[ HEADER ]--------------------*/
+#header { 
+padding: 5px 0;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out; 
+}     
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 16px;
+font-family: 'Reenie Beanie', sans-serif;
+text-transform: uppercase;
+color: #333;
+}
+
+#header #nav a {
+color: #333; 
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+border: none;
+font-weight: 300;
+}
+
+#header #nav a:hover {
+color: #336699; 
+}
+
+
+/*--[ MAIN CONTENTS ]--------------------*/
+#contents {
+width: 100%;
+}
+
+#contents h1 {
+font-family: 'Playfair Display', serif;
+font-size: 52px;
+color: #000;
+font-weight: normal;
+margin-bottom: 50px;
+margin-top: 25px;
+margin-left: 20px;
+transition: .5s all ease-in-out;
+letter-spacing: -0.05em;
+text-align: center;
+}
+
+#contents p {
+font-family: 'IBM Plex Mono', monospace;
+font-size: 16px;
+color: #333;
+font-weight: 300;
+line-height: 1.75;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+letter-spacing: -0.05em;
+margin-top: 0px;
+}
+
+#contents .sub-header {
+font-family: 'Playfair Display', serif;
+font-size: 32px;
+color: #000;
+font-weight: normal;
+margin-bottom: 0px;
+margin-top: 50px;
+margin-left: 20px;
+letter-spacing: -0.05em;
+}
+
+#Copyright {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 25px;
+}
+
+#Copyright p {
+font-size: 16px;
+text-align: center;
+color: #777;
+font-family: 'Reenie Beanie', 'Arial', sans-serif;
+text-transform: uppercase;
+}
+
+
+#Copyright a {
+color: #336699;
+text-decoration: none;
+border: none;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+font-weight: 300;
+}
+
+#Copyright a:hover, a:focus {
+color: #777;
+}
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+	
+#header {
+text-align: left;
+}
+
+#header #nav li { 
+font-size: 20px;
+}
+
+#contents {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+padding: 50px;
+color: #333;
+}
+
+#contents h1 {
+font-size: 72px;
+color: rgb(0,0,0);
+font-weight: normal;
+margin-bottom: 30px;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}
+
+#contents p {
+font-size: 18px;
+color: #333;
+font-weight: 300;
+line-height: 1.75;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}
+
+#contents .sub-header {
+font-size: 42px;
+}
+
+#Copyright {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+margin-bottom: 25px;
+}
+
+#Copyright p {
+font-size: 20px;
+text-align: center;
+color: #777;
+}
+
+
+#Copyright a {
+color: #336699;
+text-decoration: none;
+border: none;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}
+
+#Copyright a:hover, a:focus {
+color: rgb(122,184,0);
+}
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+</ul>
+
+</section> <!-- end #header -->
+
+<section id="contents">
+
+<h1>Now</h1>
+
+<p>(January 2025)  These are the things that I am doing, watching, reading, and listening to in no particular order.</p>
+
+<p class="sub-header">Doing</p>
+
+<p>I'm currently studying for my <a href="https://www.isaca.org/credentialing/cism#1">CISM</a> certification.</p> 
+
+<p class="sub-header">Watching</p>
+
+<p>I just finished the second season of <a href="https://en.wikipedia.org/wiki/Lioness_(American_TV_series)">Lioness</a> and the first season of <a href="https://en.wikipedia.org/wiki/Landman_(TV_series)">Landman</a> on Paramount+.  Both of these Taylor Sheridan shows are incredible.  I'm also watching <a href="https://www.max.com/shows/pitt-2024/e6e7bad9-d48d-4434-b334-7c651ffc4bdf">The Pitt</a> on Max, as well as the 50th season of SNL.</p>
+
+<p class="sub-header">Reading</p>
+
+<p>I renewed my <a href="https://wired.com">Wired</a> subscription (print magazine) for another year.</p>
+
+<p class="sub-header">Listening</p>
+
+<p>I currently have the following albums in heavy rotation in Apple Music:  GNX (Kendrick Lamar), Murmur (R.E.M.), Black on Both Sides (Mos Def), Thelonious Monk With John Coltrane (Thelonious Monk & John Coltrane), and The Stranger (Billy Joel).</p>
+
+</section> <!-- end #contents -->
+
+<section id="Copyright">
+<p><a href="https://steve-best.github.io">Table of Contents</a></p>
+</section>
+
+</body>
+</html>
