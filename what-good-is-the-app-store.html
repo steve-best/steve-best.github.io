@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>What Good is the App Store?</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+<style type="text/css" media="screen">
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #4A525A;
+  font-family: 'Lora', serif;
+  text-shadow: #161619;
+}
+
+:focus {
+  outline: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: rgb(212, 164, 206);
+  -webkit-transition: .5s all ease-in-out;
+  -moz-transition: .5s all ease-in-out;
+  -ms-transition: .5s all ease-in-out;
+}
+
+a:hover {
+  color: #f1ccea;
+  text-shadow: none;
+}
+
+p {
+  margin: 20px;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
+
+#header {
+  padding: 5px 0;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+
+#header #nav {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+#header #nav li {
+  display: inline;
+  font-size: 14px;
+  color: #777;
+  font-family: 'Reenie Beanie', cursive;
+  text-transform: uppercase;
+}
+
+#header #nav a {
+  color: #DDDDDD;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  border: none;
+  padding: 40px 10px;
+}
+
+#header #nav a:hover {
+  color: rgb(212, 164, 206);
+}
+
+#article_body {
+  margin-top: 100px;
+}
+
+#article_body .title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #DDDDDD;
+}
+
+#article_body p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #DDDDDD;
+}
+
+#article_body .happy_ending {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#article_body .happy_ending a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+
+
+/*--[ FOR LARGER SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+#header #nav li {
+  font-size: 16px;
+}  
+
+#article_body {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#article_body .title {
+  font-size: 48px;
+}
+
+#article_body p {
+  font-size: 22px;
+  line-heigt: 1.5;
+}
+
+#article_body .happy_ending a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</span></a></li>
+<li>|</li>
+<li><a title="#Apple" href="https://steve-best.github.io/hashtag-apple">#Apple</span></a></li>
+</ul>
+
+</section>
+
+<section id="article_body">
+
+<p class="title">What Good is the App Store?</p>
+
+<p>Apple <a href="https://support.apple.com/guide/security/about-app-store-security-secb8f887a15/web">purports</a> that one of the reasons iPhone (and iPad) users are only allowed to install apps from the their App Store is that all apps that come from their store have been vetted from a security perspective and thus can be trusted.  However, <a href="https://9to5mac.com/2025/02/07/multiple-security-flaws-found-in-deepseek-ios-app-including-sending-unencrypted-data/">this piece on 9to5 Mac</a> sheds light on the fact that there were multiple security flaws found in DeepSeek's iOS app.  If Apple is supposed to be reviewing all apps in their store for malware and other security flaws, then why did DeepSeek get approved?  Was this just a one time lapse somewhere in the process, or are they not actually examining apps from a security perspective as closely as I thought they were?</p>
+
+<p>Either way, I wish Apple would just go to the <a href="https://www.macworld.com/article/2525708/the-app-store-era-must-end-apples-already-got-the-solution.html">Mac model</a> and allow users to choose where they get their iOS and iPadOS apps from.  If Apple chose to go this route, the default setting for all users should, of course, be to only allow apps to be installed from their App Store.  Since most &ldquo;normal&rdquo; users never change their default settings, this would probably be just fine to protect the majority of users (assuming Apple is actually reviewing apps for security flaws).</p>
+  
+<p>However, I think Apple should provide an option* <a href="https://support.google.com/pixelphone/thread/255201256?hl=en&sjid=9498875595137086055-NA"> similar to what Android provides</a>, even if it is buried deep in the settings of iOS and iPadOS, that allows the user to install apps from the Internet and other sources after acknowledging a warning about the risks of doing so.  At least this way, we customers that want this capability could have &ldquo;real&rdquo; Chrome or Firefox on our iPhones (with their respective rendering and JavaScript engines), which we could, in theory, get straight from Google's or Mozilla's respective websites.  I would even be fine with having apps that don't come from the App Store having to be <a href="https://support.apple.com/guide/security/app-code-signing-process-sec3ad8e6e53/web">signed</a>, but my point here is that Apple should offer their users a choice.</p> 
+
+<p class="happy_ending"><a href="https://steve-best.github.io">Table of Contents</a></p>
+
+<P style="font-size: 14px; font-style: italic; margin-bottom: 50px;">* I know Apple offers this in the EU, but I'm talking about Apple doing this no matter the country the user is in.</P>
