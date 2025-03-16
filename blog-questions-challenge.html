@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Now</title>
+
+<style type="text/css" media="screen">
+
+/*--[ GLOBAL STYLES ]---------*/
+html {
+font-size: 100%;
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Reenie Beanie';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://steve-best.github.io/reenie-beanie-v20-latin-regular.woff2) format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://steve-best.github.io/playfair-display-v37-latin-regular.woff2) format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://steve-best.github.io/ibm-plex-mono-v19-latin-300.woff2) format('woff2'); 
+}
+
+body {
+font: normal 1em/1.5;
+margin: 0;
+padding: 0;
+background: linear-gradient(to bottom, #222 0%, #000 100%);
+width: 100%;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+color: #e68987;
+text-decoration: none;
+border-bottom: 1px dotted #e68987;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+font-weight: bold;
+}
+
+a:hover, a:focus {
+color: #eaeaea;
+border: none;
+font-weight: 300;
+}
+
+p {
+-webkit-hyphens: auto;
+-moz-hyphens: auto;
+hyphens: auto;
+margin: 20px;
+}
+
+
+/*--[ HEADER ]--------------------*/
+#header { 
+padding: 5px 0;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out; 
+}     
+
+#header #nav { 
+margin-bottom: 10px; 
+margin-top: 10px; 
+}                
+
+#header #nav li { 
+display: inline; 
+font-size: 16px;
+font-family: 'Reenie Beanie', sans-serif;
+text-transform: uppercase;
+color: #FACFCE;
+}
+
+#header #nav a {
+color: #FACFCE; 
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+border: none;
+font-weight: 300;
+}
+
+#header #nav a:hover {
+color: #e68987; 
+}
+
+
+/*--[ MAIN CONTENTS ]--------------------*/
+#contents {
+width: 100%;
+}
+
+#contents h1 {
+font-family: 'Playfair Display', serif;
+font-size: 52px;
+color: #FACFCE;
+font-weight: normal;
+margin-bottom: 50px;
+margin-top: 25px;
+transition: .5s all ease-in-out;
+letter-spacing: -0.05em;
+text-align: center;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#contents p {
+font-family: 'IBM Plex Mono', monospace;
+font-size: 16px;
+color: #999;
+font-weight: 300;
+line-height: 1.75;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+letter-spacing: -0.05em;
+margin-top: 0px;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#contents .sub-header {
+font-family: 'Playfair Display', serif;
+font-size: 32px;
+color: #FACFCE;
+font-weight: normal;
+margin-bottom: 0px;
+margin-top: 50px;
+margin-left: 20px;
+letter-spacing: -0.05em;
+text-shadow: 0px 1px 2px #161619;
+line-height: 1;
+margin-bottom: 20px;
+}
+
+#Copyright {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 25px;
+}
+
+#Copyright p {
+font-size: 16px;
+text-align: center;
+color: #FACFCE;
+font-family: 'Reenie Beanie', 'Arial', sans-serif;
+text-transform: uppercase;
+text-shadow: 0px 1px 2px #161619;
+}
+
+
+#Copyright a {
+color: #FACFCE;
+text-decoration: none;
+border: none;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+font-weight: 300;
+}
+
+#Copyright a:hover, a:focus {
+color: #e68987;
+}
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+	
+#header {
+text-align: left;
+}
+
+#header #nav li { 
+font-size: 20px;
+}
+
+#contents {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+padding: 50px;
+}
+
+#contents h1 {
+font-size: 72px;
+font-weight: normal;
+margin-bottom: 30px;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}
+
+#contents p {
+font-size: 18px;
+font-weight: 300;
+line-height: 1.75;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}
+
+#contents .sub-header {
+font-size: 42px;
+}
+
+#Copyright {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+margin-bottom: 25px;
+}
+
+#Copyright p {
+font-size: 20px;
+text-align: center;
+}
+
+
+#Copyright a {
+text-decoration: none;
+border: none;
+-webkit-transition: 0.5s all ease-in-out;
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+</ul>
+
+</section> <!-- end #header -->
+
+<section id="contents">
+
+<h1>Blog Questions Challenge</h1>
+
+<p>I came across <a href="https://scottboms.com/documenting/blog-questions-challenge">this great post</a>, and since I love this idea, I decided to create a similar post for myself.</p>
+
+<p class="sub-header">Why did you start blogging in the first place?</p>
+
+<p>I came across a post on Smashing Magazine called <a href="https://www.smashingmagazine.com/2009/11/the-death-of-the-blog-post/">The Death of the Blog Post</a> and was inspired to create my own "art directed" blog.</p>
+
+<p class="sub-header">What platform are you using to manage your blog and why did you choose it?</p>
+
+<p><a href="https://pages.github.com/">GitHub Pages</a>.  I like being able to use Git to push posts to my blog, and I like the simple nature of it.  The current iteration of this blog is actually my second go around with GitHub.  That’s actually an interesting <a href="https://steve-best.github.io/learning-from-mistakes">and embarrassing</a> story.</p>
+
+<p class="sub-header">Have you blogged on other platforms before?</p>
+
+<p>Yes.  I have blogged on Blogger and Tumblr.  Doing the art directed thing on Blogger was a giant pain, and it did not last long at all.  Tumblr was better.  There was a solid community there, but ultimately, the art directed posts were really cumbersome.  There was a lot of inline CSS and other really non-standard things happening.  I ditched Tumblr around 2012, porting some of my favorite older posts over from Tumblr to Github Pages.
+</p>
+
+<p class="sub-header">How do you write your posts? For example, in a local editing tool, or in a panel/dashboard that’s part of your blog?</p>
+
+<p>I write my posts using a combination of Apple Notes (or sometimes Google Keep), Google Docs, and ultimately, Visual Studio Code or Koder (iOS).  The outline of a post always starts out in Apple Notes or Google Keep.  Once in a blue moon I will start a post in Notepad on Windows.  Shorter posts stay in my note taking app of choice and morph from an outline to paragraph form.  Longer posts are usually migrated over to Google Docs.</p>
+
+<p>The web design part happens from scratch, using either Visual Studio Code (if I'm on Windows or Linux) or Koder (if I'm on iOS). I have my repo cloned on Windows and Linux.   I have the GitHub mobile app installed on my iPhone.  Believe it or not I design and write a lot of these posts straight from my iPhone.</p>
+
+<p>Once the design is finished, I will replace the Lorem Ipsum with the real text from Google Docs or my note taking app of choice, and I will either manually publish to Github via the web browser (if I'm on my iPhone), or I will merge the changes into “production” via Visual Studio Code.</p>
+
+<p>It seems like a lot of work for each post, but I sort of have it down to a science at this point.</p>
+
+<p class="sub-header">When do you feel most inspired to write?</p>
+
+<p>It depends.  I may come across a news article or get an idea of something I want to write about.  Most of the tech related articles happen that way.  Sometimes I come across a cool font pairing or a print ad, which inspires me to want to design something.</p>
+
+<p class="sub-header">Do you publish immediately after writing, or do you let it simmer a bit as a draft?</p>
+
+<p>It depends.  Sometimes I sit on a post, especially if my thoughts are a bit half baked. </p>
+
+<p class="sub-header">What are you generally interested in writing about?</p>
+
+<p>Most of my posts are tech related in some way.</p>
+
+<p class="sub-header">Who are you writing for?</p>
+
+<p>Me.  The reasons I blog are to practice writing and web design.  I'm just putting stuff out there that makes me happy.  If other people like it, that's great.  But I have no idea of they do, since I'm not using any analytics.  Occasionally I’ll receive an email from someone who comes across a post. </p>
+
+<p class="sub-header">What’s your favorite post on your blog?</p>
+
+<p>That's a great question.  If I can't say that all of my posts are my favorites, since each one is unique and takes a certain degree of thought and effort, <a href="https://steve-best.github.io/tried-and-true">Tried & True</a> is probably my favorite, purely from a design perspective.  I was inspired by those old, 1980's print ads.  Plus, I like my old iMac, so much so that I <a href="https://steve-best.github.io/hashtag-imac">dedicated a tag for it</a>.  I also like <a href="https://steve-best.github.io/now">my Now page</a> a lot.</p>
+
+<p class="sub-header">Any future plans for your blog? Maybe a redesign, a move to another platform, or adding a new feature?</p>
+
+<p>I'm happy with Github for the moment.  I have been using it for a long time now, and it is flexible and free.  I do plan to post more in the near future, but I need to pass my CISM exam first.  I also plan on creating more tags for posts, such as productivity.</p>
+
+</section> <!-- end #contents -->
+
+<section id="Copyright">
+<p><a href="https://steve-best.github.io">Table of Contents</a></p>
+</section>
+
+</body>
+</html>
