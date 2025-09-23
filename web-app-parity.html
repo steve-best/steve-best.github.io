@@ -1,0 +1,290 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<title>Web App Parity and Why I Don't Use Apple Apps</title>
+
+<link href="https://fonts.googleapis.com/css?family=Aleo:300,400,700" rel="stylesheet"> 
+	
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet"> 
+
+<style type="text/css" media="screen">
+
+/*--[ GLOBAL TAG STYLES ]---------*/
+html { 
+font-size: 100%; 
+}
+
+body { 
+font-family: 'Aleo', serif; 
+font-weight: 400;
+margin: 0; 
+padding: 0; 
+background: rgb(255,255,255); 
+width: 100%;   
+}
+
+:focus { 
+outline: none; 
+}
+
+a:link, a:visited { 
+color: #3689e6; 
+text-decoration: none; 
+border: none; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+font-weight: 700;
+}
+
+a:hover, a:focus { 
+color: #8cd5ff;
+}
+
+p {
+margin: 20px;
+line-height: 1.5;
+}
+
+img {
+max-width: 80%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+}                		
+
+/*--[ HEADER ]--------------------*/
+#header {
+background: rgba(255, 255, 255, 0.87);  
+position: fixed; 
+top: 0px;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 2; 
+font-family: 'Raleway', sans-serif;
+font-weight: 300;
+}
+
+#header #nav {
+margin-bottom: 10px; 
+margin-top: 10px; 
+}
+
+#header #nav li { 
+display: inline; 
+font-size: 14px;  
+color: #777;   
+}
+
+#header #nav a {
+color: rgb(0,0,0); 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+font-weight: 300;
+}
+
+#header #nav a:hover {
+color: #3689e6; 
+}
+                                		
+                
+/*--[ MAIN CONTENTS ]--------------------*/
+#contents {
+width: 100%;  
+color: #333;
+}   
+               
+#contents h1 {
+font-size: 48px; 
+color: rgb(0,0,0);   
+margin-top: 100px;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out; 
+-ms-transition: 0.5s all ease-in-out; 
+text-align: center;
+font-weight: 300;
+margin-left: 20px;
+margin-right: 20px;
+line-height: 1;
+font-family: 'Raleway', sans-serif;
+}
+
+#contents p { 
+font-size: 16px; 
+color: #333; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+font-weight: 300;
+}
+
+#contents .when {
+font-size: 32px;   
+margin-top: 75px;
+margin-bottom: 0;
+font-weight: 300;
+line-height: 1;
+color: #1a1a1a;
+font-family: 'Raleway', sans-serif
+}
+
+#contents .happy_ending {
+margin-top: 50px;
+text-align: center;
+font-size: 14px;
+font-weight: 700;
+font-family: 'Raleway', sans-serif
+}
+
+#Copyright {
+width: 100%; 
+margin-left: auto; 
+margin-right: auto; 
+margin-top: 75px; 
+margin-bottom: 25px; 
+font-weight: 300;
+font-size: 12px;
+font-family: 'Raleway', sans-serif;
+}
+
+#Copyright p { 
+text-align: center; 
+color: #d4d4d4;
+}  
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+#header {
+background: rgba(255,255,255,.65); 
+position: fixed; 
+top: 0px;
+height: auto; 
+width: 100%; 
+overflow: hidden; 
+-webkit-transition: all 0.5s ease-in-out; 
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 2; 
+}
+
+#header #nav {
+margin-bottom: 10px; 
+margin-top: 10px;  
+}
+
+#header #nav li { 
+display: inline;   
+}
+
+#header #nav a {
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+font-weight: 300;
+}
+
+#contents {
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+padding: 50px; 
+color: #333;
+}   
+               
+#contents h1 {
+font-size: 72px; 
+color: rgb(0,0,0);   
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out; 
+-ms-transition: 0.5s all ease-in-out; 
+text-align: center;
+}
+
+#contents p { 
+font-size: 20px; 
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out; 
+line-height: 1.5;
+}
+
+#contents .when {
+font-size: 46px;   
+margin-top: 75px;
+margin-bottom: 0;
+}
+
+#contents .happy_ending {
+    margin-top: 75px;
+}
+
+#Copyright {
+width: 800px; 
+margin-left: auto; 
+margin-right: auto; 
+margin-top: 50px; 
+margin-bottom: 25px; 
+}
+
+#Copyright p { 
+text-align: center; 
+}
+   
+}    
+      
+
+</style>
+</head>
+
+<body>
+
+<section id="header">
+
+	<ul id="nav">
+
+        <li><a title="Steve Best" href="https://steve-best.github.io/">Steve Best</a></li> 
+
+    </ul>
+
+</section> <!-- end #header -->
+
+<section id="contents">        
+
+    <h1>Web App Parity and Why I Don't Use Apple Apps</h1>
+
+    <p>I really want to like Apple's default apps. I really do.  My iPhone 16 Plus is, by and large, my most used <i>computer</i>, and Apple's default apps, Notes in particular, are, for the most part, well designed.  However, I am not a macOS user, and I no longer have an iPad.  My iPhone, aside from the Apple TV 4K that is connected to our living room TV, is my only Apple device.  Since I'm not a macOS user, if I want to use Apple Notes on a laptop, I have to access Notes through icloud.com.  However, what I have found through trial and error is that the icloud.com version of Notes does not have feature parity with the iOS version.</p> 
+    
+    <p>Case in point, when one tries to copy an image and paste it into a new or existing note in Apple Notes using icloud.com, there is no ability to do so.  Ctrl + V does not work.  Paste via right click does not work.  As such, I use Google Keep.  With the exception of text formatting (which I don't really care about - it's a notes app), Keep's web app and the iOS app have feature parity.  Keep is fast on both iOS and the web, and it just works.  I don't know Apple's intentions, but it seems like Apple either purposely hobbles icloud.com or they simply don't care.  Either way, it leaves a bad taste in my mouth.  I don't care for vendor lock in, and it seems like if I want full feature parity while using Apple's default apps, I need to have all Apple devices.</p>
+
+    <p>Due to their apps having true cross platform functionality, in addition to Google Keep, I have gone all in on Google's apps and ecosystem. GMail on iOS is my default email client on my iPhone.  GMail basically works the same on the iPhone app as it does on the web.  I am using Google Docs and Sheets. I use Google Tasks for my to-do list, since its web app and iOS app also have feature parity.  I use Google Calendar for my calendar.  While Apple's default Calendar app on iOS works great with my Google account, there are color coded calendar events that are not supported.</p>
+
+    <p>If Apple would ever focus on their web apps and give them feature parity with their Mac, iPad, and iOS counterparts, I may reconsider using Google's services.  However, as of this moment, Google's stuff is just better.<sup>1</sup></p>
+
+    <p class="happy_ending"><a href="https://steve-best.github.io">Table of Contents</a></p>
+
+    <p style="font-size: 14px; margin-top: 100px;"><sup>1</sup> As an aside, when I finally upgraded my <a href="https://steve-best.github.io/iPhone-11-revisited-2">iPhone 11</a> back in May, I chose an iPhone 16 Plus.  I like iOS, my entire family uses iPhones, and I think Apple makes good hardware that lasts a long time.  While I seriously considered a Pixel or a Galaxy Z Fold, I think using an iPhone that is chock full of Google apps gives me the best of both worlds.</p>
+		
+</section>	<!-- end #contents -->
+
+<section id="Copyright">
+    
+    <p>&copy; 2025 Steve Best. All Rights Reserved.</p>
+    
+</section>
+        
+</body>
+</html> 
