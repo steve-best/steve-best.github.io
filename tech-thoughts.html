@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Thoughts on a Few Tech Related Topics</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+
+<style type="text/css" media="screen">
+
+html {
+font-size: 100%;
+}
+
+body {
+margin: 0;
+padding: 0;
+font-weight: normal;
+font-family: "Google Sans", sans-serif;
+}
+
+:focus {
+outline: none;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+color: #FB471F;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+a:hover {
+color: rgb(203, 124, 124);
+}
+
+p {
+margin: 20px;
+}
+    
+img {
+max-width: 75%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+} 
+
+.left {
+max-width: 75%;
+height: auto;
+display: block;
+margin: auto;
+-webkit-transition: 0.5s all ease-in-out; 
+-moz-transition: 0.5s all ease-in-out;
+-ms-transition: 0.5s all ease-in-out;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+} 
+
+#intro_holder {
+width: 100%;
+background: rgb(0,0,0);
+min-height:100%;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-ms-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 20;
+}
+
+#header #nav li {
+display: inline;
+font-size: 18px;
+text-shadow: 0px 1px 2px #161619;
+font-family: 'Reenie Beanie', monospace;
+text-transform: uppercase;
+}
+
+#header #nav a {
+color: #FB471F;
+-webkit-transition: color 0.5s ease-in-out;
+-moz-transition: color 0.5s ease-in-out;
+-ms-transition: color 0.5s ease-in-out;
+border: none;
+}
+
+#header #nav a:hover {
+color: rgb(203, 124, 124);
+}
+
+
+#intro {
+margin-top: 75px;
+margin-bottom: 150px;
+width: 100%;
+color: rgb(255,255,255);
+text-shadow: 1px 2px 3px #161619;
+}
+
+#intro .title {
+font-size: 72px;
+text-align: left;
+font-family: "Italiana", sans-serif;
+text-shadow: 0px 1px 2px #161619;
+color: rgb(255,255,255);
+}
+
+#intro p {
+font-size: 18px;
+margin-bottom: 0px;
+text-align: left;
+font-family: "Italiana", sans-serif;
+color: #a8a1a1;
+text-shadow: 0px 1px 2px #161619;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+background: rgb(0,0,0);
+}
+
+#main_content {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#main_content p {
+color: #a8a1a1;
+font-size: 20px;
+line-height: 1.75;
+text-shadow: 0px 1px 2px #161619;
+}
+
+#main_content .firstcharacter {
+font-weight: 700;
+color: #FB471F;
+float: left;
+font-size: 100px;
+line-height: 40px;
+padding-top: 4px;
+padding-right: 8px;
+padding-left: 3px;
+font-weight: 300;
+text-transform: uppercase;
+text-shadow: 1px 2px 3px #161619;
+font-family: "Italiana", sans-serif;
+
+}
+
+#main_content .begin_point {
+color: rgb(255,255,255);
+font-size: 48px;
+line-height: 1;
+margin-top: 75px;
+margin-bottom: 0px;
+font-family: "Italiana", sans-serif;
+font-weight: 300;
+}
+
+#main_content .little_dots {
+text-align: center; 
+color: #FB471F;
+}
+
+#main_content ul {
+font-size: 20px;
+line-height: 1.75;
+color: #434D53;
+margin-left: 25px;
+margin-right: 25px;
+}
+
+#main_content li {
+font-size: 20px;
+color: #434D53;
+}
+
+
+#main_content .end {
+margin-top: 50px;
+text-align: center;
+font-family: 'Reenie Beanie', monospace;
+text-transform: uppercase;
+}
+
+#main_content .end a {
+border: none;
+}
+
+
+
+/*--[ FOR BIG SCREENS ]--------------------*/
+
+@media screen and (min-width: 481px) {
+
+body {
+margin: 0;
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+    
+img {
+float: right;
+max-width: 40%;
+height: auto;
+margin-left: 25px;
+margin-bottom: 25px;
+}
+
+img:hover {
+max-width: 100%;
+}
+
+.left {
+float: left;
+max-width: 40%;
+height: auto;
+margin-right: 25px;
+margin-bottom: 25px;
+}       
+
+.left:hover {
+max-width: 100%;
+}
+
+a:link, a:visited {
+text-decoration: none;
+border: none;
+-webkit-transition: .5s all ease-in-out;
+-moz-transition: .5s all ease-in-out;
+-ms-transition: .5s all ease-in-out;
+padding-bottom: 2px;
+border-bottom: 1px dotted;
+}
+
+#intro_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#header {
+padding: 5px 0;
+height: auto;
+width: 100%;
+overflow: hidden;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+z-index: 12;
+}
+
+#header #nav {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 25px;
+}
+
+#header #nav li {
+display: inline;
+font-size: 20px;
+padding: 15px;
+}
+
+
+#intro {
+margin-top: 150px;
+margin-bottom: 250px;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+}
+
+#intro .title {
+font-size: 122px;
+width: 700px;
+}
+
+#intro p {
+font-size: 28px;
+margin-bottom: 0px;
+}
+
+
+#main_content_holder {
+width: 100%;
+overflow: hidden;
+}
+
+#main_content {
+width: 900px;
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#main_content p {
+font-size: 20px;
+line-height: 1.75;
+}
+
+#main_content .firstcharacter {
+float: left;
+font-size: 150px;
+line-height: 60px;
+padding-top: 3px;
+padding-right: 10px;
+padding-left: 3px;
+padding-bottom: 10px;
+}
+
+#main_content .begin_point {
+font-size: 72px;
+}
+
+#main_content ul {
+font-size: 24px;
+line-height: 1.75;
+}
+
+#main_content li {
+font-size: 24px;
+}
+
+#main_content .end {
+margin-top: 100px;
+text-align: center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="intro_holder">
+
+<section id="header">
+
+<ul id="nav">
+<li><a title="Steve Best" href="https://steve-best.github.io">Steve Best</a></li>
+</ul>
+
+</section>
+
+<section id="intro">
+
+<p class="title">Thoughts on a Few Tech Related Topics</p>
+
+<p>October 2026</p>
+
+</section>
+
+</section>
+
+<section id="main_content_holder">
+
+<section id="main_content">
+
+<p><span class="firstcharacter">I</span>t's been a long time.  Outside of updating my <a href="https://steve-best.github.io/now">Now page</a> every once in a while, I have been derelict in creating any new content for this site.  I’m sorry about that.  Other than the fact that life has been busy, I don’t really have a good excuse for the lack of content.  Perhaps it’s a lack of anything much to say?  Perhaps it’s a dearth of any design inspiration?  Perhaps it’s just that I had gotten out of the habit of writing and designing?  I don’t know.  The reason that it’s late October and this is my first post for 2026 is probably a combination of all three.  Although, if you <a href="https://theartdirectedjournal.github.io">look back 10 years ago</a>, you’ll see that 2016, with just one measly post for the entire year, was also a year where new content was scarce.</p>
+    
+<p class="little_dots">....................</p>
+
+<p>Anywho.  I’m back, and I’ve had a few tech related thoughts pinging around in my squirrel brain over the past few weeks that I felt like getting in writing.  The first has to do with a cheap pair of earbuds I recently purchased.  The second has to do with Apple’s new products, Google, and ecosystems in general.</p>
+
+<p class="little_dots">....................</p>
+
+<p class="begin_point">CMF Buds Neo.</p>
+    
+<p>As you will know from reading this site, I have always been a big fan of what I call, &ldquo;Good enough computing&rdquo;.  I use hardware and software that I find ultimately works for me, and if what works is the cheaper option, that is even better.  I got a pair of <a href="https://steve-best.github.io/airpods2">Pixel Buds Pro</a> (first generation) back in early 2024.  They replaced a pair of second generation Apple AirPods, and by and large, they were great earbuds.  They sounded great, and they were fairly durable.  However, the battery life began to worsen, the right earbud would sometimes have this piercing, high-pitched whining sound in it, and finally, in February 2026, I replaced them with the AirPods Pro 3.</p>
+
+<p>The AirPods Pro 3 are an absolutely fantastic set of earbuds.  The sound quality is incredible, leaps and bounds above the Pixel Buds Pro.  The active noise cancellation is amazing.  I also like the fact that when I start talking, the volume of the music decreases.  (The Pixel Buds Pro did this too, but the Apple implementation, in my opinion, is a little more refined and works a little more consistently.)  I also really like the fact that the AirPods Pro 3 have a tiny little stalk on them, and that stalk makes taking them in and out of one’s ears easy.  I always had trouble situating the Pixel Buds in my ears, and I always thought they looked a little like Frankenstein bolts. Last but not least, the battery life on the AirPods has been great so far.</p>
+
+<img src="https://steve-best.github.io/Site_Images/Nothing_App.PNG" />
+
+<p>That said, there was a specific feature of the Pixel Buds that I sorely missed after switching to the AirPods, and that was a dual connection with my iPhone and my work computer (which is not a Mac).  Now, if one is entirely in the Apple ecosystem, meaning they have an iPhone and a Mac, for example, this might not even be a capability that they realized is missing.  AirPods seamlessly work simultaneously with iPhones and iPads, or iPhones and Macs.  That said, AirPods do not connect simultaneously with an iPhone and a computer that is not a Mac.  I’m not sure if it's a technology limitation in terms of Apple's connectivity protocols or if it's an artificial limitation imposed by Apple for ecosystem lock-in purposes, but regardless, simultaneously connecting AirPods with iPhones and non-Macs does not work.</p>
+
+<p>At first I was not really bothered by this.  If I’m listening to music while I work, and it’s time for a Zoom call, for example, I can simply have Zoom call my phone.  However, for Microsoft Teams, it’s a different story.  Ultimately, I got fed up with not having a good way to conduct meetings (at least the audio portion) through my work PC.  Then I found the <a href="https://www.amazon.com/CMF-NOTHING-Cancelling-Water-Resistant-Customizable/dp/B0H2JQ4CTP/ref=sr_1_1?crid=1D669LNRG0T5H&dib=eyJ2IjoiMSJ9.2YoUBzxQixSey0DWIq8U-EV2cYjEur4KWa7PTQh6Oa0MoMpof6Xf0CncNBTCcsMPTvj9XN3voqdkqGEgjdl-jiz7QkitRyysWnlAEIYfthwGA63ERXfhzIoBwoO-ST0z5R-wpbKrj_1zvl9M-3Wy20jXLFWtM6zFf98cfzZ_QEXtM11oaVm-HrX_D8fT1sSaN_-Vmh-qDY3c5p1qKRm5KjXmxSxM21djAHKsyXPmK-M.yTiq0dFZ6iC_NzJTbj88Z-WIzM9h9no_NKFFv1tdBFA&dib_tag=se&keywords=cmf%2Bbuds%2Bneo&qid=1792589784&sprefix=cmf%2Bbuds%2Bneo%2Caps%2C216&sr=8-1&th=1">CMF Buds Neo</a>.</p>
+
+<p>CMF is a sub-brand of <a href="https://us.nothing.tech/">Nothing</a>, which I have <a href="https://steve-best.github.io/cmf-watch-pro-2">written about before</a>.  I happened upon the Buds Neo for $25 on Amazon, and after reading through the spec sheet and noting that they sport dual connectivity, I figured I would give them a shot.  I have not been disappointed.</p>
+
+<p>While the case is cheap plastic (much cheaper feeling than the AirPods Pro 3’s plastic case) and while there is no wireless charging for the case, it still does its thing, charging the phone as it should.  I actually like the little spin wheel on the case.  While it does not do anything (except for providing the ability to attach a lanyard), it is a cool little touch.  I also like the magnetic click when putting the earbuds in the case.</p>
+
+<p>The CMF Buds Neo are comfortable in the ear, and thanks to the little stalk on each one, they are easy to put in the ears.  There is an additional set of tips that come with them, but the default ones are comfortable enough for me.</p>
+
+<p>I initially paired them with my iPhone through the Nothing app.  The Nothing app, which is very well designed, facilitates software updates, and all the settings, such as noise cancellation, are found therein.  For what these earbuds cost, they are definitely punching well above their price range in terms of overall sound quality.  To my ears (and granted, I am far from an audiophile), the audio quality is similar to my AirPods.  I’m using the default EQ settings (Immersion Boost), but they can be easily adjusted through the Nothing app.</p>
+
+<p>The CMF Buds Neo easily paired with my work PC, and I ensured that Dual Connection is set to On within the Nothing app.  Now, when I take them out of the case and put them in my ears, they seamlessly connect with the iPhone first, followed by the work computer.  When I listen to music on the iPhone, and a call comes in via Teams, when I answer the call on my work computer, the Buds Neo seamlessly switches over to the Teams call.  Once the call is over, the music on the iPhone begins to play again.  This very much solves the problem I was having with my AirPods.</p>
+
+<p>That said, I still do use the AirPods quite a bit, especially when I am at home or working out in the yard.  One of the features that the AirPods have that the Buds Neo do not is the ability to automatically raise the volume based on ambient outside noise.  In this way, and in their ability to almost completely block out external noise, the noise cancellation on the AirPods is vastly superior.</p>
+
+<p class="begin_point">iOS 27 and HomeView.</p>
+
+<p>I’ve been using iOS 27 since the beta dropped back in the Summer, and I am still on the betas, even though the production release has long since dropped.  I feel like iOS 27 is the mobile equivalent of <a href="https://basicappleguy.com/basicappleblog/0-new-features">Mac OS X Snow Leopard</a> from back in 2009.  While there are many new features in iOS 27, I feel like this really has been more of a stability focused update.  Everything just seems smoother.  Nothing crashes.  The icons are no longer blurry.  It’s fast.  In fact, I think it’s actually much faster than iOS 26 was on my iPhone 16 Plus.  I like how they have tuned Liquid Glass.  (I currently have my liquid glass settings to be as opaque as possible.)  The AI wallpaper extend trick is also pretty cool. </p>
+
+<p>CarPlay has two improvements that I am really enjoying.  The first is the clear icons.  I’m not sure if this was a thing on iOS 26, but I just noticed it a few weeks ago. It’s just a personal preference, as I have clear icons on my homescreen. I think it just looks cleaner.  The second is the slider to fast forward and rewind music.  This is such a useful feature.  I honestly cannot believe that it took this long for them to implement this.</p>
+
+<p>Now, there are two things that I think are missing from iOS 27, which I hope Apple will rectify with future iOS updates.  The first is something I <a href="https://steve-best.github.io/wwdc22-wish-list">have been talking about</a> for <a href="https://steve-best.github.io/WWDC-2024-Wish-List ">quite some time</a>.  Every third-party browser on iOS is still required to use <a href="https://webkit.org/">Webkit</a> under the hood.  I know I keep beating this drum, but I would love to see Firefox or Chrome on iOS be able to use Gecko/Blink respectively (outside of the EU and from the apps as downloaded from the iOS App Store). I know this sounds like a small thing, but it would actually go a long way toward helping open iOS up a bit, epsecially when it comes to progressive web apps that Webkit does not fully support.  There's nothing inherently wrong with Safari.  It has a lot of great features, and it is the browser on mobile that I primarily use.  But I would appreciate true choice.</p>
+
+<p>The second thing that bugs me about iOS 27 is the lack of feature parity between the version of iOS that comes on the iPhone Duo and the version of iOS that can be installed on every other iPhone capable of running iOS 27.  You see, iOS 27 on the Duo supports two apps running side by side, but none of the other iPhones get this feature.  This is actually something that Android has had (for their slab phones) dating back years and years.  I remember running side by side apps on my Netbit Robin.  While I did not use that feature a ton, it was still nice to have when I needed it.  (Again, my phone is my most used &ldquo;computer&rdquo;.)</p>
+
+<p>Apple recently announced <a href="https://www.apple.com/apple-homeview/">HomeView</a>, along with a new <a href="https://www.apple.com/apple-tv-4k/">Apple TV 4K</a>.  Here is my hot take on both of these.</p>
+
+<p>First, the new Apple TV 4K.  As an owner of the previous generation Apple TV 4K, I do not really see the need to upgrade right now.  My family prefers the Roku UI, and we have two relatively new Roku TVs.  I had originally purchased an Apple TV 4K to connect to the aging Roku TV that we had in our downstairs living room.  At the time, there was nothing wrong with the TV itself, but the Roku software had become slow to the point where it was almost unusable.  I added the Apple TV 4K and set the Roku TV to power on and turn off with the Apple TV remote.  When powering on, the TV would automatically connect to the HDMI port the Apple TV was plugged into.  Given that configuration, along with the fact that I disconnected the Roku TV from our network, I essentially turned that aging Roku TV into a &ldquo;dumb&rdquo; TV.  It worked okay for a while.  However, the aging Roku TV died (a power supply issue), and the Apple TV 4K was relegated to the upstairs TV.  We opted to replace the dead Roku TV with a newer Roku TV.  The first reason we did this is that no one but me liked the Apple TV 4K's remote.  The second reason was that no one but me liked tvOS.  Be that as it may, I don't really see the spec bump (given the hefty price increase to $300) as a reason to replace perfectly good hardware.</p>
+
+<p>The HomeView looks intriguing.  The hardware looks really polished, and I bet that the audio is nice, although I have not heard one yet.  At $300, however, I would have expected a larger display. That said, it's not really the price that causes me to pause on purchasing this device.  Instead, it's all about the ecosystem.  You see, we have been deep inside Google's Internet of Things ecosystem for 7 or 8 years now.  We have a combination of first generation Google Home Minis, second generation Nest Minis, a Nest thermostat, a first generation Nest hub, Google Wifi, a Nest Doorbell (battery), and a whole host of light bulbs and other things that can be controlled via the aforementioned speakers and display, like Pura air fresheners.  Even the Roku TVs can be controlled via this ecosystem.  Based on the research I have done, none of this stuff can be controlled via the HomeView.</p>
+
+<p>Right now, when it comes to my smart home set up, I'm just operating under the mantra of, &ldquo;If it ain't broke, don't fix it.&rdquo;  Maybe when all this stuff gets really old, to the point where Google stops supporting it, maybe then I'll slowly but surely switch things up.  But right now, I'm pretty locked in.  When Google decided to migrate from Google Assistant to Gemini, I was simultaneously sekptical and intrigued.  I guess I was more intrigued, as I signed up for the betas.  Even after the full migration for all Google customers, sometimes things still have their bugs and hiccups, but Gemini actually works really well on all this old hardware.  I really have to give props to Google for that.  The other thing is whether or not Google announces anything new before all this hardware I have needs to be put out to pasture.  The reality is that I would like to stay in the Google ecosystem, because again, <a href="https://steve-best.github.io/web-app-parity">Google's apps and services are more cross platform</a> than Apple's apps and services are right now.</p>
+
+<p class="end"><a href="https://steve-best.github.io">Table of Contents</a></p>
+
+</section>
+
+</section>
+
+</body>
+</html>
